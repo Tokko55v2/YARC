@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		864905A225BB657C00D7CF75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864905A125BB657C00D7CF75 /* Preview Assets.xcassets */; };
 		864905AD25BB657C00D7CF75 /* redditClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905AC25BB657C00D7CF75 /* redditClientTests.swift */; };
 		864905B825BB657C00D7CF75 /* redditClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905B725BB657C00D7CF75 /* redditClientUITests.swift */; };
+		9F6918155FE1A68DAFE930F2 /* libPods-redditClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F76F7AEF0F42635ADF7BBF /* libPods-redditClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		618AE3B5646DD53BD72D74C8 /* Pods-redditClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redditClient.debug.xcconfig"; path = "Target Support Files/Pods-redditClient/Pods-redditClient.debug.xcconfig"; sourceTree = "<group>"; };
+		70BEA3AAADDB6E8BF146EDF1 /* Pods-redditClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redditClient.release.xcconfig"; path = "Target Support Files/Pods-redditClient/Pods-redditClient.release.xcconfig"; sourceTree = "<group>"; };
+		84F76F7AEF0F42635ADF7BBF /* libPods-redditClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-redditClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8649059725BB657900D7CF75 /* redditClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redditClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8649059A25BB657900D7CF75 /* redditClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redditClientApp.swift; sourceTree = "<group>"; };
 		8649059C25BB657900D7CF75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6918155FE1A68DAFE930F2 /* libPods-redditClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,8 @@
 				864905AB25BB657C00D7CF75 /* redditClientTests */,
 				864905B625BB657C00D7CF75 /* redditClientUITests */,
 				8649059825BB657900D7CF75 /* Products */,
+				C2AC165B627B20F8E2DE1F51 /* Pods */,
+				DFECE574985DFC5D7D76D26B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,23 @@
 			path = redditClientUITests;
 			sourceTree = "<group>";
 		};
+		C2AC165B627B20F8E2DE1F51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				618AE3B5646DD53BD72D74C8 /* Pods-redditClient.debug.xcconfig */,
+				70BEA3AAADDB6E8BF146EDF1 /* Pods-redditClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFECE574985DFC5D7D76D26B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F76F7AEF0F42635ADF7BBF /* libPods-redditClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 864905BC25BB657C00D7CF75 /* Build configuration list for PBXNativeTarget "redditClient" */;
 			buildPhases = (
+				A1D5FE57E6C23BC178071B05 /* [CP] Check Pods Manifest.lock */,
+				860867DE25BB77C10055AB6D /* R.swift */,
 				8649059325BB657800D7CF75 /* Sources */,
 				8649059425BB657800D7CF75 /* Frameworks */,
 				8649059525BB657800D7CF75 /* Resources */,
+				864905CA25BB667000D7CF75 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		860867DE25BB77C10055AB6D /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		864905CA25BB667000D7CF75 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -z \"$CI\" ]; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nfi\n";
+		};
+		A1D5FE57E6C23BC178071B05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-redditClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8649059325BB657800D7CF75 /* Sources */ = {
@@ -414,6 +505,7 @@
 		};
 		864905BD25BB657C00D7CF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618AE3B5646DD53BD72D74C8 /* Pods-redditClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +528,7 @@
 		};
 		864905BE25BB657C00D7CF75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70BEA3AAADDB6E8BF146EDF1 /* Pods-redditClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
