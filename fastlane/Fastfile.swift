@@ -26,7 +26,7 @@ class Fastfile: LaneFile {
     
     func buildLane() {
            desc("Build for testing")
-           scan(workspace: "Portfolius-iOS.xcworkspace",
+           scan(workspace: "reddti-client-iOS.xcworkspace",
                 derivedDataPath: "derivedData",
                 buildForTesting: true,
                 xcargs: "CI=true")
@@ -34,24 +34,24 @@ class Fastfile: LaneFile {
     
     func unitTestLane() {
             desc("Run unit tests")
-            scan(workspace: "Portfolius-iOS.xcworkspace",
-                 onlyTesting: ["PortfoliusCoreTests"],
+            scan(workspace: "reddit-client-iOS.xcworkspace",
+                 onlyTesting: ["reddit-client-CoreTests"],
                  derivedDataPath: "derivedData",
                  testWithoutBuilding: true)
         }
     
     func integrationTestLane() {
             desc("Run integration tests")
-            scan(workspace: "Portfolius-iOS.xcworkspace",
-                 onlyTesting: ["Portfolius-iOSTests"],
+            scan(workspace: "reddit-client-iOS.xcworkspace",
+                 onlyTesting: ["reddit-client-iOSTests"],
                  derivedDataPath: "derivedData",
                  testWithoutBuilding: true)
         }
     
     func uiTestLane() {
            desc("Run UI tests")
-           scan(workspace: "Portfolius-iOS.xcworkspace",
-                onlyTesting: "Portfolius-iOSUITests",
+           scan(workspace: "reddit-client-iOS.xcworkspace",
+                onlyTesting: "reddit-client-iOSUITests",
                 derivedDataPath: "derivedData",
                 testWithoutBuilding: true)
        }
