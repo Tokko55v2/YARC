@@ -19,17 +19,4 @@ class Fastfile: LaneFile {
                      executable: "Pods/SwiftLint/swiftlint"
            )
     }
-    
-    func cocoapodsLane() {
-        cocoapods(
-          clean_install: true,
-          podfile: "./Podfile"
-        )
-    }
-    
-    func xcTestLane() {
-        xctest(
-          destination: "name=iPhone 11,OS=14.0"
-        )
-    }
 }

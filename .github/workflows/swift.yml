@@ -23,21 +23,3 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
-      
-  pods:
-    needs: swiftlint
-    runs-on: macos-latest
-    steps:
-    - name: Install Bundle
-      run: bundle install
-    - name: Run pods
-      run: bundle exec fastlane cocoapodsLane
-      
-  test:
-    needs: swiftlint
-    runs-on: macos-latest
-    steps:
-    - name: Install Bundle
-      run: bundle install
-    - name: Run pods
-      run: bundle exec fastlane xcTestLane
