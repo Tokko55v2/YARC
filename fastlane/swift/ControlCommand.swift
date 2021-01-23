@@ -12,7 +12,7 @@ import Foundation
 
 struct ControlCommand: RubyCommandable {
     static let commandKey = "command"
-    var type: CommandType { return .control }
+    var type: CommandType { .control }
 
     enum ShutdownCommandType {
         static let userMessageKey: String = "userMessage"

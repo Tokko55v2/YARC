@@ -10,16 +10,16 @@
 import Foundation
 
 public protocol StoryboardViewControllerResourceType: IdentifierType {
-  associatedtype ViewControllerType
+    associatedtype ViewControllerType
 }
 
 public struct StoryboardViewControllerResource<ViewController>: StoryboardViewControllerResourceType {
-  public typealias ViewControllerType = ViewController
+    public typealias ViewControllerType = ViewController
 
-  /// Storyboard identifier of this view controller
-  public let identifier: String
+    /// Storyboard identifier of this view controller
+    public let identifier: String
 
-  public init(identifier: String) {
-    self.identifier = identifier
-  }
+    public init(identifier: String) {
+        self.identifier = identifier
+    }
 }

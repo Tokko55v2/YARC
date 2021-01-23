@@ -11,13 +11,13 @@ import Foundation
 
 /// Base protocol for all identifiers
 public protocol IdentifierType: CustomStringConvertible {
-  /// Identifier string
-  var identifier: String { get }
+    /// Identifier string
+    var identifier: String { get }
 }
 
 extension IdentifierType {
-  /// CustomStringConvertible implementation, returns the identifier
-  public var description: String {
-    return identifier
-  }
+    /// CustomStringConvertible implementation, returns the identifier
+    public var description: String {
+        identifier
+    }
 }

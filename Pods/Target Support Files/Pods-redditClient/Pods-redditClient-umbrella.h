@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_redditClientVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_redditClientVersionString[];
+FOUNDATION_EXPORT double Pods_RedditClientVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_RedditClientVersionString[];
 
