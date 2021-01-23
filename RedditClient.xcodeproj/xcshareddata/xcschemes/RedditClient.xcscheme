@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "864905A725BB657C00D7CF75"
-               BuildableName = "RedditClientTests.xctest"
-               BlueprintName = "RedditClientTests"
-               ReferencedContainer = "container:RedditClient.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "864905B225BB657C00D7CF75"
-               BuildableName = "RedditClientUITests.xctest"
-               BlueprintName = "RedditClientUITests"
-               ReferencedContainer = "container:RedditClient.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
