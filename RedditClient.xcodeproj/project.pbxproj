@@ -13,6 +13,7 @@
 		862EA02325BC2962003603B3 /* RedditPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EA01F25BC2962003603B3 /* RedditPostsViewModel.swift */; };
 		862EA02425BC2962003603B3 /* RedditPostsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EA02025BC2962003603B3 /* RedditPostsRow.swift */; };
 		862EA02525BC2962003603B3 /* RedditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EA02125BC2962003603B3 /* RedditPost.swift */; };
+
 		8649059B25BB657900D7CF75 /* RedditClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649059A25BB657900D7CF75 /* RedditClientApp.swift */; };
 		8649059D25BB657900D7CF75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649059C25BB657900D7CF75 /* ContentView.swift */; };
 		8649059F25BB657C00D7CF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8649059E25BB657C00D7CF75 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		864905B825BB657C00D7CF75 /* RedditClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905B725BB657C00D7CF75 /* RedditClientUITests.swift */; };
 		86A84ACD25BC288D000D1F9C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A84ACC25BC288D000D1F9C /* LoginViewModel.swift */; };
 		86A84AD525BC2898000D1F9C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A84AD425BC2898000D1F9C /* LoginView.swift */; };
+
 		9F6918155FE1A68DAFE930F2 /* libPods-redditClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F76F7AEF0F42635ADF7BBF /* libPods-redditClient.a */; };
 /* End PBXBuildFile section */
 
