@@ -7,5 +7,4 @@ I was curious how to setup up a project which the ability to scale.  It is basic
 *  Github Actions for CI / CD including the following steps: 
     * On pull request to main branch
     * Run SwiftLintLane 
-    * Run BuildLane and upload necessary results as artifacts
-    * Test jobs will start in parallel
+    * Run BuildLane
