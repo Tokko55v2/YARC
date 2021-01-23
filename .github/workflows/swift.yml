@@ -19,5 +19,9 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install Bundle
+      run: bundle install
+    - name: Build
+      run: bundle exec fastlane buildLane
     - name: Run tests
       run: swift test -v
