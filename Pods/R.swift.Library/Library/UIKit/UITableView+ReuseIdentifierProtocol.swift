@@ -28,7 +28,7 @@ extension UITableView {
     }
 
     @available(*, unavailable, message: "Use dequeueReusableCell(withIdentifier:for:) instead")
-    public func dequeueReusableCell<Identifier: ReuseIdentifierType>(withIdentifier _: Identifier) -> Identifier.ReusableType?
+    public func dequeueReusableCell<Identifier: ReuseIdentifierType>(withIdentifier identifier: Identifier) -> Identifier.ReusableType?
         where Identifier.ReusableType: UITableViewCell
     {
         fatalError()
