@@ -8,4 +8,3 @@ I was curious how to setup up a project which the ability to scale.  It is basic
     * On pull request to main branch
     * Run SwiftLintLane 
     * Run BuildLane
-    * Test jobs will start in parallel
