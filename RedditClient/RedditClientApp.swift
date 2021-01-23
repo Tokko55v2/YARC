@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct redditClientApp: App {
+struct RedditClientApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
