@@ -10,7 +10,7 @@
 
 import Foundation
 #if canImport(SwiftShell)
-    import SwiftShell
+import SwiftShell
 #endif
 
 let argumentProcessor = ArgumentProcessor(args: CommandLine.arguments)
@@ -20,9 +20,9 @@ class MainProcess {
     var doneRunningLane = false
     var thread: Thread!
     #if SWIFT_PACKAGE
-        var lastPrintDate = Date.distantFuture
-        var timeBetweenPrints = Int.min
-        var rubySocketCommand: AsyncCommand!
+    var lastPrintDate = Date.distantFuture
+    var timeBetweenPrints = Int.min
+    var rubySocketCommand: AsyncCommand!
     #endif
 
     @objc func connectToFastlaneAndRunLane(_ fastfile: LaneFile?) {
@@ -38,28 +38,28 @@ class MainProcess {
 
     func startFastlaneThread(with fastFile: LaneFile?) {
         #if !SWIFT_PACKAGE
-            thread = Thread(target: self, selector: #selector(connectToFastlaneAndRunLane), object: nil)
+        thread = Thread(target: self, selector: #selector(connectToFastlaneAndRunLane), object: nil)
         #else
-            thread = Thread(target: self, selector: #selector(connectToFastlaneAndRunLane), object: fastFile)
+        thread = Thread(target: self, selector: #selector(connectToFastlaneAndRunLane), object: fastFile)
         #endif
         thread.name = "worker thread"
         #if SWIFT_PACKAGE
-            let PATH = run("/bin/bash", "-c", "-l", "eval $(/usr/libexec/path_helper -s) ; echo $PATH").stdout
-            main.env["PATH"] = PATH
-            let path = main.run(bash: "which fastlane").stdout
-            let pids = main.run("lsof", "-t", "-i", ":2000").stdout.split(separator: "\n")
-            pids.forEach { main.run("kill", "-9", $0) }
-            rubySocketCommand = main.runAsync(path, "socket_server", "-c", "1200")
-            lastPrintDate = Date()
-            rubySocketCommand.stderror.onStringOutput { print($0) }
-            rubySocketCommand.stdout.onStringOutput { stdout in
-                print(stdout)
-                self.timeBetweenPrints = Int(self.lastPrintDate.timeIntervalSinceNow)
-            }
+        let PATH = run("/bin/bash", "-c", "-l", "eval $(/usr/libexec/path_helper -s) ; echo $PATH").stdout
+        main.env["PATH"] = PATH
+        let path = main.run(bash: "which fastlane").stdout
+        let pids = main.run("lsof", "-t", "-i", ":2000").stdout.split(separator: "\n")
+        pids.forEach { main.run("kill", "-9", $0) }
+        rubySocketCommand = main.runAsync(path, "socket_server", "-c", "1200")
+        lastPrintDate = Date()
+        rubySocketCommand.stderror.onStringOutput { print($0) }
+        rubySocketCommand.stdout.onStringOutput { stdout in
+            print(stdout)
+            self.timeBetweenPrints = Int(self.lastPrintDate.timeIntervalSinceNow)
+        }
 
-            // swiftformat:disable:next redundantSelf
-            _ = Runner.waitWithPolling(self.timeBetweenPrints, toEventually: { $0 > 5 }, timeout: 10)
-            thread.start()
+        // swiftformat:disable:next redundantSelf
+        _ = Runner.waitWithPolling(self.timeBetweenPrints, toEventually: { $0 > 5 }, timeout: 10)
+        thread.start()
         #endif
     }
 }

@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-public extension UIFont {
+extension UIFont {
     /**
      Creates and returns a font object for the specified font resource (R.font.*) and size.
 
@@ -19,7 +19,7 @@ public extension UIFont {
 
      - returns: A font object of the specified font resource and size.
      */
-    convenience init?(resource: FontResourceType, size: CGFloat) {
+    public convenience init?(resource: FontResourceType, size: CGFloat) {
         self.init(name: resource.fontName, size: size)
     }
 }

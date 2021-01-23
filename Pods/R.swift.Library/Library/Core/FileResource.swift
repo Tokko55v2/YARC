@@ -20,10 +20,10 @@ public protocol FileResourceType {
     var pathExtension: String { get }
 }
 
-public extension FileResourceType {
+extension FileResourceType {
     /// Name of the file on disk with the pathExtension
-    var fullName: String {
-        return [name, pathExtension].joined(separator: ".")
+    public var fullName: String {
+        [name, pathExtension].joined(separator: ".")
     }
 
     /**
@@ -31,8 +31,8 @@ public extension FileResourceType {
 
      - returns: The full pathname for this resource or nil if the file could not be located.
      */
-    func path() -> String? {
-        return bundle.path(forResource: self)
+    public func path() -> String? {
+        bundle.path(forResource: self)
     }
 
     /**
@@ -40,8 +40,8 @@ public extension FileResourceType {
 
      - returns: The file URL for this resource or nil if the file could not be located.
      */
-    func url() -> URL? {
-        return bundle.url(forResource: self)
+    public func url() -> URL? {
+        bundle.url(forResource: self)
     }
 }
 

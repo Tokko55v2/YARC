@@ -9590,11 +9590,11 @@ func parseArray(fromString: String, function: String = #function) -> [String] {
 }
 
 func parseDictionary(fromString: String, function: String = #function) -> [String: String] {
-    return parseDictionaryHelper(fromString: fromString, function: function) as! [String: String]
+    parseDictionaryHelper(fromString: fromString, function: function) as! [String: String]
 }
 
 func parseDictionary(fromString: String, function: String = #function) -> [String: Any] {
-    return parseDictionaryHelper(fromString: fromString, function: function)
+    parseDictionaryHelper(fromString: fromString, function: function)
 }
 
 func parseDictionaryHelper(fromString: String, function: String = #function) -> [String: Any] {

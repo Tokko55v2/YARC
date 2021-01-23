@@ -10,13 +10,13 @@
 import Foundation
 import UIKit
 
-public extension TypedStoryboardSegueInfo {
+extension TypedStoryboardSegueInfo {
     /**
       Returns typed information about the given segue, fails if the segue types don't exactly match types.
 
       - returns: A newly initialized TypedStoryboardSegueInfo object or nil.
      */
-    init?<SegueIdentifier: StoryboardSegueIdentifierType>(segueIdentifier: SegueIdentifier, segue: UIStoryboardSegue)
+    public init?<SegueIdentifier: StoryboardSegueIdentifierType>(segueIdentifier: SegueIdentifier, segue: UIStoryboardSegue)
         where SegueIdentifier.SegueType == Segue, SegueIdentifier.SourceType == Source, SegueIdentifier.DestinationType == Destination
     {
         guard let identifier = segue.identifier,

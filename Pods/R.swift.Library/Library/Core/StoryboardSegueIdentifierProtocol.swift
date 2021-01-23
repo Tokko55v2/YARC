@@ -48,7 +48,7 @@ public struct StoryboardSegueIdentifier<Segue, Source, Destination>: StoryboardS
     public func storyboardSegue(withSource source: Source)
         -> StoryboardSegue<Segue, Source, Destination>
     {
-        return StoryboardSegue(identifier: self, source: source)
+        StoryboardSegue(identifier: self, source: source)
     }
 }
 

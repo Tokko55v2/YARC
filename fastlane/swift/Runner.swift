@@ -140,7 +140,7 @@ extension Runner {
         dispatchGroup.leave()
     }
 
-    fileprivate func testDispatchTimeoutResult(_ timeoutResult: DispatchTimeoutResult, failureMessage: String, timeToWait _: DispatchTimeInterval) -> Bool {
+    private func testDispatchTimeoutResult(_ timeoutResult: DispatchTimeoutResult, failureMessage: String, timeToWait _: DispatchTimeInterval) -> Bool {
         switch timeoutResult {
         case .success:
             return true
@@ -251,8 +251,8 @@ func verbose(message: String) {
     logger.verbose(message: message)
 }
 
-private extension DispatchTimeInterval {
-    var timeInterval: TimeInterval {
+extension DispatchTimeInterval {
+    fileprivate var timeInterval: TimeInterval {
         var result: TimeInterval = 0
         switch self {
         case let .seconds(value):

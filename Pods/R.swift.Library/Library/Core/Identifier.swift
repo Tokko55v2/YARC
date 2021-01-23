@@ -15,9 +15,9 @@ public protocol IdentifierType: CustomStringConvertible {
     var identifier: String { get }
 }
 
-public extension IdentifierType {
+extension IdentifierType {
     /// CustomStringConvertible implementation, returns the identifier
-    var description: String {
-        return identifier
+    public var description: String {
+        identifier
     }
 }

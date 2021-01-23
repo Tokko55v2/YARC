@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-public extension UIStoryboard {
+extension UIStoryboard {
     /**
      Instantiates and returns the view controller with the specified resource (R.storyboard.*.*).
 
@@ -18,7 +18,7 @@ public extension UIStoryboard {
 
      - returns: The view controller corresponding to the specified resource (R.storyboard.*.*). If no view controller is associated, this method throws an exception.
      */
-    func instantiateViewController<ViewControllerResource: StoryboardViewControllerResourceType>(withResource resource: ViewControllerResource) -> ViewControllerResource.ViewControllerType? {
-        return instantiateViewController(withIdentifier: resource.identifier) as? ViewControllerResource.ViewControllerType
+    public func instantiateViewController<ViewControllerResource: StoryboardViewControllerResourceType>(withResource resource: ViewControllerResource) -> ViewControllerResource.ViewControllerType? {
+        instantiateViewController(withIdentifier: resource.identifier) as? ViewControllerResource.ViewControllerType
     }
 }

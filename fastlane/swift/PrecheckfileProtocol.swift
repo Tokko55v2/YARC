@@ -1,7 +1,7 @@
 // PrecheckfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol PrecheckfileProtocol: class {
+public protocol PrecheckfileProtocol: AnyObject {
     /// Path to your App Store Connect API Key JSON file (https://docs.fastlane.tools/app-store-connect-api/#using-fastlane-api-key-json-file)
     var apiKeyPath: String? { get }
 
@@ -36,18 +36,18 @@ public protocol PrecheckfileProtocol: class {
     var freeStuffInIap: String? { get }
 }
 
-public extension PrecheckfileProtocol {
-    var apiKeyPath: String? { return nil }
-    var apiKey: [String: Any]? { return nil }
-    var appIdentifier: String { return "" }
-    var username: String { return "" }
-    var teamId: String? { return nil }
-    var teamName: String? { return nil }
-    var platform: String { return "ios" }
-    var defaultRuleLevel: String { return "error" }
-    var includeInAppPurchases: Bool { return true }
-    var useLive: Bool { return false }
-    var freeStuffInIap: String? { return nil }
+extension PrecheckfileProtocol {
+    public var apiKeyPath: String? { nil }
+    public var apiKey: [String: Any]? { nil }
+    public var appIdentifier: String { "" }
+    public var username: String { "" }
+    public var teamId: String? { nil }
+    public var teamName: String? { nil }
+    public var platform: String { "ios" }
+    public var defaultRuleLevel: String { "error" }
+    public var includeInAppPurchases: Bool { true }
+    public var useLive: Bool { false }
+    public var freeStuffInIap: String? { nil }
 }
 
 // Please don't remove the lines below

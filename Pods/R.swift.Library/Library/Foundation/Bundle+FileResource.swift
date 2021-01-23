@@ -9,7 +9,7 @@
 
 import Foundation
 
-public extension Bundle {
+extension Bundle {
     /**
      Returns the file URL for the given resource (R.file.*).
 
@@ -17,8 +17,8 @@ public extension Bundle {
 
      - returns: The file URL for the resource file (R.file.*) or nil if the file could not be located.
      */
-    func url(forResource resource: FileResourceType) -> URL? {
-        return url(forResource: resource.name, withExtension: resource.pathExtension)
+    public func url(forResource resource: FileResourceType) -> URL? {
+        url(forResource: resource.name, withExtension: resource.pathExtension)
     }
 
     /**
@@ -28,7 +28,7 @@ public extension Bundle {
 
      - returns: The full pathname for the resource file (R.file.*) or nil if the file could not be located.
      */
-    func path(forResource resource: FileResourceType) -> String? {
-        return path(forResource: resource.name, ofType: resource.pathExtension)
+    public func path(forResource resource: FileResourceType) -> String? {
+        path(forResource: resource.name, ofType: resource.pathExtension)
     }
 }

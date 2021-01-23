@@ -1,7 +1,7 @@
 // SnapshotfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol SnapshotfileProtocol: class {
+public protocol SnapshotfileProtocol: AnyObject {
     /// Path the workspace file
     var workspace: String? { get }
 
@@ -144,54 +144,54 @@ public protocol SnapshotfileProtocol: class {
     var useSystemScm: Bool { get }
 }
 
-public extension SnapshotfileProtocol {
-    var workspace: String? { return nil }
-    var project: String? { return nil }
-    var xcargs: String? { return nil }
-    var xcconfig: String? { return nil }
-    var devices: [String]? { return nil }
-    var languages: [String] { return ["en-US"] }
-    var launchArguments: [String] { return [""] }
-    var outputDirectory: String { return "screenshots" }
-    var outputSimulatorLogs: Bool { return false }
-    var iosVersion: String? { return nil }
-    var skipOpenSummary: Bool { return false }
-    var skipHelperVersionCheck: Bool { return false }
-    var clearPreviousScreenshots: Bool { return false }
-    var reinstallApp: Bool { return false }
-    var eraseSimulator: Bool { return false }
-    var headless: Bool { return true }
-    var overrideStatusBar: Bool { return false }
-    var localizeSimulator: Bool { return false }
-    var darkMode: Bool? { return nil }
-    var appIdentifier: String? { return nil }
-    var addPhotos: [String]? { return nil }
-    var addVideos: [String]? { return nil }
-    var htmlTemplate: String? { return nil }
-    var buildlogPath: String { return "~/Library/Logs/snapshot" }
-    var clean: Bool { return false }
-    var testWithoutBuilding: Bool? { return nil }
-    var configuration: String? { return nil }
-    var xcprettyArgs: String? { return nil }
-    var sdk: String? { return nil }
-    var scheme: String? { return nil }
-    var numberOfRetries: Int { return 1 }
-    var stopAfterFirstError: Bool { return false }
-    var derivedDataPath: String? { return nil }
-    var resultBundle: Bool { return false }
-    var testTargetName: String? { return nil }
-    var namespaceLogFiles: String? { return nil }
-    var concurrentSimulators: Bool { return true }
-    var disableSlideToType: Bool { return false }
-    var clonedSourcePackagesPath: String? { return nil }
-    var skipPackageDependenciesResolution: Bool { return false }
-    var disablePackageAutomaticUpdates: Bool { return false }
-    var testplan: String? { return nil }
-    var onlyTesting: String? { return nil }
-    var skipTesting: String? { return nil }
-    var disableXcpretty: Bool? { return nil }
-    var suppressXcodeOutput: Bool? { return nil }
-    var useSystemScm: Bool { return false }
+extension SnapshotfileProtocol {
+    public var workspace: String? { nil }
+    public var project: String? { nil }
+    public var xcargs: String? { nil }
+    public var xcconfig: String? { nil }
+    public var devices: [String]? { nil }
+    public var languages: [String] { ["en-US"] }
+    public var launchArguments: [String] { [""] }
+    public var outputDirectory: String { "screenshots" }
+    public var outputSimulatorLogs: Bool { false }
+    public var iosVersion: String? { nil }
+    public var skipOpenSummary: Bool { false }
+    public var skipHelperVersionCheck: Bool { false }
+    public var clearPreviousScreenshots: Bool { false }
+    public var reinstallApp: Bool { false }
+    public var eraseSimulator: Bool { false }
+    public var headless: Bool { true }
+    public var overrideStatusBar: Bool { false }
+    public var localizeSimulator: Bool { false }
+    public var darkMode: Bool? { nil }
+    public var appIdentifier: String? { nil }
+    public var addPhotos: [String]? { nil }
+    public var addVideos: [String]? { nil }
+    public var htmlTemplate: String? { nil }
+    public var buildlogPath: String { "~/Library/Logs/snapshot" }
+    public var clean: Bool { false }
+    public var testWithoutBuilding: Bool? { nil }
+    public var configuration: String? { nil }
+    public var xcprettyArgs: String? { nil }
+    public var sdk: String? { nil }
+    public var scheme: String? { nil }
+    public var numberOfRetries: Int { 1 }
+    public var stopAfterFirstError: Bool { false }
+    public var derivedDataPath: String? { nil }
+    public var resultBundle: Bool { false }
+    public var testTargetName: String? { nil }
+    public var namespaceLogFiles: String? { nil }
+    public var concurrentSimulators: Bool { true }
+    public var disableSlideToType: Bool { false }
+    public var clonedSourcePackagesPath: String? { nil }
+    public var skipPackageDependenciesResolution: Bool { false }
+    public var disablePackageAutomaticUpdates: Bool { false }
+    public var testplan: String? { nil }
+    public var onlyTesting: String? { nil }
+    public var skipTesting: String? { nil }
+    public var disableXcpretty: Bool? { nil }
+    public var suppressXcodeOutput: Bool? { nil }
+    public var useSystemScm: Bool { false }
 }
 
 // Please don't remove the lines below
