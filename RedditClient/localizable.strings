@@ -1,0 +1,9 @@
+//
+//  Localizable.strings
+//  RedditClient
+//
+//  Created by Michael Kroneder on 22/01/2021.
+//
+"username_placeholder" = "Username";
+"password_placeholder" = "Password";
+"login_button" = "Login";
