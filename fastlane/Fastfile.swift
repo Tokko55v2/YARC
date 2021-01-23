@@ -18,12 +18,4 @@ class Fastfile: LaneFile {
                   raiseIfSwiftlintError: true,
                   executable: "Pods/SwiftLint/swiftlint")
     }
-
-    func buildLane() {
-        desc("Build for testing")
-        scan(workspace: "RedditClient.xcworkspace",
-             derivedDataPath: "derivedData",
-             buildForTesting: true,
-             xcargs: "CI=true")
-    }
 }
