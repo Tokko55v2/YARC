@@ -10,6 +10,8 @@
 		39A461C079D66DF9F88B7C47 /* libPods-RedditClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8271A140BF5A2AE8545F2E /* libPods-RedditClient.a */; };
 		861BCCE025BBB046005A88C8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BCCDF25BBB046005A88C8 /* Post.swift */; };
 		861BCCE525BBB054005A88C8 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BCCE425BBB054005A88C8 /* ErrorHandling.swift */; };
+		862239DB25BCDE190057C0E4 /* libPods-RedditClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865A0E2C25BCCF6100A809EC /* libPods-RedditClient.a */; };
+		862239DC25BCDE1E0057C0E4 /* libR.swift.Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865A0E2E25BCCF6100A809EC /* libR.swift.Library.a */; };
 		862690C725BCAFDA00A720C6 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 862690C625BCAFDA00A720C6 /* localizable.strings */; };
 		862EA02225BC2962003603B3 /* RedditPostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EA01E25BC2962003603B3 /* RedditPostsList.swift */; };
 		862EA02325BC2962003603B3 /* RedditPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EA01F25BC2962003603B3 /* RedditPostsViewModel.swift */; };
@@ -104,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862239DC25BCDE1E0057C0E4 /* libR.swift.Library.a in Frameworks */,
+				862239DB25BCDE190057C0E4 /* libPods-RedditClient.a in Frameworks */,
 				39A461C079D66DF9F88B7C47 /* libPods-RedditClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +135,6 @@
 				103CF56108D186D68701EBB1 /* Pods-RedditClient.debug.xcconfig */,
 				BF6576282AC91F0B3A7D0CE9 /* Pods-RedditClient.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -423,7 +426,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -663,7 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"redditClient/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = VA49U6XNKH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = redditClient/Info.plist;
@@ -686,7 +689,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"redditClient/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = VA49U6XNKH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = redditClient/Info.plist;
