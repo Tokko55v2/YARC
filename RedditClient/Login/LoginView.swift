@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-
-    var body:some View {
+    var body: some View {
         Text("Hallo from Login")
             .padding()
     }

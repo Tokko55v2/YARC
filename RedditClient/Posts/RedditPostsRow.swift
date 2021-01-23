@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct RedditPostRow: View {
-    var body:some View {
-        Text("Hallo World")
+    var body: some View {
+        Text("Hallo World - from Row")
             .padding()
     }
 }
