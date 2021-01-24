@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				11957C9C282712FD524B8F96B34E21D0 /* PBXTargetDependency */,
+				B2C664224B17770CA2344A40309DFACF /* PBXTargetDependency */,
 			);
 			name = R.swift;
 			productName = R.swift;
@@ -31,62 +31,136 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		09315CE2EBCF5DEAF440DCB8E936232A /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DB4031AAB05DC0B629136A61DB287 /* UINib+NibResource.swift */; };
-		124A5D92E65616687F9368C76D903842 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9B10324209573F8DD4FBA30D11250 /* Data+FileResource.swift */; };
-		1E3694F0F67070CBED0B5902D4F88077 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8947FDAF007F2F9144B61BBB6F075971 /* R.swift.Library-dummy.m */; };
-		23784C06C497CBAC0A6C62266DFC0183 /* Pods-RedditClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98BE3A6BA92B0059FBF5DF9C747024 /* Pods-RedditClient-dummy.m */; };
-		266A4B9BA2ADEDC771C26ADD85365129 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC886C495219995F75F80E1446F78EF9 /* NibResource+UIKit.swift */; };
-		2F8CCCB10C95385ED8419279CB2B84E1 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC866629A9704C3C618875DB9BB57CFF /* UIViewController+NibResource.swift */; };
-		41D1A12E7340287BE1BEE5B808D1ED1C /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BF5DEF48B635B6B8975614C23311E /* FileResource.swift */; };
-		49DC0BBE803BEE11429153F53FB42A5B /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76002A42CA082BDB4BCA32CDA4563 /* Identifier.swift */; };
-		5344A3EF9278070EFB94E771AB341E6E /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224605220C323FC0509C5FEF840EB49 /* StoryboardResource.swift */; };
-		53731BCC13E44C927EB7A9899E732A3C /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1243AE77BD8D2D118361E2DC0A5AC8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
-		595265698E23F7164E1065F47C8DA2D9 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502D632CAC4DD5CC72EA3179CD8E7F8 /* ColorResource.swift */; };
-		5CE0AE3D1BAC4639AA21BAD23A0ADC35 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61A3AAE94BC59E5794BE6DC8FA975E2 /* Validatable.swift */; };
-		5DC2760ED2A298098158D963E92B838E /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008C2B945A0E18A058A9C637879E7C7 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
-		681617EC64D9A363DEBCB43C1552697B /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2473F517705DD6657830439491D720 /* UIColor+ColorResource.swift */; };
-		6A93CA03CEE4648125AB94503E83F559 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A223B0291C083331C64D716E6106797 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
-		6CC93189EF87CE12E034E799F84B462D /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E39D32C070643A7C43B14CB7FFF73 /* FontResource.swift */; };
-		7B5628E42E6372387E64105D89D64069 /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E4462633DE77F44BDABD501B8BC1A /* UIStoryboard+StoryboardResource.swift */; };
-		914C7871DB712EB3733F26E604445B09 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907BE91E148DC799665CA11BA9E84CDF /* UIImage+ImageResource.swift */; };
-		96B49342E340CC463C5EFD11F5397E91 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F9F523A98BAB0BC26E2ABBD1ABA4B /* UITableView+ReuseIdentifierProtocol.swift */; };
-		A1EF78222FA93D398FC62B70DC18D628 /* Pods-RedditClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 040BF1D8BC3AEA98D84B0D5C1ACD398C /* Pods-RedditClient-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A48247B9F287D400103B343A8D351AE9 /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14491AD87DA269B055A2DAD2A84F02D /* NibResource.swift */; };
-		AC330D235C80EBA1B158F68CE25EF0F9 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7017F397C328CEBCB8C00D8058F1067 /* StringResource.swift */; };
-		B87D991E0E2993DFBA053A11421D169D /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A16943211F03C4949E51D48A23F1B2 /* StoryboardResourceWithInitialController+UIKit.swift */; };
-		BB4046A6684F5802F5ED42F63C79C562 /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0FF30F126904B481E124E9A3E83514 /* UIFont+FontResource.swift */; };
-		C0607C06C4E7C781055AB5A1DA485F53 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27170A8779C6DC384548A9B33C3ED457 /* StoryboardSegueIdentifierProtocol.swift */; };
-		C18F87BCE0D71063A79A8C425E605300 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68C25358AC7EE27E37D5E1909810A2F /* StoryboardViewControllerResource.swift */; };
-		C3C87ACD9E1205A5D121E791ACE96512 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CD517924C6EC70FDA81481DAF7FA /* Bundle+FileResource.swift */; };
-		C6E0A1F28B4C23C1A37B6C61B0DF743E /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6332F539C1CC283E429011A258DC2 /* ReuseIdentifierProtocol.swift */; };
-		E81FAEC52BA930F07024C1714E3F866D /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F42C70025B5B55CBF6556AEBA97F /* ImageResource.swift */; };
-		F199F4E7234B7037FEC3C4CD51ECC463 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F04F305A8B1DEB0487D01054D5614DAA /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F72076A4E81C1A77CBE304C93CE23E7F /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017F312EF70115C3938F6B1A66585B1 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		03B7A4F856BB76F856C6CDCFC6EFDA80 /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D630C4092C9C422763083744A48289 /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		04825B3CE40BA4BCB66F17C78AD5C2A9 /* OIDExternalUserAgentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 675C241CA73721A08D1F1DF83C293C1F /* OIDExternalUserAgentRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		04913510C525DD60946D740751550C88 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A0120021BF2C445047D9A604381C9E /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0624F9F469C1A35824EB3F7741FE174A /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2F314ECD9027B4FA399C04F02CD96 /* OIDTokenUtilities.m */; };
+		06DE60F33DE9056DADEDEC33BF9D5498 /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F3906077B4667762F16454A8309E21 /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06FBAF54487E01B06BADB22EC1BB295E /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD151582117CA01FC6F9966BE0B2EB7 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		0879D59CAE9AFC8E9E839ED3CDCA3C0B /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = C176DB4D2590A8ABB3FE9EE7E90B33DD /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0ABEE4191492E7BF499D2D4A04B5D14F /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197408DE1A27510367916DB44ED363E9 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		0B0017351312188481FA48BE62FBC569 /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69832189BD439A6BAA76E96DE6E433E /* UINib+NibResource.swift */; };
+		0B2CBF5336CA0E6DFB0B3FE7C7FE0C50 /* OIDURLSessionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = D332341BD70DC3FF3B99F412F1C8AA85 /* OIDURLSessionProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CB7FAF3F9DC9A4C0D5CA9665F132AA6 /* OIDIDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DE55A025DAABC66C5B47A84F39CBD181 /* OIDIDToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D45D18AEE451FA1632315B3370D7334 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C61EA096D6386A9E7D920A101CAFA68C /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E4E06C0EB7AAA5D80DD1439EDE66970 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07DE80187FE0E0BCD25AD8931C21283 /* UIImage+ImageResource.swift */; };
+		1606ECAEB6760A69E5CF0141386EDB4A /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AB277A3C14AE017B2249081A20253A /* OIDAuthState.m */; };
+		1671743E7AA6CF77D163251E4631E864 /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF52E285D70A59378F2DF48DDD704E7 /* OIDDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16A80CC55825A6234AE971429BB3FAEF /* OIDEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE20F546651B75362FEB1ED71F342 /* OIDEndSessionResponse.m */; };
+		1823B590F152C9CAFCBB6F429AD4FF5B /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D901EC3EB4BE3B528679E9C3B13E20 /* UIFont+FontResource.swift */; };
+		1924CD7C3BA15FB8E1C856A84115518F /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD7466BBD9E949BE6060C65651EE1F /* OIDTokenResponse.m */; };
+		1C3BCA0314D32FB043DBF5B342DB0DF9 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C93D62D18A52DC3C7FC4FB7C4181F /* NibResource+UIKit.swift */; };
+		1D9B644655C651B0930782505670A9BD /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B086C3409D9A6B4F4E4E37C9AA48257 /* OIDTokenRequest.m */; };
+		2140A1AF42F2D0C570E605C2B98FB4F1 /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2899A7776058E27691A01F78FD7522 /* OIDAuthorizationService.m */; };
+		22071450F8407141BFE01F0D521A060F /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2516BB05F5DC451E77B139050DA3B5 /* Data+FileResource.swift */; };
+		236E7F2B216E90EC6090DC918D8F3FDE /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 501D82316CF16571F2DBC9430B31024B /* OIDScopeUtilities.m */; };
+		27484984A0D4908A2E93A6C0B87CA6FB /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49404A59C2ADB28A2BF9A772F411D5 /* Identifier.swift */; };
+		2C4CCBF465EFF163FCA8D4D56C93A425 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6075844A75EB3AE7EDBABCF9FA6AF206 /* OIDScopes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F7808F68DD5B246C773EFFB45C102C0 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD1CD2446184FA56C2851AF3D666AD8 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31F0767A91AD6076CAE9A0725C579967 /* Pods-RedditClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 040BF1D8BC3AEA98D84B0D5C1ACD398C /* Pods-RedditClient-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		369B03AE48C3DE968E85057E510E3475 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF37BE3B4F547BB2631A08F2C2007E5 /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37EDFF793F3205962E0500DFDD7B775D /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA69964044D4A52159872524B8241994 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		392817A73EE0DAA80651C97E0CE3C85B /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CAAF48C24122FAEB48593462AFD4A /* StoryboardViewControllerResource.swift */; };
+		3B70C2AD3AEBD202AB3737264810E7B5 /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5684867A0E5A2E5E93758D5E53F6FA /* OIDResponseTypes.m */; };
+		3EB93FA6FAE2916553E5B0083A429979 /* OIDURLSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB23866BC2DBAA022359C7968F5D29B /* OIDURLSessionProvider.m */; };
+		3F0C33300782EEACF1061252C46CB6BC /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FF39873DE2AEDBED041F5A8679E4BE /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46DBF5CA4D4A82B24DA1B2605CD4CE50 /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB2EFE3B5B06983D4101287EBF62661 /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FBAC2FA9845DA5A85CA2F6641E8CE4C /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D297356CE1F05137F53F80744934FA3E /* R.swift.Library-dummy.m */; };
+		5303AA24C16500CA11AAFC588AD27D6A /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD982B08ED019CAC782FB5126EDA1D9 /* UIViewController+NibResource.swift */; };
+		58F42D80A66E3DDCA585007096B29B11 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C540A31D6F73C82FDE40A9AFA7A764 /* StoryboardSegueIdentifierProtocol.swift */; };
+		5B9A435C2D58EC0CD114C8ED5FF23EAE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941DA4C21D87774A963664458F5337F /* ColorResource.swift */; };
+		5D4E47E9FEF83917D59F2950CE260FA3 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ECF6CCE0645858745B30F71323FBB /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		5E319FA596573FA6DEF3F3111AE93992 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95E40123C1FA44A9563E5B89B000A7 /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		6233EAF04EA3B5B5689F210241B872BC /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1196EF4E47CEE93D9073788D75E7DB /* ReuseIdentifierProtocol.swift */; };
+		63D9167E1827C072400F013F704103D2 /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 91A912ECC1925DAD9B25B3133981F679 /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63F61D3B356AF12008043F32110C318C /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 31258E5677EAF72BAF2C1A63A99CD326 /* OIDGrantTypes.m */; };
+		642F56683AD49800EA4CEABDF96E1746 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E58709F5AD008BA7724A29FEBC191EFB /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		692FFCF1C8E1A9FB4054B4402B027845 /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFB6EBCF19492B0638F7FEF653705ED /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69ECD6A2AD213507523A47BB4C73F649 /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = B20DFDCEBBA45B379B944AA3C5CFB0ED /* OIDExternalUserAgentIOSCustomBrowser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6AA4C6C92E294E2DFB6C7C03B6B7E3B6 /* AppAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A30D276D7FAB55596D8FD709DE0D2EE7 /* AppAuthCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6ACCCF234CBB808484D8EAB986A86E96 /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EB83B7377C75B135C065C42A5B571C /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CFF4A992CB32C8DD0A224D98FDE2B08 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7D2B24332586A3778CEADEBAEB500 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		6E7F5A8E0D0CBBF219409684DE47AD97 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E0E8A6189DA51D76BDB525B14FEA7 /* ImageResource.swift */; };
+		6FD686E65FD30D194F826C936EF3A77E /* Pods-RedditClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD98BE3A6BA92B0059FBF5DF9C747024 /* Pods-RedditClient-dummy.m */; };
+		6FFF1E8A8B66FF01ED0CFCF541E142D0 /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F0018A9399825C5D4C688FAEB21BA1 /* AppAuth-dummy.m */; };
+		70BE6C16BFBDEFB124E0E477EE1007DA /* OIDExternalUserAgentCatalyst.h in Headers */ = {isa = PBXBuildFile; fileRef = 0638B31910D9890B74D69CD74A94DFE9 /* OIDExternalUserAgentCatalyst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71C52EFD707E4E386B4C35FBBCF7BB87 /* OIDExternalUserAgentIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C725B788EA8BB7D84B7B6042161E75C /* OIDExternalUserAgentIOS.m */; };
+		746AC8C3C5FE2D7AFBF645E8027D3E4C /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDB4F311CF52B6ED0C1C9B336DD8456 /* AppAuth.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74B84B2D17B3B3581993F053A743C2CD /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 183162D2F878D530C92F4448E804CE0E /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78E7D000C688ACD472BBC78DEEFB501C /* OIDEndSessionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 772519E421C8259DDC6491E65534D60D /* OIDEndSessionResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7ADF429D32EE67AF1056C48DD7124B7C /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EDEBD0D345CE5CFF420FA73918C709 /* OIDError.m */; };
+		7B73F4D262527915040969166BC047AD /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A308FAFC52BA0B2FDEB75C06A0AEDC /* OIDFieldMapping.m */; };
+		7F90042AFCD560FC0478C6FEDDFA9EC6 /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D20BCB5E8FAEFF31F43834988E4F118E /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8571256C4B577B3655E13E104ABB400C /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A535353700AB801CD3B2C34CF1BF /* FileResource.swift */; };
+		8760CAF3D7BC8BAF23EDBCAAC8A87372 /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7E5294B0AD05E852F7CEAC8DC7090 /* UIStoryboard+StoryboardResource.swift */; };
+		8985DC9D86FCDC77C3FA6745CFADC847 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F2A57395EC5A25DFA9A69C2FA499AE /* Bundle+FileResource.swift */; };
+		8A5BDB2C46E7DFBFB56BD77A595D038E /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C525370A7C6EB8BD2BC42F2D21284900 /* OIDURLQueryComponent.m */; };
+		8D14AC9FFC8DDDB67090270076A9417E /* OIDExternalUserAgentIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C193D5273639E571B6F3F23AB0704 /* OIDExternalUserAgentIOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		913B47EC59E5A3B3C98785F0F7C3E505 /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DCF86CA5E0178D9DCAC7AF01F47CE /* UIColor+ColorResource.swift */; };
+		91D7EAC885C2F906980495700238DA35 /* OIDRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECDCE1A3D974ADA92E62575BAB41BD6 /* OIDRegistrationResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		933752F38D070BD138C35C48B9B68E90 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1A7DF4437086E59B77D794C844790 /* OIDExternalUserAgentIOSCustomBrowser.m */; };
+		97F5E3E258E920C6B5D2325F487BE6FC /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E238E4AFC6D58AABBBF9991E16B457E /* OIDAuthorizationRequest.m */; };
+		9ACEF98E69C45B29504921BD372D5510 /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D83F49DF5FA501EFDE0008E0D50336FA /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CB578FE1466D91152CD3A26773B2FC9 /* OIDRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC900DBF76C9B8F9EDD7D1A3E1F36F /* OIDRegistrationRequest.m */; };
+		9F5C142B5C99B39BF970EBD1EB0C5BCD /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C1FAA4B92ED9724D764C3329F4554A /* OIDAuthState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A17B63F3360399C51F0F359083CE0F1C /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F088D4E26DD4DE1355C78E62FCB8B4 /* OIDScopes.m */; };
+		A21971664C94D7E9EE57B6335008438B /* OIDClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 1614F5021818C68160BB737F260EFC20 /* OIDClientMetadataParameters.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3D7043154F557EA3B933A9F6ABE2EB1 /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D42F30D81488CF245157FAA98E7A12 /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5149471A0F558150DFD7CDAE0856E71 /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02ED15B586D8267D0BEBCCAA37AB0CF /* NibResource.swift */; };
+		A595B1408588022C92AA7BA5E4090D2B /* OIDExternalUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C660EE99ACD75D38531182F4519C8F /* OIDExternalUserAgent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A63EE619C3EB24F068B2EE7289369696 /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F90BF567967E925E647FE091DFCB5A /* OIDErrorUtilities.m */; };
+		AD1C57913E8ABC3376F61CE0C6DE5D6F /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A72F9BAC6A8AEB244A930A1C8228D55 /* StoryboardResource.swift */; };
+		AE126FC542FCB6439841BE1C624DF25D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B43FE21E41C97A45551139AAE2EA04 /* StringResource.swift */; };
+		B103A47847C7421AB893A587FDA69E38 /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A539414E407F0E9ADB0CB7E4F13D7B /* OIDServiceConfiguration.m */; };
+		BBA7506B8E2BD4EDD14DC11020ACE0BB /* OIDIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EA56643FAE5465EC201B81DFA8435E /* OIDIDToken.m */; };
+		BC43436B7A389099FB30A0648616EAB0 /* OIDClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F19B27997DE4F3230F6DAB4211869 /* OIDClientMetadataParameters.m */; };
+		BE70DF984E25E3445AC3837C7753A6A1 /* OIDAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C344E53C8E732D7880D589B65B93DE /* OIDAuthorizationService+IOS.m */; };
+		C20EBFDACF262BD4827F190B39381703 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B343F0BB85EDD2EE31B1C8818B71A /* FontResource.swift */; };
+		C2AB210CCCCF5A4A5CF5CCCC7B557B1A /* OIDAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DE14415DB4BF8FE94AD04EB462D63E /* OIDAuthState+IOS.m */; };
+		C420912AC6F87B891F7183D7FFE1A7BF /* OIDExternalUserAgentCatalyst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54485611BC41F889AB9CF63B523994 /* OIDExternalUserAgentCatalyst.m */; };
+		C6C2A1D08298FF5150BAA5295213BC89 /* OIDRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6444348EA82926B895B18511AF8B69 /* OIDRegistrationResponse.m */; };
+		C7D448B46613E3274CF7430D9B1E2061 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3070F6246C84AB8D674C605281BE02 /* Validatable.swift */; };
+		DFDB0C281B5F2EF334D964410E4EDE37 /* OIDAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4055542887843C8A6521F10B63C881 /* OIDAuthState+IOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F05579894D4080B89BB2513AB27E5BEE /* OIDRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D297D820F1A4BE7C5BF01B808F227C8D /* OIDRegistrationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0C619F94CCF5C3C9B34AB1F32586B6C /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D2AB233B8F6F6E9C6D24B7340BBF56 /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0F6DF0BF119D59C677B38A6D73D1B4F /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C548DB2E17B001E1D605C51589EB4072 /* OIDAuthorizationResponse.m */; };
+		F1E5F3CE6D6323FBF24C233C4D83D305 /* OIDExternalUserAgentSession.h in Headers */ = {isa = PBXBuildFile; fileRef = D54B32E0B5F9BDA81ACF53042DE0E334 /* OIDExternalUserAgentSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6DBE5BE2124A2DD2C94C18A0AC65E5D /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C07DA773B4037AACDAD7BDA40E93137 /* OIDError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F809068D34F7639A3B29092E895E1B79 /* OIDEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0005B1FD8A89CB8F43F833A1256926FA /* OIDEndSessionRequest.m */; };
+		FBBA2435EA0C30174F07806BD2F59954 /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2513FD38D147BE80D4F54066FE4282BE /* OIDServiceDiscovery.m */; };
+		FE684DAC77DB2D8A2F54C1866FFB1716 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97AF480D285733C0766B4C4A37C50F6 /* UITableView+ReuseIdentifierProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B2070F1A6A86F8AA14297E7B491DCD9 /* PBXContainerItemProxy */ = {
+		0C5160671B14DE1C5A96B224AD0950DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C642AA10FB29936669CC269F42079C6;
+			remoteInfo = AppAuth;
+		};
+		160DBF6A00D074F48AD9EEFFA3249E89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
 			remoteInfo = R.swift.Library;
 		};
-		64A667FA6C68254B7D31F1DF772E5EF5 /* PBXContainerItemProxy */ = {
+		211B5AB12B9746143F4D9C535EE6AA6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		6B7998CBA1CF14400FA15CFF4173902D /* PBXContainerItemProxy */ = {
+		77DE8DE4998FF011326DF3F21039C7F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
 			remoteInfo = R.swift;
 		};
-		C8642A1AA65F2B7F29E47164CD7AD4D8 /* PBXContainerItemProxy */ = {
+		CD4051CFBEF118748DFAE917F0AFE9FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -96,64 +170,142 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0005B1FD8A89CB8F43F833A1256926FA /* OIDEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionRequest.m; path = Source/AppAuthCore/OIDEndSessionRequest.m; sourceTree = "<group>"; };
 		040BF1D8BC3AEA98D84B0D5C1ACD398C /* Pods-RedditClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditClient-umbrella.h"; sourceTree = "<group>"; };
-		1502D632CAC4DD5CC72EA3179CD8E7F8 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
-		1A223B0291C083331C64D716E6106797 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
-		1E44F42C70025B5B55CBF6556AEBA97F /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
-		1E7914391368CCFE6D6FA5B904551FC1 /* R.swift.Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.release.xcconfig; sourceTree = "<group>"; };
-		27170A8779C6DC384548A9B33C3ED457 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
-		28545899EF9782BBC84BB10680A80DD5 /* R.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.release.xcconfig; sourceTree = "<group>"; };
-		2A1243AE77BD8D2D118361E2DC0A5AC8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		442F9F523A98BAB0BC26E2ABBD1ABA4B /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		4B00F8C9F95027F63A9354A97134DF3E /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
-		4C2473F517705DD6657830439491D720 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
-		5B2B43321F3C52750F1E11A40B1778E7 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
-		6FF996AA8B72B04A1FE110DBF7F64373 /* R.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.debug.xcconfig; sourceTree = "<group>"; };
-		732E4462633DE77F44BDABD501B8BC1A /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		048A4446E42E7DCF1D182D286380F0C2 /* R.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.release.xcconfig; sourceTree = "<group>"; };
+		05F2A57395EC5A25DFA9A69C2FA499AE /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		0638B31910D9890B74D69CD74A94DFE9 /* OIDExternalUserAgentCatalyst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentCatalyst.h; path = Source/AppAuth/iOS/OIDExternalUserAgentCatalyst.h; sourceTree = "<group>"; };
+		07F3906077B4667762F16454A8309E21 /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/AppAuthCore/OIDGrantTypes.h; sourceTree = "<group>"; };
+		0B086C3409D9A6B4F4E4E37C9AA48257 /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/AppAuthCore/OIDTokenRequest.m; sourceTree = "<group>"; };
+		0CA1A7DF4437086E59B77D794C844790 /* OIDExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOSCustomBrowser.m; path = Source/AppAuth/iOS/OIDExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
+		0E238E4AFC6D58AABBBF9991E16B457E /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/AppAuthCore/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
+		0E398B23DB8D1DCB3E1AE5C66D98EB7B /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		13E76D80A9DD3D27E80E29490B070F83 /* R.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.debug.xcconfig; sourceTree = "<group>"; };
+		15FF39873DE2AEDBED041F5A8679E4BE /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/AppAuthCore/OIDServiceDiscovery.h; sourceTree = "<group>"; };
+		1614F5021818C68160BB737F260EFC20 /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/AppAuthCore/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
+		183162D2F878D530C92F4448E804CE0E /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/AppAuthCore/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
+		18865939EB752FFB5E319622720F8FB5 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		18C540A31D6F73C82FDE40A9AFA7A764 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		197408DE1A27510367916DB44ED363E9 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		22D7D2B24332586A3778CEADEBAEB500 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		2513FD38D147BE80D4F54066FE4282BE /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/AppAuthCore/OIDServiceDiscovery.m; sourceTree = "<group>"; };
+		25AB277A3C14AE017B2249081A20253A /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/AppAuthCore/OIDAuthState.m; sourceTree = "<group>"; };
+		27A539414E407F0E9ADB0CB7E4F13D7B /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/AppAuthCore/OIDServiceConfiguration.m; sourceTree = "<group>"; };
+		28BD7466BBD9E949BE6060C65651EE1F /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/AppAuthCore/OIDTokenResponse.m; sourceTree = "<group>"; };
+		2A47A535353700AB801CD3B2C34CF1BF /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		2A5684867A0E5A2E5E93758D5E53F6FA /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/AppAuthCore/OIDResponseTypes.m; sourceTree = "<group>"; };
+		2C07DA773B4037AACDAD7BDA40E93137 /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/AppAuthCore/OIDError.h; sourceTree = "<group>"; };
+		2C725B788EA8BB7D84B7B6042161E75C /* OIDExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOS.m; path = Source/AppAuth/iOS/OIDExternalUserAgentIOS.m; sourceTree = "<group>"; };
+		31258E5677EAF72BAF2C1A63A99CD326 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/AppAuthCore/OIDGrantTypes.m; sourceTree = "<group>"; };
+		313CAAF48C24122FAEB48593462AFD4A /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		32D2AB233B8F6F6E9C6D24B7340BBF56 /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/AppAuthCore/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
+		37B43FE21E41C97A45551139AAE2EA04 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		3A1ECF6CCE0645858745B30F71323FBB /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		3EAAE20F546651B75362FEB1ED71F342 /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/AppAuthCore/OIDEndSessionResponse.m; sourceTree = "<group>"; };
+		3FD1B4C1246D643E9476438C28048FA8 /* libAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A308FAFC52BA0B2FDEB75C06A0AEDC /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
+		46D630C4092C9C422763083744A48289 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/AppAuthCore/OIDTokenUtilities.h; sourceTree = "<group>"; };
+		47C344E53C8E732D7880D589B65B93DE /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/AppAuth/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
+		4B9F19B27997DE4F3230F6DAB4211869 /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/AppAuthCore/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
+		501D82316CF16571F2DBC9430B31024B /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/AppAuthCore/OIDScopeUtilities.m; sourceTree = "<group>"; };
+		54F90BF567967E925E647FE091DFCB5A /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/AppAuthCore/OIDErrorUtilities.m; sourceTree = "<group>"; };
+		55D42F30D81488CF245157FAA98E7A12 /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/AppAuthCore/OIDTokenResponse.h; sourceTree = "<group>"; };
+		5941DA4C21D87774A963664458F5337F /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
+		5A72F9BAC6A8AEB244A930A1C8228D55 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		5ECDCE1A3D974ADA92E62575BAB41BD6 /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/AppAuthCore/OIDRegistrationResponse.h; sourceTree = "<group>"; };
+		5FD982B08ED019CAC782FB5126EDA1D9 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		6075844A75EB3AE7EDBABCF9FA6AF206 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/AppAuthCore/OIDScopes.h; sourceTree = "<group>"; };
+		675C241CA73721A08D1F1DF83C293C1F /* OIDExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentRequest.h; path = Source/AppAuthCore/OIDExternalUserAgentRequest.h; sourceTree = "<group>"; };
+		6B3070F6246C84AB8D674C605281BE02 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		6C2722B04FC03BFEAD3C20596540E2D8 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
+		6C4F0609904ADB40C996FEC682AEA8CB /* AppAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.debug.xcconfig; sourceTree = "<group>"; };
+		772519E421C8259DDC6491E65534D60D /* OIDEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionResponse.h; path = Source/AppAuthCore/OIDEndSessionResponse.h; sourceTree = "<group>"; };
 		7ABA14E5807E2AE1A94ABED827136BFA /* libPods-RedditClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedditClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8947FDAF007F2F9144B61BBB6F075971 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
-		8E0FF30F126904B481E124E9A3E83514 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
-		907BE91E148DC799665CA11BA9E84CDF /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		7CD1CD2446184FA56C2851AF3D666AD8 /* OIDEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionRequest.h; path = Source/AppAuthCore/OIDEndSessionRequest.h; sourceTree = "<group>"; };
+		7EB2EFE3B5B06983D4101287EBF62661 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
+		80D901EC3EB4BE3B528679E9C3B13E20 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		89A0120021BF2C445047D9A604381C9E /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/AppAuthCore/OIDServiceConfiguration.h; sourceTree = "<group>"; };
+		8B95E40123C1FA44A9563E5B89B000A7 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		8EEB5187375174FD4BEB9A50D9ECCD4D /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		91A912ECC1925DAD9B25B3133981F679 /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/AppAuthCore/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
+		96EB83B7377C75B135C065C42A5B571C /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/AppAuthCore/OIDFieldMapping.h; sourceTree = "<group>"; };
 		98C2EA5C5AA6BEDD9B7DEC4F59B38E04 /* Pods-RedditClient-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditClient-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A7B343F0BB85EDD2EE31B1C8818B71A /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		9B54485611BC41F889AB9CF63B523994 /* OIDExternalUserAgentCatalyst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentCatalyst.m; path = Source/AppAuth/iOS/OIDExternalUserAgentCatalyst.m; sourceTree = "<group>"; };
+		9BDB4F311CF52B6ED0C1C9B336DD8456 /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB23866BC2DBAA022359C7968F5D29B /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLSessionProvider.m; path = Source/AppAuthCore/OIDURLSessionProvider.m; sourceTree = "<group>"; };
+		9F7C193D5273639E571B6F3F23AB0704 /* OIDExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOS.h; path = Source/AppAuth/iOS/OIDExternalUserAgentIOS.h; sourceTree = "<group>"; };
+		A30D276D7FAB55596D8FD709DE0D2EE7 /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Source/AppAuthCore.h; sourceTree = "<group>"; };
 		A391D3481E1BCD74362414709D449AFC /* Pods-RedditClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditClient.modulemap"; sourceTree = "<group>"; };
 		A5640660C1EDCB20B3406DDC74791ACA /* Pods-RedditClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditClient.debug.xcconfig"; sourceTree = "<group>"; };
-		A5B9B10324209573F8DD4FBA30D11250 /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
-		A949CD517924C6EC70FDA81481DAF7FA /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		A7B2F314ECD9027B4FA399C04F02CD96 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/AppAuthCore/OIDTokenUtilities.m; sourceTree = "<group>"; };
+		AB1196EF4E47CEE93D9073788D75E7DB /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 		AD98BE3A6BA92B0059FBF5DF9C747024 /* Pods-RedditClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditClient-dummy.m"; sourceTree = "<group>"; };
+		ADD151582117CA01FC6F9966BE0B2EB7 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		ADF37BE3B4F547BB2631A08F2C2007E5 /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/AppAuthCore/OIDAuthorizationService.h; sourceTree = "<group>"; };
+		AE49404A59C2ADB28A2BF9A772F411D5 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		AF4055542887843C8A6521F10B63C881 /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/AppAuth/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
+		B0C660EE99ACD75D38531182F4519C8F /* OIDExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgent.h; path = Source/AppAuthCore/OIDExternalUserAgent.h; sourceTree = "<group>"; };
 		B0D916F7C97343DC68E42223B268166B /* Pods-RedditClient-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditClient-acknowledgements.plist"; sourceTree = "<group>"; };
-		B14491AD87DA269B055A2DAD2A84F02D /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
-		B1D76002A42CA082BDB4BCA32CDA4563 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
-		B26B2E47423F446E6BA1EB74616AD60C /* R.swift.Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.debug.xcconfig; sourceTree = "<group>"; };
-		B68C25358AC7EE27E37D5E1909810A2F /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
-		BC886C495219995F75F80E1446F78EF9 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
-		BDE6AD0C11E77301B52B67C2608EC144 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		C017F312EF70115C3938F6B1A66585B1 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		C11DB4031AAB05DC0B629136A61DB287 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		B20DFDCEBBA45B379B944AA3C5CFB0ED /* OIDExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOSCustomBrowser.h; path = Source/AppAuth/iOS/OIDExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
+		B44C93D62D18A52DC3C7FC4FB7C4181F /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
+		B5AC900DBF76C9B8F9EDD7D1A3E1F36F /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/AppAuthCore/OIDRegistrationRequest.m; sourceTree = "<group>"; };
+		B69832189BD439A6BAA76E96DE6E433E /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		B8DE14415DB4BF8FE94AD04EB462D63E /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/AppAuth/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
+		BDF52E285D70A59378F2DF48DDD704E7 /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/AppAuthCore/OIDDefines.h; sourceTree = "<group>"; };
+		C176DB4D2590A8ABB3FE9EE7E90B33DD /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/AppAuthCore/OIDURLQueryComponent.h; sourceTree = "<group>"; };
+		C525370A7C6EB8BD2BC42F2D21284900 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/AppAuthCore/OIDURLQueryComponent.m; sourceTree = "<group>"; };
+		C548DB2E17B001E1D605C51589EB4072 /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/AppAuthCore/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
+		C61EA096D6386A9E7D920A101CAFA68C /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/AppAuth/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
 		CA4E3B66CE4D02048C77392B64FD0ABB /* libR.swift.Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libR.swift.Library.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDDD9BCDE4315698C62AA00F346EEB0 /* Pods-RedditClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditClient.release.xcconfig"; sourceTree = "<group>"; };
-		D08E39D32C070643A7C43B14CB7FFF73 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
-		D61A3AAE94BC59E5794BE6DC8FA975E2 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
-		D90B61D9C2913E9354F31619121BC8D6 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		E008C2B945A0E18A058A9C637879E7C7 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
-		E224605220C323FC0509C5FEF840EB49 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
-		E2A16943211F03C4949E51D48A23F1B2 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
-		F04F305A8B1DEB0487D01054D5614DAA /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
-		F7017F397C328CEBCB8C00D8058F1067 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
-		FA4BF5DEF48B635B6B8975614C23311E /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
-		FC866629A9704C3C618875DB9BB57CFF /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
-		FED6332F539C1CC283E429011A258DC2 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		CC3482FB59F76CEDEB0112AA3DBC2BB7 /* R.swift.Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.release.xcconfig; sourceTree = "<group>"; };
+		CC6444348EA82926B895B18511AF8B69 /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/AppAuthCore/OIDRegistrationResponse.m; sourceTree = "<group>"; };
+		CD2E0E8A6189DA51D76BDB525B14FEA7 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		CDE7E5294B0AD05E852F7CEAC8DC7090 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		CFFB6EBCF19492B0638F7FEF653705ED /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/AppAuthCore/OIDTokenRequest.h; sourceTree = "<group>"; };
+		D02ED15B586D8267D0BEBCCAA37AB0CF /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		D07DE80187FE0E0BCD25AD8931C21283 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		D20BCB5E8FAEFF31F43834988E4F118E /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/AppAuthCore/OIDErrorUtilities.h; sourceTree = "<group>"; };
+		D297356CE1F05137F53F80744934FA3E /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
+		D297D820F1A4BE7C5BF01B808F227C8D /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/AppAuthCore/OIDRegistrationRequest.h; sourceTree = "<group>"; };
+		D332341BD70DC3FF3B99F412F1C8AA85 /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/AppAuthCore/OIDURLSessionProvider.h; sourceTree = "<group>"; };
+		D3F088D4E26DD4DE1355C78E62FCB8B4 /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/AppAuthCore/OIDScopes.m; sourceTree = "<group>"; };
+		D4C1FAA4B92ED9724D764C3329F4554A /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/AppAuthCore/OIDAuthState.h; sourceTree = "<group>"; };
+		D54B32E0B5F9BDA81ACF53042DE0E334 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/AppAuthCore/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
+		D83F49DF5FA501EFDE0008E0D50336FA /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/AppAuthCore/OIDResponseTypes.h; sourceTree = "<group>"; };
+		D89DCF86CA5E0178D9DCAC7AF01F47CE /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		D8B47A5A38A4251A24FA5EE571F7066F /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		DE55A025DAABC66C5B47A84F39CBD181 /* OIDIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDIDToken.h; path = Source/AppAuthCore/OIDIDToken.h; sourceTree = "<group>"; };
+		E3F0018A9399825C5D4C688FAEB21BA1 /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
+		E4EDEBD0D345CE5CFF420FA73918C709 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/AppAuthCore/OIDError.m; sourceTree = "<group>"; };
+		E58709F5AD008BA7724A29FEBC191EFB /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/AppAuthCore/OIDScopeUtilities.h; sourceTree = "<group>"; };
+		EF2516BB05F5DC451E77B139050DA3B5 /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		F6EA56643FAE5465EC201B81DFA8435E /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/AppAuthCore/OIDIDToken.m; sourceTree = "<group>"; };
+		F97AF480D285733C0766B4C4A37C50F6 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		F9B1984FABA6761CD2A1E7A87C912C77 /* AppAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.release.xcconfig; sourceTree = "<group>"; };
+		FA2899A7776058E27691A01F78FD7522 /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/AppAuthCore/OIDAuthorizationService.m; sourceTree = "<group>"; };
+		FA69964044D4A52159872524B8241994 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		FE90BFD71B1CDC9ADB8E311019FFE35B /* R.swift.Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8C6142CD6A28954D2BEF507C2348728B /* Frameworks */ = {
+		4592540A1E3AF9417A0770DB77E67AF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC086A2437A69229B393115AB51BAC6B /* Frameworks */ = {
+		6172D785C5E3F5C9426770B7405E013D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8716CC1F3FBACC1B23DF383FB76E27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,6 +315,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055801BB4D8DF7A2530DC80AC5258481 /* ExternalUserAgent */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB4F311CF52B6ED0C1C9B336DD8456 /* AppAuth.h */,
+				C61EA096D6386A9E7D920A101CAFA68C /* OIDAuthorizationService+IOS.h */,
+				47C344E53C8E732D7880D589B65B93DE /* OIDAuthorizationService+IOS.m */,
+				AF4055542887843C8A6521F10B63C881 /* OIDAuthState+IOS.h */,
+				B8DE14415DB4BF8FE94AD04EB462D63E /* OIDAuthState+IOS.m */,
+				0638B31910D9890B74D69CD74A94DFE9 /* OIDExternalUserAgentCatalyst.h */,
+				9B54485611BC41F889AB9CF63B523994 /* OIDExternalUserAgentCatalyst.m */,
+				9F7C193D5273639E571B6F3F23AB0704 /* OIDExternalUserAgentIOS.h */,
+				2C725B788EA8BB7D84B7B6042161E75C /* OIDExternalUserAgentIOS.m */,
+				B20DFDCEBBA45B379B944AA3C5CFB0ED /* OIDExternalUserAgentIOSCustomBrowser.h */,
+				0CA1A7DF4437086E59B77D794C844790 /* OIDExternalUserAgentIOSCustomBrowser.m */,
+			);
+			name = ExternalUserAgent;
+			sourceTree = "<group>";
+		};
+		073C4E09D2B5BD3DE2AFBD070FBAF8BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8B47A5A38A4251A24FA5EE571F7066F /* R.swift.Library.modulemap */,
+				D297356CE1F05137F53F80744934FA3E /* R.swift.Library-dummy.m */,
+				18865939EB752FFB5E319622720F8FB5 /* R.swift.Library-prefix.pch */,
+				FA69964044D4A52159872524B8241994 /* R.swift.Library-umbrella.h */,
+				FE90BFD71B1CDC9ADB8E311019FFE35B /* R.swift.Library.debug.xcconfig */,
+				CC3482FB59F76CEDEB0112AA3DBC2BB7 /* R.swift.Library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift.Library";
+			sourceTree = "<group>";
+		};
+		0E53A2504DFAED2C11244CFABA6D969D /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				FFFF1B15DF59B5F9CE3041250E8C9603 /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
 		10926D0C64D6DC788896183C1F4B97DE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,88 +363,127 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2EFD679D6774E01D770AF3EC9D2C1F54 /* Products */ = {
+		38934E1E4D3717AC8BD6EF1E809E5145 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3F0018A9399825C5D4C688FAEB21BA1 /* AppAuth-dummy.m */,
+				6C2722B04FC03BFEAD3C20596540E2D8 /* AppAuth-prefix.pch */,
+				6C4F0609904ADB40C996FEC682AEA8CB /* AppAuth.debug.xcconfig */,
+				F9B1984FABA6761CD2A1E7A87C912C77 /* AppAuth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppAuth";
+			sourceTree = "<group>";
+		};
+		40CA8BFC9B63C2F548C713712A2FF6AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C781EE0C3EAF1D5D3E894E2DC0FCDBB /* AppAuth */,
+				7F657EAC8C68892CF3C9B85D33D55A7B /* R.swift */,
+				E739237E6D53A326057E5ABCC741E3CD /* R.swift.Library */,
+				0E53A2504DFAED2C11244CFABA6D969D /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		41BDDBA76A3F686BB7B158E85F461EC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13E76D80A9DD3D27E80E29490B070F83 /* R.swift.debug.xcconfig */,
+				048A4446E42E7DCF1D182D286380F0C2 /* R.swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift";
+			sourceTree = "<group>";
+		};
+		4E3C907B9B8841A94E0BC621D3F683C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD1B4C1246D643E9476438C28048FA8 /* libAppAuth.a */,
 				7ABA14E5807E2AE1A94ABED827136BFA /* libPods-RedditClient.a */,
 				CA4E3B66CE4D02048C77392B64FD0ABB /* libR.swift.Library.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		347CF3EDB1F23105CB7D85AC12BB17C2 /* SwiftLint */ = {
+		6CBA676F377A295D01DAF07DEF9D774D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D1E68C268B02FCA610B3205B472A9F7B /* Support Files */,
+				A30D276D7FAB55596D8FD709DE0D2EE7 /* AppAuthCore.h */,
+				183162D2F878D530C92F4448E804CE0E /* OIDAuthorizationRequest.h */,
+				0E238E4AFC6D58AABBBF9991E16B457E /* OIDAuthorizationRequest.m */,
+				91A912ECC1925DAD9B25B3133981F679 /* OIDAuthorizationResponse.h */,
+				C548DB2E17B001E1D605C51589EB4072 /* OIDAuthorizationResponse.m */,
+				ADF37BE3B4F547BB2631A08F2C2007E5 /* OIDAuthorizationService.h */,
+				FA2899A7776058E27691A01F78FD7522 /* OIDAuthorizationService.m */,
+				D4C1FAA4B92ED9724D764C3329F4554A /* OIDAuthState.h */,
+				25AB277A3C14AE017B2249081A20253A /* OIDAuthState.m */,
+				7EB2EFE3B5B06983D4101287EBF62661 /* OIDAuthStateChangeDelegate.h */,
+				32D2AB233B8F6F6E9C6D24B7340BBF56 /* OIDAuthStateErrorDelegate.h */,
+				1614F5021818C68160BB737F260EFC20 /* OIDClientMetadataParameters.h */,
+				4B9F19B27997DE4F3230F6DAB4211869 /* OIDClientMetadataParameters.m */,
+				BDF52E285D70A59378F2DF48DDD704E7 /* OIDDefines.h */,
+				7CD1CD2446184FA56C2851AF3D666AD8 /* OIDEndSessionRequest.h */,
+				0005B1FD8A89CB8F43F833A1256926FA /* OIDEndSessionRequest.m */,
+				772519E421C8259DDC6491E65534D60D /* OIDEndSessionResponse.h */,
+				3EAAE20F546651B75362FEB1ED71F342 /* OIDEndSessionResponse.m */,
+				2C07DA773B4037AACDAD7BDA40E93137 /* OIDError.h */,
+				E4EDEBD0D345CE5CFF420FA73918C709 /* OIDError.m */,
+				D20BCB5E8FAEFF31F43834988E4F118E /* OIDErrorUtilities.h */,
+				54F90BF567967E925E647FE091DFCB5A /* OIDErrorUtilities.m */,
+				B0C660EE99ACD75D38531182F4519C8F /* OIDExternalUserAgent.h */,
+				675C241CA73721A08D1F1DF83C293C1F /* OIDExternalUserAgentRequest.h */,
+				D54B32E0B5F9BDA81ACF53042DE0E334 /* OIDExternalUserAgentSession.h */,
+				96EB83B7377C75B135C065C42A5B571C /* OIDFieldMapping.h */,
+				41A308FAFC52BA0B2FDEB75C06A0AEDC /* OIDFieldMapping.m */,
+				07F3906077B4667762F16454A8309E21 /* OIDGrantTypes.h */,
+				31258E5677EAF72BAF2C1A63A99CD326 /* OIDGrantTypes.m */,
+				DE55A025DAABC66C5B47A84F39CBD181 /* OIDIDToken.h */,
+				F6EA56643FAE5465EC201B81DFA8435E /* OIDIDToken.m */,
+				D297D820F1A4BE7C5BF01B808F227C8D /* OIDRegistrationRequest.h */,
+				B5AC900DBF76C9B8F9EDD7D1A3E1F36F /* OIDRegistrationRequest.m */,
+				5ECDCE1A3D974ADA92E62575BAB41BD6 /* OIDRegistrationResponse.h */,
+				CC6444348EA82926B895B18511AF8B69 /* OIDRegistrationResponse.m */,
+				D83F49DF5FA501EFDE0008E0D50336FA /* OIDResponseTypes.h */,
+				2A5684867A0E5A2E5E93758D5E53F6FA /* OIDResponseTypes.m */,
+				6075844A75EB3AE7EDBABCF9FA6AF206 /* OIDScopes.h */,
+				D3F088D4E26DD4DE1355C78E62FCB8B4 /* OIDScopes.m */,
+				E58709F5AD008BA7724A29FEBC191EFB /* OIDScopeUtilities.h */,
+				501D82316CF16571F2DBC9430B31024B /* OIDScopeUtilities.m */,
+				89A0120021BF2C445047D9A604381C9E /* OIDServiceConfiguration.h */,
+				27A539414E407F0E9ADB0CB7E4F13D7B /* OIDServiceConfiguration.m */,
+				15FF39873DE2AEDBED041F5A8679E4BE /* OIDServiceDiscovery.h */,
+				2513FD38D147BE80D4F54066FE4282BE /* OIDServiceDiscovery.m */,
+				CFFB6EBCF19492B0638F7FEF653705ED /* OIDTokenRequest.h */,
+				0B086C3409D9A6B4F4E4E37C9AA48257 /* OIDTokenRequest.m */,
+				55D42F30D81488CF245157FAA98E7A12 /* OIDTokenResponse.h */,
+				28BD7466BBD9E949BE6060C65651EE1F /* OIDTokenResponse.m */,
+				46D630C4092C9C422763083744A48289 /* OIDTokenUtilities.h */,
+				A7B2F314ECD9027B4FA399C04F02CD96 /* OIDTokenUtilities.m */,
+				C176DB4D2590A8ABB3FE9EE7E90B33DD /* OIDURLQueryComponent.h */,
+				C525370A7C6EB8BD2BC42F2D21284900 /* OIDURLQueryComponent.m */,
+				D332341BD70DC3FF3B99F412F1C8AA85 /* OIDURLSessionProvider.h */,
+				9DB23866BC2DBAA022359C7968F5D29B /* OIDURLSessionProvider.m */,
 			);
-			path = SwiftLint;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		7DF91E4BF20364DD0A89E321075AE3FA /* Support Files */ = {
+		7F657EAC8C68892CF3C9B85D33D55A7B /* R.swift */ = {
 			isa = PBXGroup;
 			children = (
-				4B00F8C9F95027F63A9354A97134DF3E /* R.swift.Library.modulemap */,
-				8947FDAF007F2F9144B61BBB6F075971 /* R.swift.Library-dummy.m */,
-				5B2B43321F3C52750F1E11A40B1778E7 /* R.swift.Library-prefix.pch */,
-				F04F305A8B1DEB0487D01054D5614DAA /* R.swift.Library-umbrella.h */,
-				B26B2E47423F446E6BA1EB74616AD60C /* R.swift.Library.debug.xcconfig */,
-				1E7914391368CCFE6D6FA5B904551FC1 /* R.swift.Library.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/R.swift.Library";
-			sourceTree = "<group>";
-		};
-		824A691E5585EFA6B30C185AFE1D52F4 /* R.swift.Library */ = {
-			isa = PBXGroup;
-			children = (
-				A949CD517924C6EC70FDA81481DAF7FA /* Bundle+FileResource.swift */,
-				1502D632CAC4DD5CC72EA3179CD8E7F8 /* ColorResource.swift */,
-				A5B9B10324209573F8DD4FBA30D11250 /* Data+FileResource.swift */,
-				FA4BF5DEF48B635B6B8975614C23311E /* FileResource.swift */,
-				D08E39D32C070643A7C43B14CB7FFF73 /* FontResource.swift */,
-				B1D76002A42CA082BDB4BCA32CDA4563 /* Identifier.swift */,
-				1E44F42C70025B5B55CBF6556AEBA97F /* ImageResource.swift */,
-				B14491AD87DA269B055A2DAD2A84F02D /* NibResource.swift */,
-				BC886C495219995F75F80E1446F78EF9 /* NibResource+UIKit.swift */,
-				FED6332F539C1CC283E429011A258DC2 /* ReuseIdentifierProtocol.swift */,
-				E224605220C323FC0509C5FEF840EB49 /* StoryboardResource.swift */,
-				E2A16943211F03C4949E51D48A23F1B2 /* StoryboardResourceWithInitialController+UIKit.swift */,
-				27170A8779C6DC384548A9B33C3ED457 /* StoryboardSegueIdentifierProtocol.swift */,
-				B68C25358AC7EE27E37D5E1909810A2F /* StoryboardViewControllerResource.swift */,
-				F7017F397C328CEBCB8C00D8058F1067 /* StringResource.swift */,
-				E008C2B945A0E18A058A9C637879E7C7 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
-				C017F312EF70115C3938F6B1A66585B1 /* UICollectionView+ReuseIdentifierProtocol.swift */,
-				4C2473F517705DD6657830439491D720 /* UIColor+ColorResource.swift */,
-				8E0FF30F126904B481E124E9A3E83514 /* UIFont+FontResource.swift */,
-				907BE91E148DC799665CA11BA9E84CDF /* UIImage+ImageResource.swift */,
-				C11DB4031AAB05DC0B629136A61DB287 /* UINib+NibResource.swift */,
-				732E4462633DE77F44BDABD501B8BC1A /* UIStoryboard+StoryboardResource.swift */,
-				1A223B0291C083331C64D716E6106797 /* UIStoryboard+StoryboardViewControllerResource.swift */,
-				442F9F523A98BAB0BC26E2ABBD1ABA4B /* UITableView+ReuseIdentifierProtocol.swift */,
-				FC866629A9704C3C618875DB9BB57CFF /* UIViewController+NibResource.swift */,
-				2A1243AE77BD8D2D118361E2DC0A5AC8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
-				D61A3AAE94BC59E5794BE6DC8FA975E2 /* Validatable.swift */,
-				7DF91E4BF20364DD0A89E321075AE3FA /* Support Files */,
-			);
-			path = R.swift.Library;
-			sourceTree = "<group>";
-		};
-		9E6B0C0F15DA481788CBAE3D35C82B99 /* R.swift */ = {
-			isa = PBXGroup;
-			children = (
-				A01D68BDD7ED44BF5E4373D5001A0751 /* Support Files */,
+				41BDDBA76A3F686BB7B158E85F461EC6 /* Support Files */,
 			);
 			path = R.swift;
 			sourceTree = "<group>";
 		};
-		A01D68BDD7ED44BF5E4373D5001A0751 /* Support Files */ = {
+		8C781EE0C3EAF1D5D3E894E2DC0FCDBB /* AppAuth */ = {
 			isa = PBXGroup;
 			children = (
-				6FF996AA8B72B04A1FE110DBF7F64373 /* R.swift.debug.xcconfig */,
-				28545899EF9782BBC84BB10680A80DD5 /* R.swift.release.xcconfig */,
+				6CBA676F377A295D01DAF07DEF9D774D /* Core */,
+				055801BB4D8DF7A2530DC80AC5258481 /* ExternalUserAgent */,
+				38934E1E4D3717AC8BD6EF1E809E5145 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/R.swift";
+			path = AppAuth;
 			sourceTree = "<group>";
 		};
 		CD46746107436F08FB34E62A2FCD00E9 /* Pods-RedditClient */ = {
@@ -275,30 +506,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				D86232FA18BC9125D1CAA0FDF8DC0B5D /* Pods */,
-				2EFD679D6774E01D770AF3EC9D2C1F54 /* Products */,
+				40CA8BFC9B63C2F548C713712A2FF6AC /* Pods */,
+				4E3C907B9B8841A94E0BC621D3F683C8 /* Products */,
 				10926D0C64D6DC788896183C1F4B97DE /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1E68C268B02FCA610B3205B472A9F7B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BDE6AD0C11E77301B52B67C2608EC144 /* SwiftLint.debug.xcconfig */,
-				D90B61D9C2913E9354F31619121BC8D6 /* SwiftLint.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		D86232FA18BC9125D1CAA0FDF8DC0B5D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9E6B0C0F15DA481788CBAE3D35C82B99 /* R.swift */,
-				824A691E5585EFA6B30C185AFE1D52F4 /* R.swift.Library */,
-				347CF3EDB1F23105CB7D85AC12BB17C2 /* SwiftLint */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -308,36 +519,142 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E739237E6D53A326057E5ABCC741E3CD /* R.swift.Library */ = {
+			isa = PBXGroup;
+			children = (
+				05F2A57395EC5A25DFA9A69C2FA499AE /* Bundle+FileResource.swift */,
+				5941DA4C21D87774A963664458F5337F /* ColorResource.swift */,
+				EF2516BB05F5DC451E77B139050DA3B5 /* Data+FileResource.swift */,
+				2A47A535353700AB801CD3B2C34CF1BF /* FileResource.swift */,
+				9A7B343F0BB85EDD2EE31B1C8818B71A /* FontResource.swift */,
+				AE49404A59C2ADB28A2BF9A772F411D5 /* Identifier.swift */,
+				CD2E0E8A6189DA51D76BDB525B14FEA7 /* ImageResource.swift */,
+				D02ED15B586D8267D0BEBCCAA37AB0CF /* NibResource.swift */,
+				B44C93D62D18A52DC3C7FC4FB7C4181F /* NibResource+UIKit.swift */,
+				AB1196EF4E47CEE93D9073788D75E7DB /* ReuseIdentifierProtocol.swift */,
+				5A72F9BAC6A8AEB244A930A1C8228D55 /* StoryboardResource.swift */,
+				8B95E40123C1FA44A9563E5B89B000A7 /* StoryboardResourceWithInitialController+UIKit.swift */,
+				18C540A31D6F73C82FDE40A9AFA7A764 /* StoryboardSegueIdentifierProtocol.swift */,
+				313CAAF48C24122FAEB48593462AFD4A /* StoryboardViewControllerResource.swift */,
+				37B43FE21E41C97A45551139AAE2EA04 /* StringResource.swift */,
+				22D7D2B24332586A3778CEADEBAEB500 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				3A1ECF6CCE0645858745B30F71323FBB /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				D89DCF86CA5E0178D9DCAC7AF01F47CE /* UIColor+ColorResource.swift */,
+				80D901EC3EB4BE3B528679E9C3B13E20 /* UIFont+FontResource.swift */,
+				D07DE80187FE0E0BCD25AD8931C21283 /* UIImage+ImageResource.swift */,
+				B69832189BD439A6BAA76E96DE6E433E /* UINib+NibResource.swift */,
+				CDE7E5294B0AD05E852F7CEAC8DC7090 /* UIStoryboard+StoryboardResource.swift */,
+				197408DE1A27510367916DB44ED363E9 /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				F97AF480D285733C0766B4C4A37C50F6 /* UITableView+ReuseIdentifierProtocol.swift */,
+				5FD982B08ED019CAC782FB5126EDA1D9 /* UIViewController+NibResource.swift */,
+				ADD151582117CA01FC6F9966BE0B2EB7 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				6B3070F6246C84AB8D674C605281BE02 /* Validatable.swift */,
+				073C4E09D2B5BD3DE2AFBD070FBAF8BC /* Support Files */,
+			);
+			path = R.swift.Library;
+			sourceTree = "<group>";
+		};
+		FFFF1B15DF59B5F9CE3041250E8C9603 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E398B23DB8D1DCB3E1AE5C66D98EB7B /* SwiftLint.debug.xcconfig */,
+				8EEB5187375174FD4BEB9A50D9ECCD4D /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D85455E2AA110AE09E3F5B3CE7DDFBA /* Headers */ = {
+		083F640AEE1C73EC105F1D0FD38EEFF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EF78222FA93D398FC62B70DC18D628 /* Pods-RedditClient-umbrella.h in Headers */,
+				37EDFF793F3205962E0500DFDD7B775D /* R.swift.Library-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		996C9EACE4E9EB9C1FA048CF2961C206 /* Headers */ = {
+		4290A165E33AE14768921F53D889E845 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F199F4E7234B7037FEC3C4CD51ECC463 /* R.swift.Library-umbrella.h in Headers */,
+				31F0767A91AD6076CAE9A0725C579967 /* Pods-RedditClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE53DF318659D60CA48C200DC3A1FC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746AC8C3C5FE2D7AFBF645E8027D3E4C /* AppAuth.h in Headers */,
+				6AA4C6C92E294E2DFB6C7C03B6B7E3B6 /* AppAuthCore.h in Headers */,
+				74B84B2D17B3B3581993F053A743C2CD /* OIDAuthorizationRequest.h in Headers */,
+				63D9167E1827C072400F013F704103D2 /* OIDAuthorizationResponse.h in Headers */,
+				0D45D18AEE451FA1632315B3370D7334 /* OIDAuthorizationService+IOS.h in Headers */,
+				369B03AE48C3DE968E85057E510E3475 /* OIDAuthorizationService.h in Headers */,
+				DFDB0C281B5F2EF334D964410E4EDE37 /* OIDAuthState+IOS.h in Headers */,
+				9F5C142B5C99B39BF970EBD1EB0C5BCD /* OIDAuthState.h in Headers */,
+				46DBF5CA4D4A82B24DA1B2605CD4CE50 /* OIDAuthStateChangeDelegate.h in Headers */,
+				F0C619F94CCF5C3C9B34AB1F32586B6C /* OIDAuthStateErrorDelegate.h in Headers */,
+				A21971664C94D7E9EE57B6335008438B /* OIDClientMetadataParameters.h in Headers */,
+				1671743E7AA6CF77D163251E4631E864 /* OIDDefines.h in Headers */,
+				2F7808F68DD5B246C773EFFB45C102C0 /* OIDEndSessionRequest.h in Headers */,
+				78E7D000C688ACD472BBC78DEEFB501C /* OIDEndSessionResponse.h in Headers */,
+				F6DBE5BE2124A2DD2C94C18A0AC65E5D /* OIDError.h in Headers */,
+				7F90042AFCD560FC0478C6FEDDFA9EC6 /* OIDErrorUtilities.h in Headers */,
+				A595B1408588022C92AA7BA5E4090D2B /* OIDExternalUserAgent.h in Headers */,
+				70BE6C16BFBDEFB124E0E477EE1007DA /* OIDExternalUserAgentCatalyst.h in Headers */,
+				8D14AC9FFC8DDDB67090270076A9417E /* OIDExternalUserAgentIOS.h in Headers */,
+				69ECD6A2AD213507523A47BB4C73F649 /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */,
+				04825B3CE40BA4BCB66F17C78AD5C2A9 /* OIDExternalUserAgentRequest.h in Headers */,
+				F1E5F3CE6D6323FBF24C233C4D83D305 /* OIDExternalUserAgentSession.h in Headers */,
+				6ACCCF234CBB808484D8EAB986A86E96 /* OIDFieldMapping.h in Headers */,
+				06DE60F33DE9056DADEDEC33BF9D5498 /* OIDGrantTypes.h in Headers */,
+				0CB7FAF3F9DC9A4C0D5CA9665F132AA6 /* OIDIDToken.h in Headers */,
+				F05579894D4080B89BB2513AB27E5BEE /* OIDRegistrationRequest.h in Headers */,
+				91D7EAC885C2F906980495700238DA35 /* OIDRegistrationResponse.h in Headers */,
+				9ACEF98E69C45B29504921BD372D5510 /* OIDResponseTypes.h in Headers */,
+				2C4CCBF465EFF163FCA8D4D56C93A425 /* OIDScopes.h in Headers */,
+				642F56683AD49800EA4CEABDF96E1746 /* OIDScopeUtilities.h in Headers */,
+				04913510C525DD60946D740751550C88 /* OIDServiceConfiguration.h in Headers */,
+				3F0C33300782EEACF1061252C46CB6BC /* OIDServiceDiscovery.h in Headers */,
+				692FFCF1C8E1A9FB4054B4402B027845 /* OIDTokenRequest.h in Headers */,
+				A3D7043154F557EA3B933A9F6ABE2EB1 /* OIDTokenResponse.h in Headers */,
+				03B7A4F856BB76F856C6CDCFC6EFDA80 /* OIDTokenUtilities.h in Headers */,
+				0879D59CAE9AFC8E9E839ED3CDCA3C0B /* OIDURLQueryComponent.h in Headers */,
+				0B2CBF5336CA0E6DFB0B3FE7C7FE0C50 /* OIDURLSessionProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5C642AA10FB29936669CC269F42079C6 /* AppAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B91E7EA7557525EA9AE91C039065C5D /* Build configuration list for PBXNativeTarget "AppAuth" */;
+			buildPhases = (
+				7DE53DF318659D60CA48C200DC3A1FC2 /* Headers */,
+				981A1B1D6D2951C456F780D481C7F28A /* Sources */,
+				6172D785C5E3F5C9426770B7405E013D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppAuth;
+			productName = AppAuth;
+			productReference = 3FD1B4C1246D643E9476438C28048FA8 /* libAppAuth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F3C7E4D39885F023E8C99674F30125D /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildConfigurationList = 0B428700E05F2932997D77C334BB0240 /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
 			buildPhases = (
-				996C9EACE4E9EB9C1FA048CF2961C206 /* Headers */,
-				8241CA31F915DBF4E04505BD52E5F779 /* Sources */,
-				FC086A2437A69229B393115AB51BAC6B /* Frameworks */,
-				5504CB21C2E076C92DCA8CD043252EED /* Copy generated compatibility header */,
+				083F640AEE1C73EC105F1D0FD38EEFF7 /* Headers */,
+				1FFCA5E97AE429ACC1B9646C6296D4B3 /* Sources */,
+				EC8716CC1F3FBACC1B23DF383FB76E27 /* Frameworks */,
+				6DFEE60D13C32D82BAD85C883EC1CA8B /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -350,18 +667,19 @@
 		};
 		D7EC05F3012B09F2FA6E911151E17FFA /* Pods-RedditClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2248BFA1079A19140CFEA63FD76E6073 /* Build configuration list for PBXNativeTarget "Pods-RedditClient" */;
+			buildConfigurationList = 3187AFB654C2FF10D92DCE7041BB39D3 /* Build configuration list for PBXNativeTarget "Pods-RedditClient" */;
 			buildPhases = (
-				2D85455E2AA110AE09E3F5B3CE7DDFBA /* Headers */,
-				DF90D3B5C35D835019C8687FA9BE96DF /* Sources */,
-				8C6142CD6A28954D2BEF507C2348728B /* Frameworks */,
+				4290A165E33AE14768921F53D889E845 /* Headers */,
+				8BC1C402FF7EF86F4FDA2653ED0E0BBC /* Sources */,
+				4592540A1E3AF9417A0770DB77E67AF0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				51DC815B0C3332A720B0308483252D72 /* PBXTargetDependency */,
-				662399B640538496AEE9A3364BE25A0A /* PBXTargetDependency */,
-				A103C25D761367CF8789F5188AE40A84 /* PBXTargetDependency */,
+				DF3F546D15B3F44F3B7FF787307A6836 /* PBXTargetDependency */,
+				F3D7D88B2EDA3C1E18B1DC3E6E1A54BC /* PBXTargetDependency */,
+				6077196D17427B7A264C77BBFF5E3D04 /* PBXTargetDependency */,
+				ABCAA54477650AB78361F82C93E7A7BB /* PBXTargetDependency */,
 			);
 			name = "Pods-RedditClient";
 			productName = "Pods-RedditClient";
@@ -386,10 +704,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 2EFD679D6774E01D770AF3EC9D2C1F54 /* Products */;
+			productRefGroup = 4E3C907B9B8841A94E0BC621D3F683C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				5C642AA10FB29936669CC269F42079C6 /* AppAuth */,
 				D7EC05F3012B09F2FA6E911151E17FFA /* Pods-RedditClient */,
 				230984053C6652DFF510F450F21C5CF7 /* R.swift */,
 				B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */,
@@ -399,7 +718,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5504CB21C2E076C92DCA8CD043252EED /* Copy generated compatibility header */ = {
+		6DFEE60D13C32D82BAD85C883EC1CA8B /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,82 +745,148 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8241CA31F915DBF4E04505BD52E5F779 /* Sources */ = {
+		1FFCA5E97AE429ACC1B9646C6296D4B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C87ACD9E1205A5D121E791ACE96512 /* Bundle+FileResource.swift in Sources */,
-				595265698E23F7164E1065F47C8DA2D9 /* ColorResource.swift in Sources */,
-				124A5D92E65616687F9368C76D903842 /* Data+FileResource.swift in Sources */,
-				41D1A12E7340287BE1BEE5B808D1ED1C /* FileResource.swift in Sources */,
-				6CC93189EF87CE12E034E799F84B462D /* FontResource.swift in Sources */,
-				49DC0BBE803BEE11429153F53FB42A5B /* Identifier.swift in Sources */,
-				E81FAEC52BA930F07024C1714E3F866D /* ImageResource.swift in Sources */,
-				266A4B9BA2ADEDC771C26ADD85365129 /* NibResource+UIKit.swift in Sources */,
-				A48247B9F287D400103B343A8D351AE9 /* NibResource.swift in Sources */,
-				1E3694F0F67070CBED0B5902D4F88077 /* R.swift.Library-dummy.m in Sources */,
-				C6E0A1F28B4C23C1A37B6C61B0DF743E /* ReuseIdentifierProtocol.swift in Sources */,
-				5344A3EF9278070EFB94E771AB341E6E /* StoryboardResource.swift in Sources */,
-				B87D991E0E2993DFBA053A11421D169D /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
-				C0607C06C4E7C781055AB5A1DA485F53 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
-				C18F87BCE0D71063A79A8C425E605300 /* StoryboardViewControllerResource.swift in Sources */,
-				AC330D235C80EBA1B158F68CE25EF0F9 /* StringResource.swift in Sources */,
-				5DC2760ED2A298098158D963E92B838E /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
-				F72076A4E81C1A77CBE304C93CE23E7F /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
-				681617EC64D9A363DEBCB43C1552697B /* UIColor+ColorResource.swift in Sources */,
-				BB4046A6684F5802F5ED42F63C79C562 /* UIFont+FontResource.swift in Sources */,
-				914C7871DB712EB3733F26E604445B09 /* UIImage+ImageResource.swift in Sources */,
-				09315CE2EBCF5DEAF440DCB8E936232A /* UINib+NibResource.swift in Sources */,
-				7B5628E42E6372387E64105D89D64069 /* UIStoryboard+StoryboardResource.swift in Sources */,
-				6A93CA03CEE4648125AB94503E83F559 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
-				96B49342E340CC463C5EFD11F5397E91 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
-				2F8CCCB10C95385ED8419279CB2B84E1 /* UIViewController+NibResource.swift in Sources */,
-				53731BCC13E44C927EB7A9899E732A3C /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
-				5CE0AE3D1BAC4639AA21BAD23A0ADC35 /* Validatable.swift in Sources */,
+				8985DC9D86FCDC77C3FA6745CFADC847 /* Bundle+FileResource.swift in Sources */,
+				5B9A435C2D58EC0CD114C8ED5FF23EAE /* ColorResource.swift in Sources */,
+				22071450F8407141BFE01F0D521A060F /* Data+FileResource.swift in Sources */,
+				8571256C4B577B3655E13E104ABB400C /* FileResource.swift in Sources */,
+				C20EBFDACF262BD4827F190B39381703 /* FontResource.swift in Sources */,
+				27484984A0D4908A2E93A6C0B87CA6FB /* Identifier.swift in Sources */,
+				6E7F5A8E0D0CBBF219409684DE47AD97 /* ImageResource.swift in Sources */,
+				1C3BCA0314D32FB043DBF5B342DB0DF9 /* NibResource+UIKit.swift in Sources */,
+				A5149471A0F558150DFD7CDAE0856E71 /* NibResource.swift in Sources */,
+				4FBAC2FA9845DA5A85CA2F6641E8CE4C /* R.swift.Library-dummy.m in Sources */,
+				6233EAF04EA3B5B5689F210241B872BC /* ReuseIdentifierProtocol.swift in Sources */,
+				AD1C57913E8ABC3376F61CE0C6DE5D6F /* StoryboardResource.swift in Sources */,
+				5E319FA596573FA6DEF3F3111AE93992 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
+				58F42D80A66E3DDCA585007096B29B11 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
+				392817A73EE0DAA80651C97E0CE3C85B /* StoryboardViewControllerResource.swift in Sources */,
+				AE126FC542FCB6439841BE1C624DF25D /* StringResource.swift in Sources */,
+				6CFF4A992CB32C8DD0A224D98FDE2B08 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
+				5D4E47E9FEF83917D59F2950CE260FA3 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
+				913B47EC59E5A3B3C98785F0F7C3E505 /* UIColor+ColorResource.swift in Sources */,
+				1823B590F152C9CAFCBB6F429AD4FF5B /* UIFont+FontResource.swift in Sources */,
+				0E4E06C0EB7AAA5D80DD1439EDE66970 /* UIImage+ImageResource.swift in Sources */,
+				0B0017351312188481FA48BE62FBC569 /* UINib+NibResource.swift in Sources */,
+				8760CAF3D7BC8BAF23EDBCAAC8A87372 /* UIStoryboard+StoryboardResource.swift in Sources */,
+				0ABEE4191492E7BF499D2D4A04B5D14F /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
+				FE684DAC77DB2D8A2F54C1866FFB1716 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
+				5303AA24C16500CA11AAFC588AD27D6A /* UIViewController+NibResource.swift in Sources */,
+				06FBAF54487E01B06BADB22EC1BB295E /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
+				C7D448B46613E3274CF7430D9B1E2061 /* Validatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF90D3B5C35D835019C8687FA9BE96DF /* Sources */ = {
+		8BC1C402FF7EF86F4FDA2653ED0E0BBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23784C06C497CBAC0A6C62266DFC0183 /* Pods-RedditClient-dummy.m in Sources */,
+				6FD686E65FD30D194F826C936EF3A77E /* Pods-RedditClient-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981A1B1D6D2951C456F780D481C7F28A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFF1E8A8B66FF01ED0CFCF541E142D0 /* AppAuth-dummy.m in Sources */,
+				97F5E3E258E920C6B5D2325F487BE6FC /* OIDAuthorizationRequest.m in Sources */,
+				F0F6DF0BF119D59C677B38A6D73D1B4F /* OIDAuthorizationResponse.m in Sources */,
+				BE70DF984E25E3445AC3837C7753A6A1 /* OIDAuthorizationService+IOS.m in Sources */,
+				2140A1AF42F2D0C570E605C2B98FB4F1 /* OIDAuthorizationService.m in Sources */,
+				C2AB210CCCCF5A4A5CF5CCCC7B557B1A /* OIDAuthState+IOS.m in Sources */,
+				1606ECAEB6760A69E5CF0141386EDB4A /* OIDAuthState.m in Sources */,
+				BC43436B7A389099FB30A0648616EAB0 /* OIDClientMetadataParameters.m in Sources */,
+				F809068D34F7639A3B29092E895E1B79 /* OIDEndSessionRequest.m in Sources */,
+				16A80CC55825A6234AE971429BB3FAEF /* OIDEndSessionResponse.m in Sources */,
+				7ADF429D32EE67AF1056C48DD7124B7C /* OIDError.m in Sources */,
+				A63EE619C3EB24F068B2EE7289369696 /* OIDErrorUtilities.m in Sources */,
+				C420912AC6F87B891F7183D7FFE1A7BF /* OIDExternalUserAgentCatalyst.m in Sources */,
+				71C52EFD707E4E386B4C35FBBCF7BB87 /* OIDExternalUserAgentIOS.m in Sources */,
+				933752F38D070BD138C35C48B9B68E90 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */,
+				7B73F4D262527915040969166BC047AD /* OIDFieldMapping.m in Sources */,
+				63F61D3B356AF12008043F32110C318C /* OIDGrantTypes.m in Sources */,
+				BBA7506B8E2BD4EDD14DC11020ACE0BB /* OIDIDToken.m in Sources */,
+				9CB578FE1466D91152CD3A26773B2FC9 /* OIDRegistrationRequest.m in Sources */,
+				C6C2A1D08298FF5150BAA5295213BC89 /* OIDRegistrationResponse.m in Sources */,
+				3B70C2AD3AEBD202AB3737264810E7B5 /* OIDResponseTypes.m in Sources */,
+				A17B63F3360399C51F0F359083CE0F1C /* OIDScopes.m in Sources */,
+				236E7F2B216E90EC6090DC918D8F3FDE /* OIDScopeUtilities.m in Sources */,
+				B103A47847C7421AB893A587FDA69E38 /* OIDServiceConfiguration.m in Sources */,
+				FBBA2435EA0C30174F07806BD2F59954 /* OIDServiceDiscovery.m in Sources */,
+				1D9B644655C651B0930782505670A9BD /* OIDTokenRequest.m in Sources */,
+				1924CD7C3BA15FB8E1C856A84115518F /* OIDTokenResponse.m in Sources */,
+				0624F9F469C1A35824EB3F7741FE174A /* OIDTokenUtilities.m in Sources */,
+				8A5BDB2C46E7DFBFB56BD77A595D038E /* OIDURLQueryComponent.m in Sources */,
+				3EB93FA6FAE2916553E5B0083A429979 /* OIDURLSessionProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		11957C9C282712FD524B8F96B34E21D0 /* PBXTargetDependency */ = {
+		6077196D17427B7A264C77BBFF5E3D04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = R.swift.Library;
 			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
-			targetProxy = 0B2070F1A6A86F8AA14297E7B491DCD9 /* PBXContainerItemProxy */;
+			targetProxy = CD4051CFBEF118748DFAE917F0AFE9FD /* PBXContainerItemProxy */;
 		};
-		51DC815B0C3332A720B0308483252D72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = R.swift;
-			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
-			targetProxy = 6B7998CBA1CF14400FA15CFF4173902D /* PBXContainerItemProxy */;
-		};
-		662399B640538496AEE9A3364BE25A0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = R.swift.Library;
-			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
-			targetProxy = C8642A1AA65F2B7F29E47164CD7AD4D8 /* PBXContainerItemProxy */;
-		};
-		A103C25D761367CF8789F5188AE40A84 /* PBXTargetDependency */ = {
+		ABCAA54477650AB78361F82C93E7A7BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 64A667FA6C68254B7D31F1DF772E5EF5 /* PBXContainerItemProxy */;
+			targetProxy = 211B5AB12B9746143F4D9C535EE6AA6D /* PBXContainerItemProxy */;
+		};
+		B2C664224B17770CA2344A40309DFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
+			targetProxy = 160DBF6A00D074F48AD9EEFFA3249E89 /* PBXContainerItemProxy */;
+		};
+		DF3F546D15B3F44F3B7FF787307A6836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppAuth;
+			target = 5C642AA10FB29936669CC269F42079C6 /* AppAuth */;
+			targetProxy = 0C5160671B14DE1C5A96B224AD0950DB /* PBXContainerItemProxy */;
+		};
+		F3D7D88B2EDA3C1E18B1DC3E6E1A54BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift;
+			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
+			targetProxy = 77DE8DE4998FF011326DF3F21039C7F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		009F5E13829CBFC37E4310EDC9FA0C78 /* Release */ = {
+		04A0679CCEF6D12F0BDE8B122796B172 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E7914391368CCFE6D6FA5B904551FC1 /* R.swift.Library.release.xcconfig */;
+			baseConfigurationReference = 6C4F0609904ADB40C996FEC682AEA8CB /* AppAuth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AppAuth;
+				PRODUCT_NAME = AppAuth;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18814D677FC663E44C6D95AFF6F5BA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC3482FB59F76CEDEB0112AA3DBC2BB7 /* R.swift.Library.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -524,7 +909,71 @@
 			};
 			name = Release;
 		};
-		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+		391D844FA5D142900AA7D108C7859715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDDD9BCDE4315698C62AA00F346EEB0 /* Pods-RedditClient.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RedditClient/Pods-RedditClient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78348A99DBE5E833006A6ABF8D54B8A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048A4446E42E7DCF1D182D286380F0C2 /* R.swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87DD3E6138B67E9D76D99AEBEDDCD0BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE90BFD71B1CDC9ADB8E311019FFE35B /* R.swift.Library.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = Headers/Public/Rswift/R.swift.Library.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = R.swift.Library;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -577,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -590,24 +1039,7 @@
 			};
 			name = Debug;
 		};
-		78348A99DBE5E833006A6ABF8D54B8A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28545899EF9782BBC84BB10680A80DD5 /* R.swift.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -657,7 +1089,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -671,7 +1103,7 @@
 		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D90B61D9C2913E9354F31619121BC8D6 /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 8EEB5187375174FD4BEB9A50D9ECCD4D /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -686,70 +1118,7 @@
 			};
 			name = Release;
 		};
-		CD17B93CF7ADE75483B704E6E4A5692A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FF996AA8B72B04A1FE110DBF7F64373 /* R.swift.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D8755D1C888B48320E839212625DEE97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBDDD9BCDE4315698C62AA00F346EEB0 /* Pods-RedditClient.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RedditClient/Pods-RedditClient.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E371508135DB5041F27B1DD047565F60 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B26B2E47423F446E6BA1EB74616AD60C /* R.swift.Library.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MODULEMAP_FILE = Headers/Public/Rswift/R.swift.Library.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Rswift;
-				PRODUCT_NAME = R.swift.Library;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E8EF5DB2811AA7F8EAEF4E0CA87500CB /* Debug */ = {
+		AF3B2D401F83F7673550A9A9ADBB81B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5640660C1EDCB20B3406DDC74791ACA /* Pods-RedditClient.debug.xcconfig */;
 			buildSettings = {
@@ -758,7 +1127,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RedditClient/Pods-RedditClient.modulemap";
 				OTHER_LDFLAGS = "";
@@ -771,9 +1140,9 @@
 			};
 			name = Debug;
 		};
-		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+		CD17B93CF7ADE75483B704E6E4A5692A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDE6AD0C11E77301B52B67C2608EC144 /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = 13E76D80A9DD3D27E80E29490B070F83 /* R.swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -787,23 +1156,63 @@
 			};
 			name = Debug;
 		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E398B23DB8D1DCB3E1AE5C66D98EB7B /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB403CE4B5360BB0AAF62189FB65C070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B1984FABA6761CD2A1E7A87C912C77 /* AppAuth.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AppAuth;
+				PRODUCT_NAME = AppAuth;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F3C7E4D39885F023E8C99674F30125D /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
+		0B428700E05F2932997D77C334BB0240 /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E371508135DB5041F27B1DD047565F60 /* Debug */,
-				009F5E13829CBFC37E4310EDC9FA0C78 /* Release */,
+				87DD3E6138B67E9D76D99AEBEDDCD0BE /* Debug */,
+				18814D677FC663E44C6D95AFF6F5BA6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2248BFA1079A19140CFEA63FD76E6073 /* Build configuration list for PBXNativeTarget "Pods-RedditClient" */ = {
+		3187AFB654C2FF10D92DCE7041BB39D3 /* Build configuration list for PBXNativeTarget "Pods-RedditClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8EF5DB2811AA7F8EAEF4E0CA87500CB /* Debug */,
-				D8755D1C888B48320E839212625DEE97 /* Release */,
+				AF3B2D401F83F7673550A9A9ADBB81B2 /* Debug */,
+				391D844FA5D142900AA7D108C7859715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -811,8 +1220,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
-				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -822,6 +1231,15 @@
 			buildConfigurations = (
 				CD17B93CF7ADE75483B704E6E4A5692A /* Debug */,
 				78348A99DBE5E833006A6ABF8D54B8A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B91E7EA7557525EA9AE91C039065C5D /* Build configuration list for PBXNativeTarget "AppAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A0679CCEF6D12F0BDE8B122796B172 /* Debug */,
+				FB403CE4B5360BB0AAF62189FB65C070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
