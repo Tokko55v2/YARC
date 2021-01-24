@@ -4,7 +4,7 @@
 //
 //  Created by Michael Kroneder on 23/01/2021.
 //
-
+import AppAuth
 import SwiftUI
 
 // swiftlint:disable multiple_closures_with_trailing_closure
