@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LoginView(username: "MichaelKro", password: "PW")
+        LoginView(username: "", password: "")
     }
 }
 
