@@ -14,11 +14,13 @@ jobs:
     - name: Run swiftlint
       run: bundle exec fastlane swiftLintLane
 
-#  build:
-#    runs-on: macos-latest
-#    needs: swiftlint
-#    steps:
-#    - uses: actions/checkout@v2
-#    - name: Build
-#      run: swift build -v
+  build:
+    needs: swiftLint
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Bundle
+      run: bundle install
+    - name: Build
+      run: bundle exec fastlane buildLane
 
