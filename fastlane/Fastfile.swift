@@ -14,7 +14,7 @@ class Fastfile: LaneFile {
         desc("Run SwiftLint")
         swiftlint(configFile: ".swiftlint.yml",
                   strict: true,
-                  ignoreExitStatus: false,
+                  ignoreExitStatus: true,
                   raiseIfSwiftlintError: true,
                   executable: "Pods/SwiftLint/swiftlint")
     }
