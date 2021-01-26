@@ -100,6 +100,7 @@ extension LoginViewModel {
 
         if let authState = self.authState {
             if #available(iOS 12.0, *) {
+                // swiftlint:disable force_try
                 data = try! NSKeyedArchiver.archivedData(withRootObject: authState, requiringSecureCoding: false)
             } else {
                 data = NSKeyedArchiver.archivedData(withRootObject: authState)
