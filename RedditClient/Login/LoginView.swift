@@ -6,7 +6,6 @@
 //
 import AppAuth
 import SwiftUI
-
 // swiftlint:disable multiple_closures_with_trailing_closure
 struct LoginView: View {
     @State var username: String
