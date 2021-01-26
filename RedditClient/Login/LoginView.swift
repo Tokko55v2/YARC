@@ -11,6 +11,7 @@ import SwiftUI
 struct LoginView: View {
     @State var username: String
     @State var password: String
+    @State var moveToListView: Bool = false
 
     var body: some View {
         BackgroundColor()
@@ -29,20 +30,21 @@ struct LoginView: View {
                     SecureTextField(password: password)
 
                     Button(action: {
-                        print("login button pushed")
+                        self.moveToListView.toggle()
                     }) {
                             Text(R.string.localizable.login_button())
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(width: 300, height: 60)
-                                .background(Color.green)
+                                .background(Color(R.color.buttonColor()!))
                                 .cornerRadius(15.0)
                     }
                     .padding(.top, 30)
                     .padding(.bottom, 30)
 
                 }.padding([.leading, .trailing], 27.5))
+            .navigate(to: ListMainView(), when: $moveToListView)
     }
 }
 
@@ -79,12 +81,6 @@ struct SecureTextField: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView(username: "", password: "")
-    }
-}
-
 struct BackgroundColor: View {
     var body: some View {
         Color(hex: "")
@@ -94,5 +90,11 @@ struct BackgroundColor: View {
                                       Color(R.color.backgroundColorTwo()!)]),
                     startPoint: .top, endPoint: .bottom))
             .edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView(username: "", password: "")
     }
 }
