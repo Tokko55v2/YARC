@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct RedditClientApp: App {
+    init() {
+        UITableView.appearance().backgroundColor = .none
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
