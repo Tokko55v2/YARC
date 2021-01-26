@@ -42,10 +42,10 @@ class LoginViewModel: UIViewController {
      The key under which the authorization state will be saved in a keyed archive.
      */
     let authStateKey = "authState"
-    
+
     /**
-    OpenID Connect issuer URL, where the OpenID configuration can be obtained from.
-    */
+     OpenID Connect issuer URL, where the OpenID configuration can be obtained from.
+     */
     let issuerUrl: String = "https://oauth.reddit.com/api/v1/me"
 
     override func viewDidLoad() {
