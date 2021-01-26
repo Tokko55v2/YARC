@@ -5,31 +5,32 @@ on:
     branches: [ main ]
 
 jobs:
-  swiftLint:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install Bundle
-      run: bundle install
-    - name: Run swiftlint
-      run: bundle exec fastlane swiftLintLane
+    job:
+      swiftLint:
+        runs-on: macos-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Install Bundle
+          run: bundle install
+        - name: Run swiftlint
+          run: bundle exec fastlane swiftLintLane
 
-  build:
-    needs: swiftLint
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install Bundle
-      run: bundle install
-    - name: Build
-      run: bundle exec fastlane buildLane
+      build:
+        needs: swiftLint
+        runs-on: macos-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Install Bundle
+          run: bundle install
+        - name: Build
+          run: bundle exec fastlane buildLane
       
-jobs:
-  update-readme:
-    name: Update Readme with Metrics
-    runs-on: ubuntu-latest
-    steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    job:
+      update-readme:
+        name: Update Readme with Metrics
+        runs-on: ubuntu-latest
+        steps:
+          - uses: anmol098/waka-readme-stats@master
+            with:
+              WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+              GH_TOKEN: ${{ secrets.GH_TOKEN }}
