@@ -1,4 +1,4 @@
-name: Swift
+name: RedditClient
 
 on:
   pull_request:
@@ -18,3 +18,12 @@ jobs:
 
       - name: Build
         run: bundle exec fastlane buildLane
+        
+  update-readme:
+    name: Update Readme with Metrics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
