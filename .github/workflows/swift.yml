@@ -5,22 +5,16 @@ on:
     branches: [ main ]
 
 jobs:
-  swiftLint:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install Bundle
-      run: bundle install
-    - name: Run swiftlint
-      run: bundle exec fastlane swiftLintLane
-
   build:
-    needs: swiftLint
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Bundle
-      run: bundle install
-    - name: Build
-      run: bundle exec fastlane buildLane
+      - uses: actions/checkout@v2
 
+      - name: Install Bundle
+        run: bundle install
+
+      - name: Run swiftlint
+        run: bundle exec fastlane swiftLintLane
+
+      - name: Build
+        run: bundle exec fastlane buildLane
