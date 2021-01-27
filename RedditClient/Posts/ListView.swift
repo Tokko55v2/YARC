@@ -16,47 +16,40 @@ struct ListMainView: View {
 }
 
 struct ListView: View {
-    var array: [String] = ["", "", "", "", "", "", ""]
-
+    @ObservedObject var viewModel = ListViewModel()
     var body: some View {
         ZStack {
-            List(array, id: \.self) { _ in
-                RowView()
+            List(viewModel.posts.posts) { post in
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("\(post.title)").font(.system(size: 15.0))
+                        Text("\(post.author)").font(.system(size: 12.0))
+                        Text("\(post.url)").font(.system(size: 10.0)).foregroundColor(Color.gray)
+                    }
+                    Spacer()
+                    VStack {
+                        HStack {
+                            Image(systemName: "arrow.up")
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(Color(R.color.backgroundColorTwo()!))
+                            Text("\(post.ups)")
+                        }
+                        HStack {
+                            Image(systemName: "arrow.down")
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(Color(R.color.backgroundColorOne()!))
+                            Text("\(post.downs)")
+                        }
+                        HStack {
+                            Image(systemName: "bubble.left.and.bubble.right")
+                                .font(.system(size: 16, weight: .semibold))
+                            Text("\(post.numComments)")
+                        }
+                    }.padding(.leading)
+                }
             }
         }
         .background(RowBackgroundColor())
-    }
-}
-
-struct RowView: View {
-    var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text("Title").font(.system(size: 15.0))
-                Text("Author").font(.system(size: 12.0))
-                Text("URL").font(.system(size: 10.0)).foregroundColor(Color.gray)
-            }
-            Spacer()
-            VStack {
-                HStack {
-                    Image(systemName: "arrow.up")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(Color(R.color.backgroundColorTwo()!))
-                    Text("3")
-                }
-                HStack {
-                    Image(systemName: "arrow.down")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(Color(R.color.backgroundColorOne()!))
-                    Text("50")
-                }
-                HStack {
-                    Image(systemName: "bubble.left.and.bubble.right")
-                        .font(.system(size: 16, weight: .semibold))
-                    Text("2")
-                }
-            }.padding(.leading)
-        }
     }
 }
 
