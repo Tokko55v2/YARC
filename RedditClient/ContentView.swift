@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LoginView(username: "", password: "")
+        Text("Hello, world!")
+            .padding()
     }
 }
 

@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import WebKit
 
 // swiftlint:disable multiple_closures_with_trailing_closure
 struct LoginView: View {
     @State var username: String
     @State var password: String
     @State var moveToListView: Bool = false
+    @State var loginView: Bool = false
 
     var body: some View {
         BackgroundColor()
@@ -30,7 +32,7 @@ struct LoginView: View {
                     SecureTextField(password: password)
 
                     Button(action: {
-                        self.moveToListView.toggle()
+                        print("later")
                     }) {
                             Text(R.string.localizable.login_button())
                                 .font(.headline)
