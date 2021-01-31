@@ -13,21 +13,21 @@ struct MainView: View {
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                         .font(.system(size: 16, weight: .regular))
-                    Text("Posts")
+                    Text(R.string.localizable.posts_page_title())
                 }
 
             Text("WIP: Profil")
                 .tabItem {
                     Image(systemName: "person.crop.circle.fill")
                         .font(.system(size: 16, weight: .regular))
-                    Text("Profil")
+                    Text(R.string.localizable.profile_page_title())
                 }
 
             Text("WIP: Settings")
                 .tabItem {
                     Image(systemName: "gear")
                         .font(.system(size: 16, weight: .regular))
-                    Text("Settings")
+                    Text(R.string.localizable.settings_page_title())
                 }
         }
         .accentColor(Color(R.color.backgroundColorTwo()!))
