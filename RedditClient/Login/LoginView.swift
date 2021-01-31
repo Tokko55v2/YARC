@@ -12,12 +12,13 @@ import WebKit
 struct LoginView: View {
     @State var moveToListView: Bool = false
     @State var loginView: Bool = false
+    @State var noLoginView: Bool = false
 
     var body: some View {
         BackgroundColor()
             .overlay(
                 VStack {
-                    Text("Reddit Client")
+                    Text(R.string.localizable.reddit_header())
                         .font(.largeTitle).foregroundColor(Color.white)
                         .padding([.top, .bottom], 40)
 
@@ -27,7 +28,17 @@ struct LoginView: View {
                         .shadow(radius: 10)
 
                     Spacer()
-
+                    Button(action: {
+                        self.noLoginView.toggle()
+                    }) {
+                            Text(R.string.localizable.no_login_button())
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(width: 300, height: 60)
+                                .background(Color(R.color.buttonColor()!))
+                                .cornerRadius(15.0)
+                    }
                     Button(action: {
                         LoginViewModel()
                             .doOauthReddit()
@@ -44,11 +55,12 @@ struct LoginView: View {
                     .padding(.bottom, 60)
 
                 }.padding([.leading, .trailing], 27.5))
-            .navigate(to: ListMainView(), when: $moveToListView)
+            .navigate(to: MainView(), when: $noLoginView)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
-struct ImageView: View {
+private struct ImageView: View {
     var body: some View {
         guard let img = R.image.logo() else {
             fatalError("Unable to load image")
@@ -61,7 +73,7 @@ struct ImageView: View {
     }
 }
 
-struct BackgroundColor: View {
+private struct BackgroundColor: View {
     var body: some View {
         Color(hex: "")
             .background(

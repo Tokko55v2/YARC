@@ -1,5 +1,5 @@
 //
-//  OAuthWebViewExtention.swift
+//  OAuthWebViewExtension.swift
 //  RedditClient
 //
 //  Created by Michael Kroneder on 30/01/2021.

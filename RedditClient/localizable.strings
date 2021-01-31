@@ -4,7 +4,6 @@
 //
 //  Created by Michael Kroneder on 22/01/2021.
 //
-"username_placeholder" = "Username";
-"password_placeholder" = "Password";
+"no_login_button" = "Go!";
 "login_button" = "Login";
 "reddit_header" = "RedditClient";
