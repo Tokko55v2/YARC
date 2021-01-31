@@ -1,5 +1,5 @@
 //
-//  ColorExtenstion.swift
+//  ColorExtension.swift
 //  RedditClient
 //
 //  Created by Michael Kroneder on 24/01/2021.

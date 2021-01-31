@@ -11,11 +11,10 @@ import SwiftUI
 struct ListMainView: View {
     var body: some View {
         ListView()
-            .navigationTitle(R.string.localizable.reddit_header())
     }
 }
 
-struct ListView: View {
+private struct ListView: View {
     @ObservedObject var viewModel = ListViewModel()
     var body: some View {
         ZStack {
@@ -53,7 +52,7 @@ struct ListView: View {
     }
 }
 
-struct RowBackgroundColor: View {
+private struct RowBackgroundColor: View {
     var body: some View {
         EmptyView()
             .background(Color(R.color.headerColor()!))
@@ -61,7 +60,7 @@ struct RowBackgroundColor: View {
     }
 }
 
-struct ListMainView_Previews: PreviewProvider {
+private struct ListMainView_Previews: PreviewProvider {
     static var previews: some View {
         ListMainView()
     }

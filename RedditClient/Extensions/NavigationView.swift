@@ -5,6 +5,7 @@
 //  Created by Michael Kroneder on 26/01/2021.
 //
 
+import Rswift
 import SwiftUI
 import UIKit
 
@@ -34,7 +35,6 @@ extension UINavigationController {
 
         let standard = UINavigationBarAppearance()
         standard.backgroundColor = R.color.headerColor()
-        navigationBar.tintColor = UIColor.white
 
         navigationBar.standardAppearance = standard
     }
