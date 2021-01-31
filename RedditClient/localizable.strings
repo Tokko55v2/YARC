@@ -6,7 +6,8 @@
 //
 "no_login_button" = "Go!";
 "login_button" = "Login";
-"reddit_header" = "RedditClient";
+"reddit_header" = "YARC";
+"reddit_sub_header" = "Yet Another Reddit Client";
 "posts_page_title" = "Posts";
 "profile_page_title" = "Profile";
 "settings_page_title" = "Settings";
