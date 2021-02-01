@@ -21,7 +21,7 @@ class Fastfile: LaneFile {
 
     func buildLane() {
         desc("Build for testing")
-        scan(xcodeproj: "RedditClient.xcodeproj",
+        scan(workspace: "RedditClient.xcworkspace",
              derivedDataPath: "derivedData",
              buildForTesting: true,
              xcargs: "CI=true")
