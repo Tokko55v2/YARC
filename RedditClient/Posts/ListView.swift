@@ -48,15 +48,6 @@ private struct ListView: View {
                 }
             }
         }
-        .background(RowBackgroundColor())
-    }
-}
-
-private struct RowBackgroundColor: View {
-    var body: some View {
-        EmptyView()
-            .background(Color(R.color.headerColor()!))
-            .edgesIgnoringSafeArea(.all)
     }
 }
 

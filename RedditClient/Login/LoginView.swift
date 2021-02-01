@@ -19,8 +19,14 @@ struct LoginView: View {
             .overlay(
                 VStack {
                     Text(R.string.localizable.reddit_header())
-                        .font(.largeTitle).foregroundColor(Color.white)
-                        .padding([.top, .bottom], 40)
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .padding(.top, 40)
+
+                    Text(R.string.localizable.reddit_sub_header())
+                        .font(.title)
+                        .foregroundColor(Color.white)
+                        .padding(.bottom, 40)
 
                     Spacer()
 

@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var passedIntro: Bool = true
     var body: some View {
         TabView {
             ListMainView()
@@ -31,5 +32,8 @@ struct MainView: View {
                 }
         }
         .accentColor(Color(R.color.backgroundColorTwo()!))
+        .sheet(isPresented: $passedIntro, content: {
+            IntroView()
+        })
     }
 }
