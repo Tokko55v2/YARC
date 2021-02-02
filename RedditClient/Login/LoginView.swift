@@ -11,8 +11,7 @@ import WebKit
 // swiftlint:disable multiple_closures_with_trailing_closure
 struct LoginView: View {
     @State var moveToListView: Bool = false
-    @State var loginView: Bool = false
-    @State var noLoginView: Bool = false
+    @State var hasProfile: Bool = false
 
     var body: some View {
         BackgroundColor()
@@ -35,7 +34,7 @@ struct LoginView: View {
 
                     Spacer()
                     Button(action: {
-                        self.noLoginView.toggle()
+                        self.hasProfile.toggle()
                     }) {
                             Text(R.string.localizable.no_login_button())
                                 .font(.headline)
@@ -61,7 +60,7 @@ struct LoginView: View {
                     .padding(.bottom, 60)
 
                 }.padding([.leading, .trailing], 27.5))
-            .navigate(to: MainView(), when: $noLoginView)
+            .navigate(to: MainView(), when: $hasProfile)
             .edgesIgnoringSafeArea(.all)
     }
 }

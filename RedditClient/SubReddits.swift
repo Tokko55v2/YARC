@@ -16,6 +16,11 @@ struct SubReddit: Identifiable {
     var display_name_prefixed: String
     var subreddit_type: String
     var over18: Bool
+    var primary_color: String
+    var icon_img: String
+    var public_description: String
+    var banner_background_color: String
+    var url: String
 }
 
 // swiftlint:disable identifier_name
@@ -27,6 +32,11 @@ extension SubReddit: Decodable, Hashable {
         case display_name_prefixed
         case subreddit_type
         case over18
+        case primary_color
+        case icon_img
+        case public_description
+        case banner_background_color
+        case url
         case data
     }
 
@@ -42,6 +52,11 @@ extension SubReddit: Decodable, Hashable {
         display_name_prefixed = try dataContainer.decode(String.self, forKey: .display_name_prefixed)
         subreddit_type = try dataContainer.decode(String.self, forKey: .subreddit_type)
         over18 = try dataContainer.decode(Bool.self, forKey: .over18)
+        primary_color = try dataContainer.decode(String.self, forKey: .primary_color)
+        icon_img = try dataContainer.decode(String.self, forKey: .icon_img)
+        public_description = try dataContainer.decode(String.self, forKey: .public_description)
+        banner_background_color = try dataContainer.decode(String.self, forKey: .banner_background_color)
+        url = try dataContainer.decode(String.self, forKey: .url)
     }
 
     // swiftlint:disable operator_whitespace

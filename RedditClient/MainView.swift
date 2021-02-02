@@ -33,7 +33,7 @@ struct MainView: View {
         }
         .accentColor(Color(R.color.backgroundColorTwo()!))
         .sheet(isPresented: $passedIntro, content: {
-            IntroView()
+            IntroView(isPresented: self.$passedIntro)
         })
     }
 }
