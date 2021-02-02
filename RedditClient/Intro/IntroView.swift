@@ -50,6 +50,7 @@ private struct SelectMultiRow: View {
                     .background(Color(R.color.backgroundColorOne()!))
                     .clipShape(Capsule())
             }
+
             VStack(alignment: .leading) {
                 Text(subReddit.title)
                     .font(.headline)
