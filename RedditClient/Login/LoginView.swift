@@ -8,7 +8,6 @@
 import SwiftUI
 import WebKit
 
-// swiftlint:disable multiple_closures_with_trailing_closure
 struct LoginView: View {
     @State var moveToListView: Bool = false
     @State var hasProfile: Bool = false
@@ -29,52 +28,26 @@ struct LoginView: View {
 
                     Spacer()
 
-                    ImageView()
+                    LogoView()
                         .shadow(radius: 10)
 
                     Spacer()
-                    Button(action: {
+                    Button(R.string.localizable.no_login_button()) {
                         self.hasProfile.toggle()
-                    }) {
-                            Text(R.string.localizable.no_login_button())
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(width: 300, height: 60)
-                                .background(Color(R.color.buttonColor()!))
-                                .cornerRadius(15.0)
                     }
-                    Button(action: {
+                    .buttonStyle(CustomButton())
+
+                    Button(R.string.localizable.login_button()) {
                         LoginViewModel()
                             .doOauthReddit()
-                    }) {
-                            Text(R.string.localizable.login_button())
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(width: 300, height: 60)
-                                .background(Color(R.color.buttonColor()!))
-                                .cornerRadius(15.0)
                     }
+                    .buttonStyle(CustomButton())
                     .padding(.top, 30)
                     .padding(.bottom, 60)
 
                 }.padding([.leading, .trailing], 27.5))
             .navigate(to: MainView(), when: $hasProfile)
             .edgesIgnoringSafeArea(.all)
-    }
-}
-
-private struct ImageView: View {
-    var body: some View {
-        guard let img = R.image.logo() else {
-            fatalError("Unable to load image")
-        }
-
-        return Image(uiImage: img)
-            .resizable()
-            .frame(width: 250, height: 250)
-            .padding(.bottom, 50)
     }
 }
 

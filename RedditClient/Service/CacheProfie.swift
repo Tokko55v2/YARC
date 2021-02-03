@@ -10,7 +10,7 @@ import Foundation
 class CacheProfile {
     var profile = NSCache<NSString, Profile>()
 
-    func get(key: NSString) {
+    func get(key: NSString) -> Profile? {
         profile.object(forKey: key)
     }
 
@@ -21,7 +21,7 @@ class CacheProfile {
 
 extension CacheProfile {
     static var cacheProfile = CacheProfile()
-    static func getImageCache() -> CacheProfile {
+    static func getProfileCache() -> CacheProfile {
         cacheProfile
     }
 }

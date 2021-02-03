@@ -7,10 +7,9 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var passedIntro: Bool = true
     var body: some View {
         TabView {
-            ListMainView()
+            SubRedditView()
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                         .font(.system(size: 16, weight: .regular))
@@ -32,8 +31,5 @@ struct MainView: View {
                 }
         }
         .accentColor(Color(R.color.backgroundColorTwo()!))
-        .sheet(isPresented: $passedIntro, content: {
-            IntroView(isPresented: self.$passedIntro)
-        })
     }
 }

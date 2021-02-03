@@ -9,8 +9,9 @@ import SwiftUI
 
 struct IntroView: View {
     @ObservedObject var viewModel = IntroViewModel()
+    @ObservedObject var viewModelSubRedditView = SubRedditViewModel()
     @State var selectedRows = Set<SubReddit>()
-    @Binding var isPresented: Bool
+    @Binding var passedIntro: Bool
 
     var body: some View {
         NavigationView {
@@ -22,7 +23,8 @@ struct IntroView: View {
             .navigationBarItems(trailing:
                 Button(R.string.localizable.save_button()) {
                     self.viewModel.cacheProfile(selectedRows)
-                    self.isPresented = false
+                    self.viewModelSubRedditView.refresh()
+                    self.passedIntro = false
                 }
             )
         }
@@ -54,7 +56,7 @@ private struct SelectMultiRow: View {
             VStack(alignment: .leading) {
                 Text(subReddit.title)
                     .font(.headline)
-                Text("\(subReddit.subscribers) subscribers")
+                Text("\(subReddit.subscribers) \(R.string.localizable.subscribers_title())")
                     .font(.subheadline)
             }
             Spacer()
