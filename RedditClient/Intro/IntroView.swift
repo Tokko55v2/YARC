@@ -9,25 +9,35 @@ import SwiftUI
 
 struct IntroView: View {
     @ObservedObject var viewModel = IntroViewModel()
-
+    @ObservedObject var viewModelSubRedditView = SubRedditViewModel()
     @State var selectedRows = Set<SubReddit>()
+    @Binding var passedIntro: Bool
 
     var body: some View {
         NavigationView {
             List(viewModel.subReddit.subReddits, selection: $selectedRows) { data in
-                SelectMultiRow(subReddit: data, selectedItems: $selectedRows)
+                SelectMultiRow(imageLoader: ImageLoader(urlString: data.icon_img), selectedItems: $selectedRows, subReddit: data)
                     .frame(minHeight: 65)
             }
-            .navigationBarTitle(Text("Popular Subreddits"), displayMode: .inline)
+            .navigationBarTitle(R.string.localizable.popular_subReddits(), displayMode: .inline)
+            .navigationBarItems(trailing:
+                Button(R.string.localizable.save_button()) {
+                    self.viewModel.cacheProfile(selectedRows)
+                    self.viewModelSubRedditView.refresh()
+                    self.passedIntro = false
+                }
+            )
         }
     }
 }
 
 private struct SelectMultiRow: View {
     @ObservedObject var viewModel = IntroViewModel()
-    var subReddit: SubReddit
+    @ObservedObject var imageLoader: ImageLoader
 
     @Binding var selectedItems: Set<SubReddit>
+
+    var subReddit: SubReddit
 
     var isSelected: Bool {
         selectedItems.contains(subReddit)
@@ -35,10 +45,18 @@ private struct SelectMultiRow: View {
 
     var body: some View {
         HStack {
+            VStack {
+                Image(uiImage: imageLoader.image ?? UIImage())
+                    .resizable()
+                    .frame(width: 45, height: 45)
+                    .background(Color(R.color.backgroundColorOne()!))
+                    .clipShape(Capsule())
+            }
+
             VStack(alignment: .leading) {
                 Text(subReddit.title)
                     .font(.headline)
-                Text("\(subReddit.subscribers) subscribers")
+                Text("\(subReddit.subscribers) \(R.string.localizable.subscribers_title())")
                     .font(.subheadline)
             }
             Spacer()

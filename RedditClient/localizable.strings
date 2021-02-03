@@ -11,3 +11,9 @@
 "posts_page_title" = "Posts";
 "profile_page_title" = "Profile";
 "settings_page_title" = "Settings";
+"popular_subReddits" = "Popular Subreddits";
+"save_button" = "Save";
+"no_subReddits_chosen" = "There are no subreddits chosen";
+"add_subReddits" = "Add SubReddits";
+"members" = "members";
+"subscribers_title" = "subscribers";

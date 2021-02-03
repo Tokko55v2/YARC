@@ -11,6 +11,7 @@ import SwiftUI
 
 class IntroViewModel: ObservableObject {
     private var dataService: DataService?
+    let profileCach = CacheProfile.getProfileCache()
     @Published var subReddit: SubReddits
 
     init() {
@@ -29,5 +30,14 @@ class IntroViewModel: ObservableObject {
                 self.subReddit = data
             }
         })
+    }
+
+    func cacheProfile(_ profile: Set<SubReddit>) {
+        var temp = [ProfileSubReddit]()
+        for subReddit in profile {
+            temp.append(ProfileSubReddit.mapSubRedditToProfilSubReddit(subReddit: subReddit))
+        }
+        let profile = Profile(temp)
+        profileCach.set(key: "firstUser", profile: profile)
     }
 }
