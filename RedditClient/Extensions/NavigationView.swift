@@ -35,7 +35,7 @@ extension UINavigationController {
 
         let standard = UINavigationBarAppearance()
         standard.backgroundColor = R.color.headerColor()
-        navigationBar.tintColor = UIColor.white
+        navigationBar.tintColor = R.color.navigationColor()
 
         navigationBar.standardAppearance = standard
     }
