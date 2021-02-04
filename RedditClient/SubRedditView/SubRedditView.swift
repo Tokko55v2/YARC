@@ -21,6 +21,7 @@ struct SubRedditView: View {
             } else {
                 VStack {
                     Text("\(R.string.localizable.no_subReddits_chosen())")
+                        .foregroundColor(Color(R.color.textColor()!))
                         .font(.headline)
                         .padding(.top, 10)
                     Spacer(minLength: 30)
@@ -38,7 +39,7 @@ struct SubRedditView: View {
                minHeight: 0,
                maxHeight: .infinity,
                alignment: .center)
-        .background(Color(R.color.backgroundColorOne()!))
+        .background(Color(R.color.mainBackground()!))
         .onAppear {
             self.viewModel.refresh()
         }

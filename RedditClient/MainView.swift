@@ -7,14 +7,16 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var selection = 0
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             SubRedditView()
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                         .font(.system(size: 16, weight: .regular))
                     Text(R.string.localizable.posts_page_title())
                 }
+                .tag(0)
 
             Text("WIP: Profil")
                 .tabItem {
@@ -22,6 +24,7 @@ struct MainView: View {
                         .font(.system(size: 16, weight: .regular))
                     Text(R.string.localizable.profile_page_title())
                 }
+                .tag(1)
 
             Text("WIP: Settings")
                 .tabItem {
@@ -29,7 +32,14 @@ struct MainView: View {
                         .font(.system(size: 16, weight: .regular))
                     Text(R.string.localizable.settings_page_title())
                 }
+                .tag(2)
         }
         .accentColor(Color(R.color.backgroundColorTwo()!))
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
     }
 }
