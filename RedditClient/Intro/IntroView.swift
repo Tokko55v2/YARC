@@ -34,9 +34,7 @@ struct IntroView: View {
 private struct SelectMultiRow: View {
     @ObservedObject var viewModel = IntroViewModel()
     @ObservedObject var imageLoader: ImageLoader
-
     @Binding var selectedItems: Set<SubReddit>
-
     var subReddit: SubReddit
 
     var isSelected: Bool {
