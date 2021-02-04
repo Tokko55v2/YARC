@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-class SubRedditViewModel: ObservableObject {
-    let profileCach = CacheProfile.getProfileCache()
-    @Published var profile = Profile()
-
-    init() {}
-
-    func refresh() {
-        guard let profile = profileCach.get(key: "firstUser") else {
-            return
-        }
-        self.profile = profile
-    }
-}
+// class SubRedditViewModel: ObservableObject {
+//    let profileCach = CacheProfile.getProfileCache()
+//    @Published var profile = Profile()
+//
+//    init() {}
+//
+//    func refresh() {
+//        guard let profile = profileCach.get(key: "firstUser") else {
+//            return
+//        }
+//        self.profile = profile
+//    }
+// }
