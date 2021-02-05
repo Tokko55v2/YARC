@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86145CDB25C5C76D0072A7A6 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86145CDA25C5C76D0072A7A6 /* OAuthSwift */; };
 		86145D3125C5E8B90072A7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D3025C5E8B90072A7A6 /* AppDelegate.swift */; };
 		86145D3525C5E9310072A7A6 /* ScenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D3425C5E9310072A7A6 /* ScenceDelegate.swift */; };
 		86145D4F25C6AA590072A7A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D4E25C6AA590072A7A6 /* MainView.swift */; };
@@ -119,7 +118,6 @@
 				8641FC1925C84B2F00AB4194 /* Rswift in Frameworks */,
 				8633548225C1E8E100FF661D /* JGProgressHUD in Frameworks */,
 				86A02E7F25C1536600974E4E /* Alamofire in Frameworks */,
-				86145CDB25C5C76D0072A7A6 /* OAuthSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +333,6 @@
 			packageProductDependencies = (
 				86A02E7E25C1536600974E4E /* Alamofire */,
 				8633548125C1E8E100FF661D /* JGProgressHUD */,
-				86145CDA25C5C76D0072A7A6 /* OAuthSwift */,
 				8641FC1825C84B2F00AB4194 /* Rswift */,
 			);
 			productName = redditClient;
@@ -412,7 +409,6 @@
 			packageReferences = (
 				86A02E7D25C1536600974E4E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8633548025C1E8E100FF661D /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
-				86145CD925C5C76D0072A7A6 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
 				8641FC1725C84B2F00AB4194 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 8649059825BB657900D7CF75 /* Products */;
@@ -885,14 +881,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		86145CD925C5C76D0072A7A6 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.2;
-			};
-		};
 		8633548025C1E8E100FF661D /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
@@ -920,11 +908,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86145CDA25C5C76D0072A7A6 /* OAuthSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86145CD925C5C76D0072A7A6 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
-			productName = OAuthSwift;
-		};
 		8633548125C1E8E100FF661D /* JGProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8633548025C1E8E100FF661D /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
