@@ -10,7 +10,7 @@ import UIKit
 
 class ImageLoader: ObservableObject {
     var imageCache = ImageCache.getImageCache()
-    @Published var image: UIImage?
+    @Published var image: Data?
 
     init(urlString: String) {
         if loadFromCache(urlString: urlString) {
@@ -20,7 +20,7 @@ class ImageLoader: ObservableObject {
         loadFromURL(urlString: urlString)
     }
 
-    func loadFromCache(urlString: String) -> Bool {
+    private func loadFromCache(urlString: String) -> Bool {
         guard URL(string: urlString) != nil else {
             return false
         }
@@ -33,7 +33,7 @@ class ImageLoader: ObservableObject {
         return true
     }
 
-    func loadFromURL(urlString: String) {
+    private func loadFromURL(urlString: String) {
         guard let url = URL(string: urlString) else { return }
         let task = AF.request(url)
             .validate()
@@ -43,11 +43,8 @@ class ImageLoader: ObservableObject {
                     print(error)
                 case let .success(data):
                     DispatchQueue.main.async {
-                        guard let image = UIImage(data: data) else {
-                            return
-                        }
-                        self.image = image
-                        self.imageCache.set(forKey: urlString, image: image)
+                        self.image = data
+                        self.imageCache.set(forKey: urlString, image: data)
                     }
                 }
             }
@@ -56,14 +53,14 @@ class ImageLoader: ObservableObject {
 }
 
 class ImageCache {
-    var cache = NSCache<NSString, UIImage>()
+    var cache = NSCache<NSString, NSData>()
 
-    func get(forKey: String) -> UIImage? {
-        cache.object(forKey: NSString(string: forKey))
+    func get(forKey: String) -> Data? {
+        cache.object(forKey: NSString(string: forKey)) as Data?
     }
 
-    func set(forKey: String, image: UIImage) {
-        cache.setObject(image, forKey: NSString(string: forKey))
+    func set(forKey: String, image: Data) {
+        cache.setObject(image as NSData, forKey: NSString(string: forKey))
     }
 }
 

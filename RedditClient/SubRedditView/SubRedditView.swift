@@ -9,14 +9,17 @@ import Rswift
 import SwiftUI
 
 struct SubRedditView: View {
-    @ObservedObject var viewModel = SubRedditViewModel()
+    @Environment(\.managedObjectContext) var managedObjectContext
     @State var passedIntro: Bool = true
+
+    @FetchRequest(fetchRequest: YarcProfile.yarcFetchRequest)
+    var yarcProfile: FetchedResults<YarcProfile>
 
     var body: some View {
         ScrollView {
-            if let profile = viewModel.profile.subReddit {
-                ForEach(profile) { subReddit in
-                    ListView(profileSubReddit: subReddit, imageLoader: ImageLoader(urlString: subReddit.iconImg))
+            if !yarcProfile.isEmpty {
+                ForEach(yarcProfile, id: \.title) {
+                    ListView(yarcProfile: $0)
                 }
             } else {
                 VStack {
@@ -40,25 +43,23 @@ struct SubRedditView: View {
                maxHeight: .infinity,
                alignment: .center)
         .background(Color(R.color.mainBackground()!))
-        .onAppear {
-            self.viewModel.refresh()
-        }
         .sheet(isPresented: $passedIntro, content: {
-            IntroView(viewModelSubRedditView: viewModel, passedIntro: self.$passedIntro)
+            IntroView(passedIntro: self.$passedIntro)
+                .environment(\.managedObjectContext, managedObjectContext)
+
         })
     }
 }
 
 private struct ListView: View {
-    var profileSubReddit: ProfileSubReddit
-    var imageLoader: ImageLoader
+    var yarcProfile: YarcProfile
 
     var body: some View {
         ZStack(alignment: .leading) {
             Color(R.color.backgroundColorTwo()!)
             HStack {
                 VStack {
-                    Image(uiImage: imageLoader.image ?? UIImage())
+                    Image(uiImage: UIImage(data: yarcProfile.iconImageData ?? Data()) ?? UIImage())
                         .resizable()
                         .frame(width: 60, height: 60)
                         .background(Color(R.color.backgroundColorOne()!))
@@ -67,16 +68,16 @@ private struct ListView: View {
                 .padding(.bottom, 35)
 
                 VStack(alignment: .leading) {
-                    Text(profileSubReddit.title)
+                    Text(yarcProfile.title ?? "")
                         .font(.headline)
                         .fontWeight(.bold)
                         .padding(.bottom, 5)
 
-                    Text(profileSubReddit.displayNamePrefixed)
+                    Text(yarcProfile.displayNamePrefixed ?? "")
                         .padding(.bottom, 5)
 
                     HStack(alignment: .center) {
-                        Text("\(profileSubReddit.subscribers) \(R.string.localizable.members())")
+                        Text("\(yarcProfile.subscribers) \(R.string.localizable.members())")
                     }
                     .padding(.bottom, 5)
                 }
@@ -96,11 +97,5 @@ private struct ListView: View {
         .frame(maxHeight: 100, alignment: .center)
         .padding([.leading, .trailing, .top], 20)
         .padding(.top, 15)
-    }
-}
-
-private struct ListMainView_Previews: PreviewProvider {
-    static var previews: some View {
-        SubRedditView()
     }
 }

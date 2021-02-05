@@ -6,13 +6,12 @@
 //
 
 import Alamofire
-import Combine
+import CoreData
 import SwiftUI
 
 class IntroViewModel: ObservableObject {
-    private var dataService: DataService?
-    let profileCach = CacheProfile.getProfileCache()
     @Published var subReddit: SubReddits
+    private var dataService: DataService?
 
     init() {
         dataService = DataService()
@@ -30,14 +29,5 @@ class IntroViewModel: ObservableObject {
                 self.subReddit = data
             }
         })
-    }
-
-    func cacheProfile(_ profile: Set<SubReddit>) {
-        var temp = [ProfileSubReddit]()
-        for subReddit in profile {
-            temp.append(ProfileSubReddit.mapSubRedditToProfilSubReddit(subReddit: subReddit))
-        }
-        let profile = Profile(temp)
-        profileCach.set(key: "firstUser", profile: profile)
     }
 }
