@@ -12,6 +12,7 @@ struct MainView: View {
     var body: some View {
         TabView(selection: $selection) {
             SubRedditView()
+                .navigationBarHidden(true)
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                         .font(.system(size: 16, weight: .regular))
@@ -20,6 +21,7 @@ struct MainView: View {
                 .tag(0)
 
             Text("WIP: Profil")
+                .navigationBarHidden(true)
                 .tabItem {
                     Image(systemName: "person.crop.circle.fill")
                         .font(.system(size: 16, weight: .regular))
@@ -28,6 +30,7 @@ struct MainView: View {
                 .tag(1)
 
             Text("WIP: Settings")
+                .navigationBarHidden(true)
                 .tabItem {
                     Image(systemName: "gear")
                         .font(.system(size: 16, weight: .regular))

@@ -16,38 +16,39 @@ struct SubRedditView: View {
     var yarcProfile: FetchedResults<YarcProfile>
 
     var body: some View {
-        ScrollView {
-            if !yarcProfile.isEmpty {
-                ForEach(yarcProfile, id: \.title) {
-                    ListView(yarcProfile: $0)
-                }
-            } else {
-                VStack {
-                    Text("\(R.string.localizable.no_subReddits_chosen())")
-                        .foregroundColor(Color(R.color.textColor()!))
-                        .font(.headline)
-                        .padding(.top, 10)
-                    Spacer(minLength: 30)
-                    Button("\(R.string.localizable.add_subReddits())") {
-                        self.passedIntro.toggle()
+        NavigationView {
+            ScrollView {
+                if !yarcProfile.isEmpty {
+                    ForEach(yarcProfile, id: \.title) {
+                        ListView(yarcProfile: $0)
                     }
-                    .buttonStyle(CustomButton())
-                    Spacer(minLength: 30)
-                    LogoView()
+                } else {
+                    VStack {
+                        Text("\(R.string.localizable.no_subReddits_chosen())")
+                            .foregroundColor(Color(R.color.textColor()!))
+                            .font(.headline)
+                            .padding(.top, 10)
+                        Spacer(minLength: 30)
+                        Button("\(R.string.localizable.add_subReddits())") {
+                            self.passedIntro.toggle()
+                        }
+                        .buttonStyle(CustomButton())
+                        Spacer(minLength: 30)
+                        LogoView()
+                    }
                 }
             }
+            .navigationBarTitle(R.string.localizable.your_subReddits_title(), displayMode: .inline)
+            .navigationBarItems(trailing: Button(action: {
+                self.passedIntro.toggle()
+            }) {
+                    Image(systemName: "plus.circle.fill")
+            })
+            .sheet(isPresented: $passedIntro, content: {
+                IntroView(passedIntro: self.$passedIntro)
+                    .environment(\.managedObjectContext, managedObjectContext)
+            })
         }
-        .frame(minWidth: 0,
-               maxWidth: .infinity,
-               minHeight: 0,
-               maxHeight: .infinity,
-               alignment: .center)
-        .background(Color(R.color.mainBackground()!))
-        .sheet(isPresented: $passedIntro, content: {
-            IntroView(passedIntro: self.$passedIntro)
-                .environment(\.managedObjectContext, managedObjectContext)
-
-        })
     }
 }
 
