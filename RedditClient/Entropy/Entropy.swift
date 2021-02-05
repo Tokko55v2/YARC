@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WebKit
 
 struct Entropy: View {
     @State var moveToListView: Bool = false
