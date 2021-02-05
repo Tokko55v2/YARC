@@ -24,6 +24,10 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
 
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
   - explicit_self
+  - multiple_closures_with_trailing_closure
+  
+disabled_rules: # rule identifiers to exclude from running
+  - multiple_closures_with_trailing_closure
 
 # configurable rules can be customized from this configuration file
 # binary rules can set their severity level

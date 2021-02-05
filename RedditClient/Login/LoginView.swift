@@ -13,41 +13,37 @@ struct LoginView: View {
     @State var hasProfile: Bool = false
 
     var body: some View {
-        BackgroundColor()
-            .overlay(
-                VStack {
-                    Text(R.string.localizable.reddit_header())
-                        .font(.largeTitle)
-                        .foregroundColor(Color.white)
-                        .padding(.top, 40)
+        NavigationView {
+            BackgroundColor()
+                .overlay(
+                    VStack {
+                        Text(R.string.localizable.reddit_header())
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                            .padding(.top, 60)
 
-                    Text(R.string.localizable.reddit_sub_header())
-                        .font(.title)
-                        .foregroundColor(Color.white)
-                        .padding(.bottom, 40)
+                        Text(R.string.localizable.reddit_sub_header())
+                            .font(.title)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 40)
 
-                    Spacer()
+                        Spacer()
 
-                    LogoView()
-                        .shadow(radius: 10)
+                        LogoView()
+                            .shadow(radius: 10)
 
-                    Spacer()
-                    Button(R.string.localizable.no_login_button()) {
-                        self.hasProfile.toggle()
+                        Spacer()
+
+                        NavigationLink(destination: MainView()
+                            .navigationBarHidden(true)) {
+                                Text(R.string.localizable.no_login_button())
+                        }
+                        .buttonStyle(CustomButton())
+                        .padding(.bottom, 60)
                     }
-                    .buttonStyle(CustomButton())
-
-                    Button(R.string.localizable.login_button()) {
-                        LoginViewModel()
-                            .doOauthReddit()
-                    }
-                    .buttonStyle(CustomButton())
-                    .padding(.top, 30)
-                    .padding(.bottom, 60)
-
-                }.padding([.leading, .trailing], 27.5))
-            .navigate(to: MainView(), when: $hasProfile)
-            .edgesIgnoringSafeArea(.all)
+                    .padding([.leading, .trailing], 30))
+                .navigationBarHidden(true)
+        }
     }
 }
 
