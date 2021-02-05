@@ -18,4 +18,8 @@ enum ClientConstants {
     static let MOST_POPULAR_URL = "subreddits/.json"
 
     static let SEARCH_FOR_SUB_REDDIT = "reddits/search.json?q=test"
+
+    static let ENTROPY = "entropy"
+
+    static let PROFILE = "profile"
 }

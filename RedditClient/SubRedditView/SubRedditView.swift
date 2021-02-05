@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SubRedditView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
-    @State var passedIntro: Bool = true
+    @ObservedObject var userSetting = UserDefaultsService()
 
     @FetchRequest(fetchRequest: YarcProfile.yarcFetchRequest)
     var yarcProfile: FetchedResults<YarcProfile>
@@ -30,7 +30,7 @@ struct SubRedditView: View {
                             .padding(.top, 10)
                         Spacer(minLength: 30)
                         Button("\(R.string.localizable.add_subReddits())") {
-                            self.passedIntro.toggle()
+                            self.userSetting.initialProfileStatus.toggle()
                         }
                         .buttonStyle(CustomButton())
                         Spacer(minLength: 30)
@@ -40,12 +40,12 @@ struct SubRedditView: View {
             }
             .navigationBarTitle(R.string.localizable.your_subReddits_title(), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
-                self.passedIntro.toggle()
+                self.userSetting.initialProfileStatus.toggle()
             }) {
                     Image(systemName: "plus.circle.fill")
             })
-            .sheet(isPresented: $passedIntro, content: {
-                IntroView(passedIntro: self.$passedIntro)
+            .sheet(isPresented: $userSetting.initialProfileStatus, content: {
+                IntroView(passedIntro: self.$userSetting.initialProfileStatus)
                     .environment(\.managedObjectContext, managedObjectContext)
             })
         }

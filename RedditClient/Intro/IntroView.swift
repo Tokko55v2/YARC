@@ -11,6 +11,7 @@ struct IntroView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @ObservedObject var viewModel = IntroViewModel()
     @ObservedObject var viewModelCoreData = CoreDataService()
+    @ObservedObject var userSettings = UserDefaultsService()
     @State var selectedSubReddits = Set<SubReddit>()
     @Binding var passedIntro: Bool
 
@@ -30,6 +31,7 @@ struct IntroView: View {
                         }
                     }
                     self.passedIntro = false
+                    self.userSettings.initialProfileStatus.toggle()
                 }
             )
         }

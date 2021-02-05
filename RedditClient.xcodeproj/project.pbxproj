@@ -20,6 +20,7 @@
 		864905A225BB657C00D7CF75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864905A125BB657C00D7CF75 /* Preview Assets.xcassets */; };
 		864905AD25BB657C00D7CF75 /* RedditClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905AC25BB657C00D7CF75 /* RedditClientTests.swift */; };
 		864905B825BB657C00D7CF75 /* RedditClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905B725BB657C00D7CF75 /* RedditClientUITests.swift */; };
+		86849E8725CDEF690039E3B4 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86849E8625CDEF680039E3B4 /* UserDefaultsService.swift */; };
 		8699C3E425CB20C4001F3B98 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8699C3E125CB20C4001F3B98 /* Post.swift */; };
 		8699C3E525CB20C4001F3B98 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8699C3E225CB20C4001F3B98 /* Profile.swift */; };
 		8699C3E625CB20C4001F3B98 /* SubReddits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8699C3E325CB20C4001F3B98 /* SubReddits.swift */; };
@@ -89,6 +90,7 @@
 		864905B325BB657C00D7CF75 /* RedditClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		864905B725BB657C00D7CF75 /* RedditClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditClientUITests.swift; sourceTree = "<group>"; };
 		864905B925BB657C00D7CF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86849E8625CDEF680039E3B4 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		8699C3E125CB20C4001F3B98 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8699C3E225CB20C4001F3B98 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
 		8699C3E325CB20C4001F3B98 /* SubReddits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubReddits.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				8633548625C1EBBE00FF661D /* DataService.swift */,
 				863A878A25C8AC74007D7AA3 /* ImageLoader.swift */,
 				8699C43A25CC8CD0001F3B98 /* CoreDataService.swift */,
+				86849E8625CDEF680039E3B4 /* UserDefaultsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				8699C40E25CC3048001F3B98 /* Yarc.xcdatamodeld in Sources */,
 				86145D3525C5E9310072A7A6 /* ScenceDelegate.swift in Sources */,
 				8699C3E425CB20C4001F3B98 /* Post.swift in Sources */,
+				86849E8725CDEF690039E3B4 /* UserDefaultsService.swift in Sources */,
 				8699C3E625CB20C4001F3B98 /* SubReddits.swift in Sources */,
 				86145D4F25C6AA590072A7A6 /* MainView.swift in Sources */,
 				86E62C0725BCE8FC00884675 /* ErrorHandling.swift in Sources */,
