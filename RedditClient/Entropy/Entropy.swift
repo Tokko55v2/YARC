@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import WebKit
 
-struct LoginView: View {
+struct Entropy: View {
     @State var moveToListView: Bool = false
     @State var hasProfile: Bool = false
 
@@ -61,6 +60,6 @@ private struct BackgroundColor: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        Entropy()
     }
 }

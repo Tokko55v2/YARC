@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86145CDB25C5C76D0072A7A6 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86145CDA25C5C76D0072A7A6 /* OAuthSwift */; };
-		86145CEA25C5CE8D0072A7A6 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145CE925C5CE8D0072A7A6 /* WKWebViewController.swift */; };
 		86145D3125C5E8B90072A7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D3025C5E8B90072A7A6 /* AppDelegate.swift */; };
 		86145D3525C5E9310072A7A6 /* ScenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D3425C5E9310072A7A6 /* ScenceDelegate.swift */; };
-		86145D4125C60D2D0072A7A6 /* WKWebViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D4025C60D2D0072A7A6 /* WKWebViewExtension.swift */; };
-		86145D4525C60DC90072A7A6 /* OAuthWebViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D4425C60DC90072A7A6 /* OAuthWebViewExtension.swift */; };
 		86145D4F25C6AA590072A7A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86145D4E25C6AA590072A7A6 /* MainView.swift */; };
 		862690C725BCAFDA00A720C6 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 862690C625BCAFDA00A720C6 /* localizable.strings */; };
 		8633548225C1E8E100FF661D /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 8633548125C1E8E100FF661D /* JGProgressHUD */; };
@@ -36,8 +32,7 @@
 		86A02E7F25C1536600974E4E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 86A02E7E25C1536600974E4E /* Alamofire */; };
 		86A02E8325C1563500974E4E /* ClientConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A02E8225C1563500974E4E /* ClientConstants.swift */; };
 		86E62C0725BCE8FC00884675 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E62C0625BCE8FC00884675 /* ErrorHandling.swift */; };
-		86E62C0C25BCE91400884675 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E62C0A25BCE91400884675 /* LoginView.swift */; };
-		86E62C0D25BCE91400884675 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E62C0B25BCE91400884675 /* LoginViewModel.swift */; };
+		86E62C0C25BCE91400884675 /* Entropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E62C0A25BCE91400884675 /* Entropy.swift */; };
 		86E62C1825BCE92700884675 /* SubRedditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E62C1425BCE92700884675 /* SubRedditView.swift */; };
 		86E62C7225BD7CA100884675 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E62C7125BD7CA100884675 /* Colors.xcassets */; };
 		86E7B1FA25C6BA2100BA8BB8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7B1F925C6BA2100BA8BB8 /* ColorExtension.swift */; };
@@ -77,11 +72,8 @@
 
 /* Begin PBXFileReference section */
 		103CF56108D186D68701EBB1 /* Pods-RedditClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditClient.debug.xcconfig"; path = "Target Support Files/Pods-RedditClient/Pods-RedditClient.debug.xcconfig"; sourceTree = "<group>"; };
-		86145CE925C5CE8D0072A7A6 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		86145D3025C5E8B90072A7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86145D3425C5E9310072A7A6 /* ScenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenceDelegate.swift; sourceTree = "<group>"; };
-		86145D4025C60D2D0072A7A6 /* WKWebViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewExtension.swift; sourceTree = "<group>"; };
-		86145D4425C60DC90072A7A6 /* OAuthWebViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthWebViewExtension.swift; sourceTree = "<group>"; };
 		86145D4E25C6AA590072A7A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		862690C625BCAFDA00A720C6 /* localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = localizable.strings; sourceTree = "<group>"; };
 		8633548625C1EBBE00FF661D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -108,8 +100,7 @@
 		86A02E6E25C0C58800974E4E /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		86A02E8225C1563500974E4E /* ClientConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConstants.swift; sourceTree = "<group>"; };
 		86E62C0625BCE8FC00884675 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
-		86E62C0A25BCE91400884675 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		86E62C0B25BCE91400884675 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		86E62C0A25BCE91400884675 /* Entropy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entropy.swift; sourceTree = "<group>"; };
 		86E62C1425BCE92700884675 /* SubRedditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubRedditView.swift; sourceTree = "<group>"; };
 		86E62C7125BD7CA100884675 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		86E7B1F925C6BA2100BA8BB8 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -127,7 +118,6 @@
 				8641FC1925C84B2F00AB4194 /* Rswift in Frameworks */,
 				8633548225C1E8E100FF661D /* JGProgressHUD in Frameworks */,
 				86A02E7F25C1536600974E4E /* Alamofire in Frameworks */,
-				86145CDB25C5C76D0072A7A6 /* OAuthSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,14 +145,6 @@
 				BF6576282AC91F0B3A7D0CE9 /* Pods-RedditClient.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		86145CE025C5CAEB0072A7A6 /* OAuth */ = {
-			isa = PBXGroup;
-			children = (
-				86145CE925C5CE8D0072A7A6 /* WKWebViewController.swift */,
-			);
-			path = OAuth;
 			sourceTree = "<group>";
 		};
 		861BCCC725BBAF5E005A88C8 /* Model */ = {
@@ -228,11 +210,10 @@
 				8699C41D25CC6529001F3B98 /* DTOMapper */,
 				8699C3F925CB517D001F3B98 /* SupportView */,
 				86F677DC25C6DA5800A3FB9E /* Intro */,
-				86145CE025C5CAEB0072A7A6 /* OAuth */,
 				8633548525C1EBAA00FF661D /* Service */,
 				86E62C6825BD6FBE00884675 /* Extensions */,
 				862690C625BCAFDA00A720C6 /* localizable.strings */,
-				86A84ACB25BC2870000D1F9C /* Login */,
+				86A84ACB25BC2870000D1F9C /* Entropy */,
 				861BCCC925BBAFE7005A88C8 /* SubRedditView */,
 				861BCCC825BBAF66005A88C8 /* Utils */,
 				861BCCC725BBAF5E005A88C8 /* Model */,
@@ -294,21 +275,18 @@
 			path = DTOMapper;
 			sourceTree = "<group>";
 		};
-		86A84ACB25BC2870000D1F9C /* Login */ = {
+		86A84ACB25BC2870000D1F9C /* Entropy */ = {
 			isa = PBXGroup;
 			children = (
-				86E62C0A25BCE91400884675 /* LoginView.swift */,
-				86E62C0B25BCE91400884675 /* LoginViewModel.swift */,
+				86E62C0A25BCE91400884675 /* Entropy.swift */,
 			);
-			path = Login;
+			path = Entropy;
 			sourceTree = "<group>";
 		};
 		86E62C6825BD6FBE00884675 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				86A02E6E25C0C58800974E4E /* NavigationView.swift */,
-				86145D4025C60D2D0072A7A6 /* WKWebViewExtension.swift */,
-				86145D4425C60DC90072A7A6 /* OAuthWebViewExtension.swift */,
 				86E7B1F925C6BA2100BA8BB8 /* ColorExtension.swift */,
 			);
 			path = Extensions;
@@ -355,7 +333,6 @@
 			packageProductDependencies = (
 				86A02E7E25C1536600974E4E /* Alamofire */,
 				8633548125C1E8E100FF661D /* JGProgressHUD */,
-				86145CDA25C5C76D0072A7A6 /* OAuthSwift */,
 				8641FC1825C84B2F00AB4194 /* Rswift */,
 			);
 			productName = redditClient;
@@ -432,7 +409,6 @@
 			packageReferences = (
 				86A02E7D25C1536600974E4E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8633548025C1E8E100FF661D /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
-				86145CD925C5C76D0072A7A6 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
 				8641FC1725C84B2F00AB4194 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 8649059825BB657900D7CF75 /* Products */;
@@ -565,9 +541,7 @@
 				86145D3525C5E9310072A7A6 /* ScenceDelegate.swift in Sources */,
 				8699C3E425CB20C4001F3B98 /* Post.swift in Sources */,
 				8699C3E625CB20C4001F3B98 /* SubReddits.swift in Sources */,
-				86E62C0D25BCE91400884675 /* LoginViewModel.swift in Sources */,
 				86145D4F25C6AA590072A7A6 /* MainView.swift in Sources */,
-				86145D4125C60D2D0072A7A6 /* WKWebViewExtension.swift in Sources */,
 				86E62C0725BCE8FC00884675 /* ErrorHandling.swift in Sources */,
 				86F677E425C6DA7E00A3FB9E /* IntroView.swift in Sources */,
 				863A878725C863AF007D7AA3 /* R.generated.swift in Sources */,
@@ -581,10 +555,8 @@
 				863A878B25C8AC74007D7AA3 /* ImageLoader.swift in Sources */,
 				86A02E6F25C0C58800974E4E /* NavigationView.swift in Sources */,
 				8699C3FB25CB518C001F3B98 /* LogoView.swift in Sources */,
-				86E62C0C25BCE91400884675 /* LoginView.swift in Sources */,
-				86145D4525C60DC90072A7A6 /* OAuthWebViewExtension.swift in Sources */,
+				86E62C0C25BCE91400884675 /* Entropy.swift in Sources */,
 				8699C3FF25CB5198001F3B98 /* CustomButtonView.swift in Sources */,
-				86145CEA25C5CE8D0072A7A6 /* WKWebViewController.swift in Sources */,
 				86E7B1FA25C6BA2100BA8BB8 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,14 +881,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		86145CD925C5C76D0072A7A6 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.2;
-			};
-		};
 		8633548025C1E8E100FF661D /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
@@ -944,11 +908,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86145CDA25C5C76D0072A7A6 /* OAuthSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86145CD925C5C76D0072A7A6 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
-			productName = OAuthSwift;
-		};
 		8633548125C1E8E100FF661D /* JGProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8633548025C1E8E100FF661D /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
