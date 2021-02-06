@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Entropy: View {
     @State var moveToListView: Bool = false
-    @State var hasProfile: Bool = false
+    @State var hasEntropy: Bool = false
+    @ObservedObject var userSettings = UserDefaultsService()
 
     var body: some View {
         NavigationView {
@@ -33,12 +34,17 @@ struct Entropy: View {
 
                         Spacer()
 
-                        NavigationLink(destination: MainView()
-                            .navigationBarHidden(true)) {
+                        Button(action: {
+                            self.hasEntropy.toggle()
+                            self.userSettings.entropy.toggle()
+                        }) {
                                 Text(R.string.localizable.no_login_button())
                         }
                         .buttonStyle(CustomButton())
                         .padding(.bottom, 60)
+
+                        NavigationLink("", destination: MainView()
+                            .navigationBarHidden(true), isActive: self.$hasEntropy)
                     }
                     .padding([.leading, .trailing], 30))
                 .navigationBarHidden(true)
