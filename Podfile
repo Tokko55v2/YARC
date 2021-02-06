@@ -1,5 +1,5 @@
 platform :ios, '13.0'
 
-target 'RedditClient' do
+target 'YARC' do
   pod 'SwiftLint'
 end
