@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>redditClient</string>
+				<string>YARC</string>
 			</array>
 		</dict>
 	</array>
