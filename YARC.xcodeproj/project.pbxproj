@@ -149,6 +149,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		860BA41B25D2F2BB00E2DE47 /* SubRedditView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubRedditView;
+			sourceTree = "<group>";
+		};
 		861BCCC725BBAF5E005A88C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,12 +173,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		861BCCC925BBAFE7005A88C8 /* SubRedditView */ = {
+		861BCCC925BBAFE7005A88C8 /* SubRedditList */ = {
 			isa = PBXGroup;
 			children = (
 				86E62C1425BCE92700884675 /* SubRedditView.swift */,
 			);
-			path = SubRedditView;
+			path = SubRedditList;
 			sourceTree = "<group>";
 		};
 		8633548525C1EBAA00FF661D /* Service */ = {
@@ -216,14 +223,15 @@
 				86F677DC25C6DA5800A3FB9E /* Intro */,
 				8633548525C1EBAA00FF661D /* Service */,
 				86E62C6825BD6FBE00884675 /* Extensions */,
-				862690C625BCAFDA00A720C6 /* localizable.strings */,
 				86A84ACB25BC2870000D1F9C /* Entropy */,
-				861BCCC925BBAFE7005A88C8 /* SubRedditView */,
+				860BA41B25D2F2BB00E2DE47 /* SubRedditView */,
+				861BCCC925BBAFE7005A88C8 /* SubRedditList */,
 				861BCCC825BBAF66005A88C8 /* Utils */,
 				861BCCC725BBAF5E005A88C8 /* Model */,
 				8649059E25BB657C00D7CF75 /* Assets.xcassets */,
 				864905A325BB657C00D7CF75 /* Info.plist */,
 				86E62C7125BD7CA100884675 /* Colors.xcassets */,
+				862690C625BCAFDA00A720C6 /* localizable.strings */,
 				863A878625C863AF007D7AA3 /* R.generated.swift */,
 				86145D3025C5E8B90072A7A6 /* AppDelegate.swift */,
 				86145D3425C5E9310072A7A6 /* ScenceDelegate.swift */,
