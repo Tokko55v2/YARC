@@ -31,7 +31,12 @@ class CoreDataService: ObservableObject {
         saveContext(moc)
     }
 
-    private func saveContext(_ moc: NSManagedObjectContext) {
+    func deleteSubReddit(_ yarcSubReddit: YarcProfile, moc: NSManagedObjectContext) {
+        moc.delete(yarcSubReddit)
+        saveContext(moc)
+    }
+
+    func saveContext(_ moc: NSManagedObjectContext) {
         do {
             try moc.save()
         } catch {
