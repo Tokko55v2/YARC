@@ -13,6 +13,7 @@ extension Profile {
     }
 }
 
+// swiftlint:disable operator_whitespace
 extension Profile: Hashable {
     static func ==(lhs: Profile, rhs: Profile) -> Bool {
         lhs.id == rhs.id
