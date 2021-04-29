@@ -4,7 +4,6 @@
         <attribute name="bannerBackgroundColor" optional="YES" attributeType="String"/>
         <attribute name="displayName" optional="YES" attributeType="String"/>
         <attribute name="displayNamePrefixed" optional="YES" attributeType="String"/>
-        <attribute name="iconImageData" optional="YES" attributeType="Binary"/>
         <attribute name="iconImg" optional="YES" attributeType="String"/>
         <attribute name="over18" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="primaryColor" optional="YES" attributeType="String"/>
@@ -15,6 +14,6 @@
         <attribute name="url" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="YarcProfile" positionX="-90.867919921875" positionY="340.3363342285156" width="128" height="223"/>
+        <element name="YarcProfile" positionX="-90.867919921875" positionY="340.3363342285156" width="128" height="194"/>
     </elements>
 </model>

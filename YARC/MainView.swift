@@ -9,9 +9,14 @@ import SwiftUI
 
 struct MainView: View {
     @State private var selection = 0
+    @State var showSubRedditView: Bool = false
+
     var body: some View {
         TabView(selection: $selection) {
-            SubRedditView()
+            MainRedditListView(viewModel: MainRedditListViewModel())
+                .sheet(isPresented: $showSubRedditView, content: {
+                    RedditsView(viewModel: RedditsViewModel())
+                })
                 .navigationBarHidden(true)
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
@@ -21,7 +26,6 @@ struct MainView: View {
                 .tag(0)
 
             Text("WIP: Profil")
-                .navigationBarHidden(true)
                 .tabItem {
                     Image(systemName: "person.crop.circle.fill")
                         .font(.system(size: 16, weight: .regular))
@@ -30,7 +34,6 @@ struct MainView: View {
                 .tag(1)
 
             Text("WIP: Settings")
-                .navigationBarHidden(true)
                 .tabItem {
                     Image(systemName: "gear")
                         .font(.system(size: 16, weight: .regular))
@@ -44,6 +47,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(showSubRedditView: false)
     }
 }

@@ -17,6 +17,8 @@
 "add_subReddits" = "Add SubReddits";
 "members" = "members";
 "subscribers_title" = "subscribers";
-"your_subReddits_title" = "Your SubReddits";
+"mainReddit_list_title" = "Your SubReddits";
 "delete_button_message_subReddit" = "Do you really want to delete your Subreddit?";
 "delete_button_test" = "Delete";
+"common_cancle" = "Cancle";
+"isLoading_phrase" = "is loading...";

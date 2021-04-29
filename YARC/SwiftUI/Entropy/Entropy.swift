@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct Entropy: View {
-    @State var moveToListView: Bool = false
     @State var hasEntropy: Bool = false
-    @ObservedObject var userSettings = UserDefaultsService()
-
     var body: some View {
         NavigationView {
             BackgroundColor()
@@ -36,17 +33,16 @@ struct Entropy: View {
 
                         Button(action: {
                             self.hasEntropy.toggle()
-                            self.userSettings.entropy.toggle()
-                        }) {
-                                Text(R.string.localizable.no_login_button())
-                        }
-                        .buttonStyle(CustomButton())
-                        .padding(.bottom, 60)
+                        }, label: {
+                            Text(R.string.localizable.no_login_button())
+                        })
+                            .buttonStyle(CustomButton())
+                            .padding(.bottom, 60)
 
-                        NavigationLink("", destination: MainView()
-                            .navigationBarHidden(true), isActive: self.$hasEntropy)
+                        NavigationLink("", destination: MainView(showSubRedditView: true), isActive: $hasEntropy)
                     }
-                    .padding([.leading, .trailing], 30))
+                    .padding([.leading, .trailing], 30)
+                )
                 .navigationBarHidden(true)
         }
     }
@@ -64,8 +60,8 @@ private struct BackgroundColor: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        Entropy()
-    }
-}
+// struct LoginView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Entropy()
+//    }
+// }

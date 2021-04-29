@@ -10,44 +10,36 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
+    lazy var coreDataStack = CoreDataStack()
+    var hasEntropy = EntropyStatus()
 
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Yarc")
-
-        container.loadPersistentStores { _, error in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-        return container
-    }()
-
-    func saveContext() {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
-    }
+    var viewController: UIViewController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
+        // initialize SDK
+        YARCSDK.initShared()
+
+        if hasEntropy.getEntropyState() {
+            viewController = UIHostingController(rootView: MainView()
+                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext))
+        } else {
+            viewController = UIHostingController(rootView: Entropy()
+                .onAppear {
+                    self.hasEntropy.setEntropyState()
+                }
+                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext))
+        }
+
         // Create the SwiftUI view that provides the window contents.
-        // let contentView = ContentView()
-        let context = persistentContainer.viewContext
-        let contentView = ContentView().environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = viewController
             self.window = window
             window.makeKeyAndVisible()
         }
@@ -76,9 +68,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        saveContext()
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+
+        do {
+            try coreDataStack.persistentContainer.viewContext.save()
+        } catch {
+            print("Error saving managed object context: \(error)")
+        }
     }
 }

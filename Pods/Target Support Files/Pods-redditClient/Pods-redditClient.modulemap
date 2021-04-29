@@ -1,6 +1,0 @@
-module Pods_RedditClient {
-  umbrella header "Pods-RedditClient-umbrella.h"
-
-  export *
-  module * { export * }
-}

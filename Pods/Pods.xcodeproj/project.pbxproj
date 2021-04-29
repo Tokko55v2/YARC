@@ -19,11 +19,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		57AF840F78E4BBBB1422B64075BE04C1 /* Pods-RedditClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E23665014CFAA99F2AB3336BBBCC9796 /* Pods-RedditClient-dummy.m */; };
+		7ADA8F8BFC19A3318FE2DE463CE0BD36 /* Pods-YARC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9A173D6F80E66196071046F624CED /* Pods-YARC-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C97584D471D8E17314C99A0E32661DB9 /* PBXContainerItemProxy */ = {
+		B85E9C0CEF68AA9B93C2ABD7FD974743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -33,19 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E660E5207BE49135152BC9326200795 /* Pods-RedditClient-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditClient-acknowledgements.plist"; sourceTree = "<group>"; };
-		14143A76420AA387D517C0B739AF3D6A /* Pods-RedditClient-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditClient-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39958B52310A969B0FE409A7542E8B19 /* Pods-YARC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YARC-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		7ABA14E5807E2AE1A94ABED827136BFA /* libPods-RedditClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RedditClient.a"; path = "libPods-RedditClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4337A5D22AE64FDD05888E8C37D1F4A9 /* Pods-YARC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YARC-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BE10ACBE9E756BDBB0FBDC7C054A91E /* libPods-YARC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YARC.a"; path = "libPods-YARC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		858C7D3671A03479D64F7C615B0DF934 /* Pods-RedditClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditClient.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CC439CBDB18FCA3CD35D5014AD04F389 /* Pods-RedditClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditClient.debug.xcconfig"; sourceTree = "<group>"; };
-		E23665014CFAA99F2AB3336BBBCC9796 /* Pods-RedditClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditClient-dummy.m"; sourceTree = "<group>"; };
+		9DC59CE31845827D759B7B6EC218DDF0 /* Pods-YARC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YARC.release.xcconfig"; sourceTree = "<group>"; };
+		EC8372867CACA6EABEE9722C59354130 /* Pods-YARC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YARC.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F9A173D6F80E66196071046F624CED /* Pods-YARC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YARC-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5EC02BD2BFF804CB5B0022581ABC4B34 /* Frameworks */ = {
+		8BA41B017ABF8C385BF591DB4EFA691A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43F235110FD11D80060A28F0AC1A1695 /* Pods-YARC */ = {
+			isa = PBXGroup;
+			children = (
+				39958B52310A969B0FE409A7542E8B19 /* Pods-YARC-acknowledgements.markdown */,
+				4337A5D22AE64FDD05888E8C37D1F4A9 /* Pods-YARC-acknowledgements.plist */,
+				F7F9A173D6F80E66196071046F624CED /* Pods-YARC-dummy.m */,
+				EC8372867CACA6EABEE9722C59354130 /* Pods-YARC.debug.xcconfig */,
+				9DC59CE31845827D759B7B6EC218DDF0 /* Pods-YARC.release.xcconfig */,
+			);
+			name = "Pods-YARC";
+			path = "Target Support Files/Pods-YARC";
+			sourceTree = "<group>";
+		};
 		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +78,6 @@
 			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
-		856DD5DD5FE0D57F5B42222F72712D69 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9674B88ECCA17D1FD26F4665F5226099 /* Pods-RedditClient */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,17 +86,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9674B88ECCA17D1FD26F4665F5226099 /* Pods-RedditClient */ = {
+		CC42F0CF8DB49900FF387029F97CFE8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14143A76420AA387D517C0B739AF3D6A /* Pods-RedditClient-acknowledgements.markdown */,
-				0E660E5207BE49135152BC9326200795 /* Pods-RedditClient-acknowledgements.plist */,
-				E23665014CFAA99F2AB3336BBBCC9796 /* Pods-RedditClient-dummy.m */,
-				CC439CBDB18FCA3CD35D5014AD04F389 /* Pods-RedditClient.debug.xcconfig */,
-				858C7D3671A03479D64F7C615B0DF934 /* Pods-RedditClient.release.xcconfig */,
+				5BE10ACBE9E756BDBB0FBDC7C054A91E /* libPods-YARC.a */,
 			);
-			name = "Pods-RedditClient";
-			path = "Target Support Files/Pods-RedditClient";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -100,8 +100,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				965877409E01FB3D85D85E90E6B30185 /* Pods */,
-				DC2039908790CE08F639475891186EA2 /* Products */,
-				856DD5DD5FE0D57F5B42222F72712D69 /* Targets Support Files */,
+				CC42F0CF8DB49900FF387029F97CFE8A /* Products */,
+				F85FEB3636A5EDC6B0EFF88B3732E9C6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,18 +121,18 @@
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		DC2039908790CE08F639475891186EA2 /* Products */ = {
+		F85FEB3636A5EDC6B0EFF88B3732E9C6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7ABA14E5807E2AE1A94ABED827136BFA /* libPods-RedditClient.a */,
+				43F235110FD11D80060A28F0AC1A1695 /* Pods-YARC */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2B3066BEC2DB6DD1ED5783A5795CA45E /* Headers */ = {
+		3B4508D86E071354BC2C806302AA5CB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,22 +142,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D7EC05F3012B09F2FA6E911151E17FFA /* Pods-RedditClient */ = {
+		18F68EB522856E91042A23EA03488274 /* Pods-YARC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5CBE89370383E778B5A4A1CC5F4CE1 /* Build configuration list for PBXNativeTarget "Pods-RedditClient" */;
+			buildConfigurationList = 2400EFE443C23869F47747F6BBEB1AE8 /* Build configuration list for PBXNativeTarget "Pods-YARC" */;
 			buildPhases = (
-				2B3066BEC2DB6DD1ED5783A5795CA45E /* Headers */,
-				50AEDC411B29BA81919E1FC112BEE756 /* Sources */,
-				5EC02BD2BFF804CB5B0022581ABC4B34 /* Frameworks */,
+				3B4508D86E071354BC2C806302AA5CB4 /* Headers */,
+				375C2BD1FD77CA0C68BDF7AFD705779B /* Sources */,
+				8BA41B017ABF8C385BF591DB4EFA691A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				535768191CAAF8F4306C36AA71A23466 /* PBXTargetDependency */,
+				30027947C8427956F7CE708080542D1C /* PBXTargetDependency */,
 			);
-			name = "Pods-RedditClient";
-			productName = "Pods-RedditClient";
-			productReference = 7ABA14E5807E2AE1A94ABED827136BFA /* libPods-RedditClient.a */;
+			name = "Pods-YARC";
+			productName = "Pods-YARC";
+			productReference = 5BE10ACBE9E756BDBB0FBDC7C054A91E /* libPods-YARC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -178,33 +178,33 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DC2039908790CE08F639475891186EA2 /* Products */;
+			productRefGroup = CC42F0CF8DB49900FF387029F97CFE8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7EC05F3012B09F2FA6E911151E17FFA /* Pods-RedditClient */,
+				18F68EB522856E91042A23EA03488274 /* Pods-YARC */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		50AEDC411B29BA81919E1FC112BEE756 /* Sources */ = {
+		375C2BD1FD77CA0C68BDF7AFD705779B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF840F78E4BBBB1422B64075BE04C1 /* Pods-RedditClient-dummy.m in Sources */,
+				7ADA8F8BFC19A3318FE2DE463CE0BD36 /* Pods-YARC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		535768191CAAF8F4306C36AA71A23466 /* PBXTargetDependency */ = {
+		30027947C8427956F7CE708080542D1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = C97584D471D8E17314C99A0E32661DB9 /* PBXContainerItemProxy */;
+			targetProxy = B85E9C0CEF68AA9B93C2ABD7FD974743 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -274,28 +274,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		93C92FD3D47866568AFED1EFD21D38D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 858C7D3671A03479D64F7C615B0DF934 /* Pods-RedditClient.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -376,9 +354,47 @@
 			};
 			name = Release;
 		};
-		E7AFBB88DBE99361E020C52F46A68417 /* Debug */ = {
+		DA7CF74C55D57D53B107C151B92BC654 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC439CBDB18FCA3CD35D5014AD04F389 /* Pods-RedditClient.debug.xcconfig */;
+			baseConfigurationReference = 9DC59CE31845827D759B7B6EC218DDF0 /* Pods-YARC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED71B2F3A47400E8341AD987166188F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8372867CACA6EABEE9722C59354130 /* Pods-YARC.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -397,39 +413,23 @@
 			};
 			name = Debug;
 		};
-		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2400EFE443C23869F47747F6BBEB1AE8 /* Build configuration list for PBXNativeTarget "Pods-YARC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED71B2F3A47400E8341AD987166188F8 /* Debug */,
+				DA7CF74C55D57D53B107C151B92BC654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C5CBE89370383E778B5A4A1CC5F4CE1 /* Build configuration list for PBXNativeTarget "Pods-RedditClient" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7AFBB88DBE99361E020C52F46A68417 /* Debug */,
-				93C92FD3D47866568AFED1EFD21D38D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
