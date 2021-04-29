@@ -1,14 +1,14 @@
 //
-//  redditClientTests.swift
-//  redditClientTests
+//  YARCTests.swift
+//  YARCTests
 //
 //  Created by Michael Kroneder on 22/01/2021.
 //
 
-@testable import RedditClient
+@testable import YARC
 import XCTest
 
-class RedditClientTests: XCTestCase {
+class YARCTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

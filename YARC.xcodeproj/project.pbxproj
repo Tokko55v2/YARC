@@ -22,8 +22,8 @@
 		863A878725C863AF007D7AA3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A878625C863AF007D7AA3 /* R.generated.swift */; };
 		8641FC1925C84B2F00AB4194 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 8641FC1825C84B2F00AB4194 /* Rswift */; };
 		8649059F25BB657C00D7CF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8649059E25BB657C00D7CF75 /* Assets.xcassets */; };
-		864905AD25BB657C00D7CF75 /* RedditClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905AC25BB657C00D7CF75 /* RedditClientTests.swift */; };
-		864905B825BB657C00D7CF75 /* RedditClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905B725BB657C00D7CF75 /* RedditClientUITests.swift */; };
+		864905AD25BB657C00D7CF75 /* YARCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905AC25BB657C00D7CF75 /* YARCTests.swift */; };
+		864905B825BB657C00D7CF75 /* YARCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864905B725BB657C00D7CF75 /* YARCUITests.swift */; };
 		867F6D0E2627778100381087 /* YarcSDKInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F6D0D2627778100381087 /* YarcSDKInitializer.swift */; };
 		867F6D14262777AC00381087 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F6D13262777AC00381087 /* Repository.swift */; };
 		867F6D1B262782B200381087 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F6D1A262782B200381087 /* Profile.swift */; };
@@ -32,6 +32,8 @@
 		8699C3FF25CB5198001F3B98 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8699C3FE25CB5198001F3B98 /* CustomButtonView.swift */; };
 		8699C40E25CC3048001F3B98 /* Yarc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8699C40C25CC3048001F3B98 /* Yarc.xcdatamodeld */; };
 		86A02E6F25C0C58800974E4E /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A02E6E25C0C58800974E4E /* UINavigationController+Extension.swift */; };
+		86AB472D263B50FD00CFD0AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 864905AE25BB657C00D7CF75 /* Info.plist */; };
+		86AB472E263B510900CFD0AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 864905B925BB657C00D7CF75 /* Info.plist */; };
 		86AC9C172635FC1A00429780 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC9C162635FC1A00429780 /* LoadingView.swift */; };
 		86AE7AD9262A208700B3D335 /* MainRedditListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AE7AD8262A208700B3D335 /* MainRedditListViewModel.swift */; };
 		86B3B64225CF4523005BD2A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B3B64125CF4523005BD2A8 /* Preview Assets.xcassets */; };
@@ -97,10 +99,10 @@
 		8649059E25BB657C00D7CF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864905A325BB657C00D7CF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		864905A825BB657C00D7CF75 /* YARCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YARCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		864905AC25BB657C00D7CF75 /* RedditClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditClientTests.swift; sourceTree = "<group>"; };
+		864905AC25BB657C00D7CF75 /* YARCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YARCTests.swift; sourceTree = "<group>"; };
 		864905AE25BB657C00D7CF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		864905B325BB657C00D7CF75 /* YARCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YARCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		864905B725BB657C00D7CF75 /* RedditClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditClientUITests.swift; sourceTree = "<group>"; };
+		864905B725BB657C00D7CF75 /* YARCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YARCUITests.swift; sourceTree = "<group>"; };
 		864905B925BB657C00D7CF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867F6D0D2627778100381087 /* YarcSDKInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarcSDKInitializer.swift; sourceTree = "<group>"; };
 		867F6D13262777AC00381087 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -241,7 +243,7 @@
 		864905AB25BB657C00D7CF75 /* YARCTests */ = {
 			isa = PBXGroup;
 			children = (
-				864905AC25BB657C00D7CF75 /* RedditClientTests.swift */,
+				864905AC25BB657C00D7CF75 /* YARCTests.swift */,
 				864905AE25BB657C00D7CF75 /* Info.plist */,
 			);
 			path = YARCTests;
@@ -250,7 +252,7 @@
 		864905B625BB657C00D7CF75 /* YARCUITests */ = {
 			isa = PBXGroup;
 			children = (
-				864905B725BB657C00D7CF75 /* RedditClientUITests.swift */,
+				864905B725BB657C00D7CF75 /* YARCUITests.swift */,
 				864905B925BB657C00D7CF75 /* Info.plist */,
 			);
 			path = YARCUITests;
@@ -504,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AB472D263B50FD00CFD0AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AB472E263B510900CFD0AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864905AD25BB657C00D7CF75 /* RedditClientTests.swift in Sources */,
+				864905AD25BB657C00D7CF75 /* YARCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,7 +651,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864905B825BB657C00D7CF75 /* RedditClientUITests.swift in Sources */,
+				864905B825BB657C00D7CF75 /* YARCUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,19 +836,20 @@
 		};
 		864905C025BB657C00D7CF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC94F1C28D0E1B0CE33ECC7E /* Pods-YARC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VA49U6XNKH;
-				INFOPLIST_FILE = redditClientTests/Info.plist;
+				INFOPLIST_FILE = YARCTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.redditClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.YARCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -859,14 +864,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VA49U6XNKH;
-				INFOPLIST_FILE = redditClientTests/Info.plist;
+				INFOPLIST_FILE = YARCTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.redditClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.YARCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -876,21 +881,22 @@
 		};
 		864905C325BB657C00D7CF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC94F1C28D0E1B0CE33ECC7E /* Pods-YARC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VA49U6XNKH;
-				INFOPLIST_FILE = redditClientUITests/Info.plist;
+				INFOPLIST_FILE = YARCUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.redditClientUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.YARCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = redditClient;
+				TEST_TARGET_NAME = YARC;
 			};
 			name = Debug;
 		};
@@ -900,17 +906,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VA49U6XNKH;
-				INFOPLIST_FILE = redditClientUITests/Info.plist;
+				INFOPLIST_FILE = YARCUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.redditClientUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.YARCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = redditClient;
+				TEST_TARGET_NAME = YARC;
 			};
 			name = Release;
 		};
