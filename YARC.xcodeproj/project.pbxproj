@@ -836,7 +836,6 @@
 		};
 		864905C025BB657C00D7CF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC94F1C28D0E1B0CE33ECC7E /* Pods-YARC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -881,7 +880,6 @@
 		};
 		864905C325BB657C00D7CF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC94F1C28D0E1B0CE33ECC7E /* Pods-YARC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
