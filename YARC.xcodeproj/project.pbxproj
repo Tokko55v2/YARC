@@ -458,11 +458,9 @@
 					};
 					864905A725BB657C00D7CF75 = {
 						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 8649059625BB657800D7CF75;
 					};
 					864905B225BB657C00D7CF75 = {
 						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 8649059625BB657800D7CF75;
 					};
 				};
 			};
@@ -838,7 +836,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VA49U6XNKH;
 				INFOPLIST_FILE = YARCTests/Info.plist;
@@ -852,7 +849,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YARC.app/YARC";
 			};
 			name = Debug;
 		};
@@ -860,7 +856,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VA49U6XNKH;
 				INFOPLIST_FILE = YARCTests/Info.plist;
@@ -874,7 +869,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YARC.app/YARC";
 			};
 			name = Release;
 		};
@@ -892,9 +886,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.YARCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YARC;
 			};
 			name = Debug;
 		};
@@ -912,9 +906,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mkroneder.YARCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YARC;
 			};
 			name = Release;
 		};
