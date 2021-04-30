@@ -22,4 +22,6 @@ enum ClientConstants {
     static let ENTROPY = "entropy"
 
     static let PROFILE = "profile"
+
+    static let JSON = "/.json"
 }
