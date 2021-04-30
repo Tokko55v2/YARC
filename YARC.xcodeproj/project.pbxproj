@@ -789,7 +789,7 @@
 		};
 		864905BD25BB657C00D7CF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 103CF56108D186D68701EBB1 /* Pods-RedditClient.debug.xcconfig */;
+			baseConfigurationReference = B608D5FEE8A4E1540229C683 /* Pods-YARC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -813,7 +813,7 @@
 		};
 		864905BE25BB657C00D7CF75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 103CF56108D186D68701EBB1 /* Pods-RedditClient.debug.xcconfig */;
+			baseConfigurationReference = DC94F1C28D0E1B0CE33ECC7E /* Pods-YARC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
