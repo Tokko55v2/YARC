@@ -12,15 +12,9 @@
 #   - vertical_whitespace
 
 included: # paths to include during linting. `--path` is ignored if present.
-  - YARC
-  - YARCTests
-  - YARCUITests
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
-  - Pods
-  - fastlane/
-  - R.generated.swift
-  - BuildTools/
+  - YARC/R.generated.swift
 
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
   - explicit_self
