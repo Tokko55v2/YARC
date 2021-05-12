@@ -11,16 +11,13 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Update Fastlane
-        runs: bundle update fastlane
+        run: bundle update fastlane
       
       - name: Install dependencies
         run: bundle install
 
       - name: Run linter
         run: bundle exec fastlane swiftLintLane
-
-      - name: Build
-        run: bundle exec fastlane buildLane
         
   update-readme:
     name: Update Readme with Metrics
