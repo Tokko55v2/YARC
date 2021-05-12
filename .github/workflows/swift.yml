@@ -9,7 +9,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-
+      
+      - name: Update Fastlane
+        runs: bundle update fastlane
+      
       - name: Install dependencies
         run: bundle install
 
