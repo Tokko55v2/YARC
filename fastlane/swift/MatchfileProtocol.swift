@@ -1,7 +1,7 @@
 // MatchfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol MatchfileProtocol: AnyObject {
+public protocol MatchfileProtocol: class {
     /// Define the profile type, can be appstore, adhoc, development, enterprise, developer_id, mac_installer_distribution
     var type: String { get }
 
@@ -135,51 +135,51 @@ public protocol MatchfileProtocol: AnyObject {
     var verbose: Bool { get }
 }
 
-extension MatchfileProtocol {
-    public var type: String { "development" }
-    public var additionalCertTypes: [String]? { nil }
-    public var readonly: Bool { false }
-    public var generateAppleCerts: Bool { true }
-    public var skipProvisioningProfiles: Bool { false }
-    public var appIdentifier: [String] { [] }
-    public var apiKeyPath: String? { nil }
-    public var apiKey: [String: Any]? { nil }
-    public var username: String? { nil }
-    public var teamId: String? { nil }
-    public var teamName: String? { nil }
-    public var storageMode: String { "git" }
-    public var gitUrl: String { "" }
-    public var gitBranch: String { "master" }
-    public var gitFullName: String? { nil }
-    public var gitUserEmail: String? { nil }
-    public var shallowClone: Bool { false }
-    public var cloneBranchDirectly: Bool { false }
-    public var gitBasicAuthorization: String? { nil }
-    public var gitBearerAuthorization: String? { nil }
-    public var gitPrivateKey: String? { nil }
-    public var googleCloudBucketName: String? { nil }
-    public var googleCloudKeysFile: String? { nil }
-    public var googleCloudProjectId: String? { nil }
-    public var s3Region: String? { nil }
-    public var s3AccessKey: String? { nil }
-    public var s3SecretAccessKey: String? { nil }
-    public var s3Bucket: String? { nil }
-    public var s3ObjectPrefix: String? { nil }
-    public var keychainName: String { "login.keychain" }
-    public var keychainPassword: String? { nil }
-    public var force: Bool { false }
-    public var forceForNewDevices: Bool { false }
-    public var skipConfirmation: Bool { false }
-    public var skipDocs: Bool { false }
-    public var platform: String { "ios" }
-    public var deriveCatalystAppIdentifier: Bool { false }
-    public var templateName: String? { nil }
-    public var profileName: String? { nil }
-    public var failOnNameTaken: Bool { false }
-    public var skipCertificateMatching: Bool { false }
-    public var outputPath: String? { nil }
-    public var skipSetPartitionList: Bool { false }
-    public var verbose: Bool { false }
+public extension MatchfileProtocol {
+    var type: String { return "development" }
+    var additionalCertTypes: [String]? { return nil }
+    var readonly: Bool { return false }
+    var generateAppleCerts: Bool { return true }
+    var skipProvisioningProfiles: Bool { return false }
+    var appIdentifier: [String] { return [] }
+    var apiKeyPath: String? { return nil }
+    var apiKey: [String: Any]? { return nil }
+    var username: String? { return nil }
+    var teamId: String? { return nil }
+    var teamName: String? { return nil }
+    var storageMode: String { return "git" }
+    var gitUrl: String { return "" }
+    var gitBranch: String { return "master" }
+    var gitFullName: String? { return nil }
+    var gitUserEmail: String? { return nil }
+    var shallowClone: Bool { return false }
+    var cloneBranchDirectly: Bool { return false }
+    var gitBasicAuthorization: String? { return nil }
+    var gitBearerAuthorization: String? { return nil }
+    var gitPrivateKey: String? { return nil }
+    var googleCloudBucketName: String? { return nil }
+    var googleCloudKeysFile: String? { return nil }
+    var googleCloudProjectId: String? { return nil }
+    var s3Region: String? { return nil }
+    var s3AccessKey: String? { return nil }
+    var s3SecretAccessKey: String? { return nil }
+    var s3Bucket: String? { return nil }
+    var s3ObjectPrefix: String? { return nil }
+    var keychainName: String { return "login.keychain" }
+    var keychainPassword: String? { return nil }
+    var force: Bool { return false }
+    var forceForNewDevices: Bool { return false }
+    var skipConfirmation: Bool { return false }
+    var skipDocs: Bool { return false }
+    var platform: String { return "ios" }
+    var deriveCatalystAppIdentifier: Bool { return false }
+    var templateName: String? { return nil }
+    var profileName: String? { return nil }
+    var failOnNameTaken: Bool { return false }
+    var skipCertificateMatching: Bool { return false }
+    var outputPath: String? { return nil }
+    var skipSetPartitionList: Bool { return false }
+    var verbose: Bool { return false }
 }
 
 // Please don't remove the lines below

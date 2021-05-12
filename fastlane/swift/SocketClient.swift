@@ -29,7 +29,7 @@ class SocketClient: NSObject {
     }
 
     static let connectTimeoutSeconds = 2
-    static let defaultCommandTimeoutSeconds = 10_800 // 3 hours
+    static let defaultCommandTimeoutSeconds = 10800 // 3 hours
     static let doneToken = "done" // TODO: remove these
     static let cancelToken = "cancelFastlaneRun"
 
@@ -47,7 +47,7 @@ class SocketClient: NSObject {
     private let host: String
     private let port: UInt32
 
-    let maxReadLength = 65_536 // max for ipc on 10.12 is kern.ipc.maxsockbuf: 8388608 ($sysctl kern.ipc.maxsockbuf)
+    let maxReadLength = 65536 // max for ipc on 10.12 is kern.ipc.maxsockbuf: 8388608 ($sysctl kern.ipc.maxsockbuf)
 
     private(set) weak var socketDelegate: SocketClientDelegateProtocol?
 

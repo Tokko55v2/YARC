@@ -12,7 +12,7 @@ class Fastfile: LaneFile {
     // add actions here: https://docs.fastlane.tools/actions
     func swiftLintLane() {
         desc("Run SwiftLint")
-        swiftlint(configFile: ".swiftlint.yml",
+        swiftlint(configFile: "app/.swiftlint.yml",
                   strict: true,
                   ignoreExitStatus: false,
                   raiseIfSwiftlintError: true,
