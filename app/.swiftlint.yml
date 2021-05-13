@@ -15,7 +15,7 @@ included: # paths to include during linting. `--path` is ignored if present.
   - YARC
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
-  - fastlane/
+  - fastlane
   - YARC/R.generated.swift
 
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
