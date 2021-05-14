@@ -10,10 +10,10 @@ import Foundation
 
 class Fastfile: LaneFile {
     // add actions here: https://docs.fastlane.tools/actions
-    func xcodeGenLane() {
-        xcodegen(spec: "app/project.yml",
-                 project: "app/YARC.xcodeproj")
-    }
+//    func xcodeGenLane() {
+//        xcodegen(spec: "app/project.yml",
+//                 project: "app/YARC.xcodeproj")
+//    }
     
     func swiftLintLane() {
         desc("Run SwiftLint")
