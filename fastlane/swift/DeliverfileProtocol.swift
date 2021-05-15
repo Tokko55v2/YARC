@@ -1,7 +1,7 @@
 // DeliverfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol DeliverfileProtocol: AnyObject {
+public protocol DeliverfileProtocol: class {
     /// Path to your App Store Connect API Key JSON file (https://docs.fastlane.tools/app-store-connect-api/#using-fastlane-api-key-json-file)
     var apiKeyPath: String? { get }
 
@@ -9,7 +9,7 @@ public protocol DeliverfileProtocol: AnyObject {
     var apiKey: [String: Any]? { get }
 
     /// Your Apple ID Username
-    var username: String { get }
+    var username: String? { get }
 
     /// The bundle identifier of your app
     var appIdentifier: String? { get }
@@ -189,71 +189,71 @@ public protocol DeliverfileProtocol: AnyObject {
     var app: String { get }
 }
 
-extension DeliverfileProtocol {
-    public var apiKeyPath: String? { nil }
-    public var apiKey: [String: Any]? { nil }
-    public var username: String { "" }
-    public var appIdentifier: String? { nil }
-    public var appVersion: String? { nil }
-    public var ipa: String? { nil }
-    public var pkg: String? { nil }
-    public var buildNumber: String? { nil }
-    public var platform: String { "ios" }
-    public var editLive: Bool { false }
-    public var useLiveVersion: Bool { false }
-    public var metadataPath: String? { nil }
-    public var screenshotsPath: String? { nil }
-    public var skipBinaryUpload: Bool { false }
-    public var skipScreenshots: Bool { false }
-    public var skipMetadata: Bool { false }
-    public var skipAppVersionUpdate: Bool { false }
-    public var force: Bool { false }
-    public var overwriteScreenshots: Bool { false }
-    public var submitForReview: Bool { false }
-    public var rejectIfPossible: Bool { false }
-    public var automaticRelease: Bool? { nil }
-    public var autoReleaseDate: Int? { nil }
-    public var phasedRelease: Bool { false }
-    public var resetRatings: Bool { false }
-    public var priceTier: String? { nil }
-    public var appRatingConfigPath: String? { nil }
-    public var submissionInformation: [String: Any]? { nil }
-    public var teamId: String? { nil }
-    public var teamName: String? { nil }
-    public var devPortalTeamId: String? { nil }
-    public var devPortalTeamName: String? { nil }
-    public var itcProvider: String? { nil }
-    public var runPrecheckBeforeSubmit: Bool { true }
-    public var precheckDefaultRuleLevel: String { "warn" }
-    public var individualMetadataItems: [String]? { nil }
-    public var appIcon: String? { nil }
-    public var appleWatchAppIcon: String? { nil }
-    public var copyright: String? { nil }
-    public var primaryCategory: String? { nil }
-    public var secondaryCategory: String? { nil }
-    public var primaryFirstSubCategory: String? { nil }
-    public var primarySecondSubCategory: String? { nil }
-    public var secondaryFirstSubCategory: String? { nil }
-    public var secondarySecondSubCategory: String? { nil }
-    public var tradeRepresentativeContactInformation: [String: Any]? { nil }
-    public var appReviewInformation: [String: Any]? { nil }
-    public var appReviewAttachmentFile: String? { nil }
-    public var description: String? { nil }
-    public var name: String? { nil }
-    public var subtitle: [String: Any]? { nil }
-    public var keywords: [String: Any]? { nil }
-    public var promotionalText: [String: Any]? { nil }
-    public var releaseNotes: String? { nil }
-    public var privacyUrl: String? { nil }
-    public var appleTvPrivacyPolicy: String? { nil }
-    public var supportUrl: String? { nil }
-    public var marketingUrl: String? { nil }
-    public var languages: [String]? { nil }
-    public var ignoreLanguageDirectoryValidation: Bool { false }
-    public var precheckIncludeInAppPurchases: Bool { true }
-    public var app: String { "" }
+public extension DeliverfileProtocol {
+    var apiKeyPath: String? { return nil }
+    var apiKey: [String: Any]? { return nil }
+    var username: String? { return nil }
+    var appIdentifier: String? { return nil }
+    var appVersion: String? { return nil }
+    var ipa: String? { return nil }
+    var pkg: String? { return nil }
+    var buildNumber: String? { return nil }
+    var platform: String { return "ios" }
+    var editLive: Bool { return false }
+    var useLiveVersion: Bool { return false }
+    var metadataPath: String? { return nil }
+    var screenshotsPath: String? { return nil }
+    var skipBinaryUpload: Bool { return false }
+    var skipScreenshots: Bool { return false }
+    var skipMetadata: Bool { return false }
+    var skipAppVersionUpdate: Bool { return false }
+    var force: Bool { return false }
+    var overwriteScreenshots: Bool { return false }
+    var submitForReview: Bool { return false }
+    var rejectIfPossible: Bool { return false }
+    var automaticRelease: Bool? { return nil }
+    var autoReleaseDate: Int? { return nil }
+    var phasedRelease: Bool { return false }
+    var resetRatings: Bool { return false }
+    var priceTier: String? { return nil }
+    var appRatingConfigPath: String? { return nil }
+    var submissionInformation: [String: Any]? { return nil }
+    var teamId: String? { return nil }
+    var teamName: String? { return nil }
+    var devPortalTeamId: String? { return nil }
+    var devPortalTeamName: String? { return nil }
+    var itcProvider: String? { return nil }
+    var runPrecheckBeforeSubmit: Bool { return true }
+    var precheckDefaultRuleLevel: String { return "warn" }
+    var individualMetadataItems: [String]? { return nil }
+    var appIcon: String? { return nil }
+    var appleWatchAppIcon: String? { return nil }
+    var copyright: String? { return nil }
+    var primaryCategory: String? { return nil }
+    var secondaryCategory: String? { return nil }
+    var primaryFirstSubCategory: String? { return nil }
+    var primarySecondSubCategory: String? { return nil }
+    var secondaryFirstSubCategory: String? { return nil }
+    var secondarySecondSubCategory: String? { return nil }
+    var tradeRepresentativeContactInformation: [String: Any]? { return nil }
+    var appReviewInformation: [String: Any]? { return nil }
+    var appReviewAttachmentFile: String? { return nil }
+    var description: String? { return nil }
+    var name: String? { return nil }
+    var subtitle: [String: Any]? { return nil }
+    var keywords: [String: Any]? { return nil }
+    var promotionalText: [String: Any]? { return nil }
+    var releaseNotes: String? { return nil }
+    var privacyUrl: String? { return nil }
+    var appleTvPrivacyPolicy: String? { return nil }
+    var supportUrl: String? { return nil }
+    var marketingUrl: String? { return nil }
+    var languages: [String]? { return nil }
+    var ignoreLanguageDirectoryValidation: Bool { return false }
+    var precheckIncludeInAppPurchases: Bool { return true }
+    var app: String { return "" }
 }
 
 // Please don't remove the lines below
 // They are used to detect outdated files
-// FastlaneRunnerAPIVersion [0.9.55]
+// FastlaneRunnerAPIVersion [0.9.67]

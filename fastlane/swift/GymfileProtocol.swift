@@ -1,7 +1,7 @@
 // GymfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol GymfileProtocol: AnyObject {
+public protocol GymfileProtocol: class {
     /// Path to the workspace file
     var workspace: String? { get }
 
@@ -144,56 +144,56 @@ public protocol GymfileProtocol: AnyObject {
     var useSystemScm: Bool { get }
 }
 
-extension GymfileProtocol {
-    public var workspace: String? { nil }
-    public var project: String? { nil }
-    public var scheme: String? { nil }
-    public var clean: Bool { false }
-    public var outputDirectory: String { "." }
-    public var outputName: String? { nil }
-    public var configuration: String? { nil }
-    public var silent: Bool { false }
-    public var codesigningIdentity: String? { nil }
-    public var skipPackageIpa: Bool { false }
-    public var skipPackagePkg: Bool { false }
-    public var includeSymbols: Bool? { nil }
-    public var includeBitcode: Bool? { nil }
-    public var exportMethod: String? { nil }
-    public var exportOptions: [String: Any]? { nil }
-    public var exportXcargs: String? { nil }
-    public var skipBuildArchive: Bool? { nil }
-    public var skipArchive: Bool? { nil }
-    public var skipCodesigning: Bool? { nil }
-    public var catalystPlatform: String? { nil }
-    public var installerCertName: String? { nil }
-    public var buildPath: String? { nil }
-    public var archivePath: String? { nil }
-    public var derivedDataPath: String? { nil }
-    public var resultBundle: Bool { false }
-    public var resultBundlePath: String? { nil }
-    public var buildlogPath: String { "~/Library/Logs/gym" }
-    public var sdk: String? { nil }
-    public var toolchain: String? { nil }
-    public var destination: String? { nil }
-    public var exportTeamId: String? { nil }
-    public var xcargs: String? { nil }
-    public var xcconfig: String? { nil }
-    public var suppressXcodeOutput: Bool? { nil }
-    public var disableXcpretty: Bool? { nil }
-    public var xcprettyTestFormat: Bool? { nil }
-    public var xcprettyFormatter: String? { nil }
-    public var xcprettyReportJunit: String? { nil }
-    public var xcprettyReportHtml: String? { nil }
-    public var xcprettyReportJson: String? { nil }
-    public var analyzeBuildTime: Bool? { nil }
-    public var xcprettyUtf: Bool? { nil }
-    public var skipProfileDetection: Bool { false }
-    public var clonedSourcePackagesPath: String? { nil }
-    public var skipPackageDependenciesResolution: Bool { false }
-    public var disablePackageAutomaticUpdates: Bool { false }
-    public var useSystemScm: Bool { false }
+public extension GymfileProtocol {
+    var workspace: String? { return nil }
+    var project: String? { return nil }
+    var scheme: String? { return nil }
+    var clean: Bool { return false }
+    var outputDirectory: String { return "." }
+    var outputName: String? { return nil }
+    var configuration: String? { return nil }
+    var silent: Bool { return false }
+    var codesigningIdentity: String? { return nil }
+    var skipPackageIpa: Bool { return false }
+    var skipPackagePkg: Bool { return false }
+    var includeSymbols: Bool? { return nil }
+    var includeBitcode: Bool? { return nil }
+    var exportMethod: String? { return nil }
+    var exportOptions: [String: Any]? { return nil }
+    var exportXcargs: String? { return nil }
+    var skipBuildArchive: Bool? { return nil }
+    var skipArchive: Bool? { return nil }
+    var skipCodesigning: Bool? { return nil }
+    var catalystPlatform: String? { return nil }
+    var installerCertName: String? { return nil }
+    var buildPath: String? { return nil }
+    var archivePath: String? { return nil }
+    var derivedDataPath: String? { return nil }
+    var resultBundle: Bool { return false }
+    var resultBundlePath: String? { return nil }
+    var buildlogPath: String { return "~/Library/Logs/gym" }
+    var sdk: String? { return nil }
+    var toolchain: String? { return nil }
+    var destination: String? { return nil }
+    var exportTeamId: String? { return nil }
+    var xcargs: String? { return nil }
+    var xcconfig: String? { return nil }
+    var suppressXcodeOutput: Bool? { return nil }
+    var disableXcpretty: Bool? { return nil }
+    var xcprettyTestFormat: Bool? { return nil }
+    var xcprettyFormatter: String? { return nil }
+    var xcprettyReportJunit: String? { return nil }
+    var xcprettyReportHtml: String? { return nil }
+    var xcprettyReportJson: String? { return nil }
+    var analyzeBuildTime: Bool? { return nil }
+    var xcprettyUtf: Bool? { return nil }
+    var skipProfileDetection: Bool { return false }
+    var clonedSourcePackagesPath: String? { return nil }
+    var skipPackageDependenciesResolution: Bool { return false }
+    var disablePackageAutomaticUpdates: Bool { return false }
+    var useSystemScm: Bool { return false }
 }
 
 // Please don't remove the lines below
 // They are used to detect outdated files
-// FastlaneRunnerAPIVersion [0.9.58]
+// FastlaneRunnerAPIVersion [0.9.70]

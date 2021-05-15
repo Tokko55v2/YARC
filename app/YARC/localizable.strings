@@ -1,0 +1,24 @@
+//
+//  Localizable.strings
+//  RedditClient
+//
+//  Created by Michael Kroneder on 22/01/2021.
+//
+"no_login_button" = "Go!";
+"login_button" = "Login";
+"reddit_header" = "YARC";
+"reddit_sub_header" = "Yet Another Reddit Client";
+"posts_page_title" = "Posts";
+"profile_page_title" = "Profile";
+"settings_page_title" = "Settings";
+"popular_subReddits" = "Popular Subreddits";
+"save_button" = "Save";
+"no_subReddits_chosen" = "There are no subreddits chosen";
+"add_subReddits" = "Add SubReddits";
+"members" = "members";
+"subscribers_title" = "subscribers";
+"mainReddit_list_title" = "Your SubReddits";
+"delete_button_message_subReddit" = "Do you really want to delete your Subreddit?";
+"delete_button_test" = "Delete";
+"common_cancle" = "Cancle";
+"isLoading_phrase" = "is loading...";

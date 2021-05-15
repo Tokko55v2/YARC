@@ -1,5 +1,5 @@
 // LaneFileProtocol.swift
-// Copyright (c) 2020 FastlaneTools
+// Copyright (c) 2021 FastlaneTools
 
 //
 //  ** NOTE **
@@ -10,48 +10,52 @@
 
 import Foundation
 
-public protocol LaneFileProtocol: AnyObject {
+public protocol LaneFileProtocol: class {
     var fastlaneVersion: String { get }
     static func runLane(from fastfile: LaneFile?, named lane: String, with parameters: [String: String]) -> Bool
 
     func recordLaneDescriptions()
     func beforeAll(with lane: String)
     func afterAll(with lane: String)
-    func onError(currentLane: String, errorInfo: String)
+    func onError(currentLane: String, errorInfo: String, errorClass: String?, errorMessage: String?)
 }
 
-extension LaneFileProtocol {
-    public var fastlaneVersion: String { "" } // Defaults to "" because that means any is fine
-    public func beforeAll(with _: String) {} // No-op by default
-    public func afterAll(with _: String) {} // No-op by default
-    public func onError(currentLane _: String, errorInfo _: String) {} // No-op by default
-    public func recordLaneDescriptions() {} // No-op by default
+public extension LaneFileProtocol {
+    var fastlaneVersion: String { return "" } // Defaults to "" because that means any is fine
+    func beforeAll(with _: String) {} // No-op by default
+    func afterAll(with _: String) {} // No-op by default
+    func recordLaneDescriptions() {} // No-op by default
 }
 
 @objcMembers
 open class LaneFile: NSObject, LaneFileProtocol {
     private(set) static var fastfileInstance: LaneFile?
+    private static var onErrorCalled = Set<String>()
 
     private static func trimLaneFromName(laneName: String) -> String {
-        String(laneName.prefix(laneName.count - 4))
+        return String(laneName.prefix(laneName.count - 4))
     }
 
     private static func trimLaneWithOptionsFromName(laneName: String) -> String {
-        String(laneName.prefix(laneName.count - 12))
+        return String(laneName.prefix(laneName.count - 12))
+    }
+
+    public func onError(currentLane: String, errorInfo _: String, errorClass _: String?, errorMessage _: String?) {
+        LaneFile.onErrorCalled.insert(currentLane)
     }
 
     private static var laneFunctionNames: [String] {
         var lanes: [String] = []
         var methodCount: UInt32 = 0
         #if !SWIFT_PACKAGE
-        let methodList = class_copyMethodList(self, &methodCount)
+            let methodList = class_copyMethodList(self, &methodCount)
         #else
-        // In SPM we're calling this functions out of the scope of the normal binary that it's
-        // being built, so *self* in this scope would be the SPM executable instead of the Fastfile
-        // that we'd normally expect.
-        let methodList = class_copyMethodList(type(of: fastfileInstance!), &methodCount)
+            // In SPM we're calling this functions out of the scope of the normal binary that it's
+            // being built, so *self* in this scope would be the SPM executable instead of the Fastfile
+            // that we'd normally expect.
+            let methodList = class_copyMethodList(type(of: fastfileInstance!), &methodCount)
         #endif
-        for i in 0..<Int(methodCount) {
+        for i in 0 ..< Int(methodCount) {
             let selName = sel_getName(method_getName(methodList![i]))
             let name = String(cString: selName)
             let lowercasedName = name.lowercased()
@@ -93,22 +97,22 @@ open class LaneFile: NSObject, LaneFileProtocol {
     public static func runLane(from fastfile: LaneFile?, named lane: String, with parameters: [String: String]) -> Bool {
         log(message: "Running lane: \(lane)")
         #if !SWIFT_PACKAGE
-        // When not in SPM environment, we load the Fastfile from its `className()`.
-        loadFastfile()
-        guard let fastfileInstance = self.fastfileInstance as? Fastfile else {
-            let message = "Unable to instantiate class named: \(className())"
-            log(message: message)
-            fatalError(message)
-        }
+            // When not in SPM environment, we load the Fastfile from its `className()`.
+            loadFastfile()
+            guard let fastfileInstance = self.fastfileInstance as? Fastfile else {
+                let message = "Unable to instantiate class named: \(className())"
+                log(message: message)
+                fatalError(message)
+            }
         #else
-        // When in SPM environment, we can't load the Fastfile from its `className()` because the executable is in
-        // another scope, so `className()` won't be the expected Fastfile. Instead, we load the Fastfile as a Lanefile
-        // in a static way, by parameter.
-        guard let fastfileInstance = fastfile else {
-            log(message: "Found nil instance of fastfile")
-            preconditionFailure()
-        }
-        self.fastfileInstance = fastfileInstance
+            // When in SPM environment, we can't load the Fastfile from its `className()` because the executable is in
+            // another scope, so `className()` won't be the expected Fastfile. Instead, we load the Fastfile as a Lanefile
+            // in a static way, by parameter.
+            guard let fastfileInstance = fastfile else {
+                log(message: "Found nil instance of fastfile")
+                preconditionFailure()
+            }
+            self.fastfileInstance = fastfileInstance
         #endif
         let currentLanes = lanes
         let lowerCasedLaneRequested = lane.lowercased()
@@ -137,7 +141,9 @@ open class LaneFile: NSObject, LaneFileProtocol {
         _ = fastfileInstance.perform(NSSelectorFromString(laneMethod), with: parameters)
 
         // Call only on success.
-        fastfileInstance.afterAll(with: lane)
+        if !LaneFile.onErrorCalled.contains(lane) {
+            fastfileInstance.afterAll(with: lane)
+        }
 
         log(message: "Done running lane: \(lane) 🚀")
         return true

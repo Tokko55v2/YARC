@@ -1,0 +1,6 @@
+module Pods_YARC {
+  umbrella header "Pods-YARC-umbrella.h"
+
+  export *
+  module * { export * }
+}

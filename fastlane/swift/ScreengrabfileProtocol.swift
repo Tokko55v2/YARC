@@ -1,7 +1,7 @@
 // ScreengrabfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol ScreengrabfileProtocol: AnyObject {
+public protocol ScreengrabfileProtocol: class {
     /// Path to the root of your Android SDK installation, e.g. ~/tools/android-sdk-macosx
     var androidHome: String? { get }
 
@@ -69,31 +69,31 @@ public protocol ScreengrabfileProtocol: AnyObject {
     var adbHost: String? { get }
 }
 
-extension ScreengrabfileProtocol {
-    public var androidHome: String? { nil }
-    public var buildToolsVersion: String? { nil }
-    public var locales: [String] { ["en-US"] }
-    public var clearPreviousScreenshots: Bool { false }
-    public var outputDirectory: String { "fastlane/metadata/android" }
-    public var skipOpenSummary: Bool { false }
-    public var appPackageName: String { "" }
-    public var testsPackageName: String? { nil }
-    public var useTestsInPackages: [String]? { nil }
-    public var useTestsInClasses: [String]? { nil }
-    public var launchArguments: [String]? { nil }
-    public var testInstrumentationRunner: String { "androidx.test.runner.AndroidJUnitRunner" }
-    public var endingLocale: String { "en-US" }
-    public var useAdbRoot: Bool { false }
-    public var appApkPath: String? { nil }
-    public var testsApkPath: String? { nil }
-    public var specificDevice: String? { nil }
-    public var deviceType: String { "phone" }
-    public var exitOnTestFailure: Bool { true }
-    public var reinstallApp: Bool { false }
-    public var useTimestampSuffix: Bool { true }
-    public var adbHost: String? { nil }
+public extension ScreengrabfileProtocol {
+    var androidHome: String? { return nil }
+    var buildToolsVersion: String? { return nil }
+    var locales: [String] { return ["en-US"] }
+    var clearPreviousScreenshots: Bool { return false }
+    var outputDirectory: String { return "fastlane/metadata/android" }
+    var skipOpenSummary: Bool { return false }
+    var appPackageName: String { return "" }
+    var testsPackageName: String? { return nil }
+    var useTestsInPackages: [String]? { return nil }
+    var useTestsInClasses: [String]? { return nil }
+    var launchArguments: [String]? { return nil }
+    var testInstrumentationRunner: String { return "androidx.test.runner.AndroidJUnitRunner" }
+    var endingLocale: String { return "en-US" }
+    var useAdbRoot: Bool { return false }
+    var appApkPath: String? { return nil }
+    var testsApkPath: String? { return nil }
+    var specificDevice: String? { return nil }
+    var deviceType: String { return "phone" }
+    var exitOnTestFailure: Bool { return true }
+    var reinstallApp: Bool { return false }
+    var useTimestampSuffix: Bool { return true }
+    var adbHost: String? { return nil }
 }
 
 // Please don't remove the lines below
 // They are used to detect outdated files
-// FastlaneRunnerAPIVersion [0.9.53]
+// FastlaneRunnerAPIVersion [0.9.65]

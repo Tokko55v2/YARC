@@ -1,5 +1,5 @@
 // Runner.swift
-// Copyright (c) 2020 FastlaneTools
+// Copyright (c) 2021 FastlaneTools
 
 //
 //  ** NOTE **
@@ -251,8 +251,8 @@ func verbose(message: String) {
     logger.verbose(message: message)
 }
 
-extension DispatchTimeInterval {
-    fileprivate var timeInterval: TimeInterval {
+private extension DispatchTimeInterval {
+    var timeInterval: TimeInterval {
         var result: TimeInterval = 0
         switch self {
         case let .seconds(value):

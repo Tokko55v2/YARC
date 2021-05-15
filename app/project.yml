@@ -1,0 +1,68 @@
+name: YARC
+options:
+  miniumXcodeGenVersion: 2.14
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+  usesTabs: false
+  indentWidth: 4
+  deploymentTarget:
+    iOS: "14.3"
+
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    PRODUCT_BUNDLE_IDENTIFIER: mkroneder.YARC
+
+targets:
+  YARC_Test:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: YARCTests
+    settings:
+      base:
+        PRODUCT_NAME: YARC_Test
+    dependencies:
+      - target: YARC
+  YARC_UITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: YARCUITests
+    settings:
+      base:
+        PRODUCT_NAME: YARC_UITests
+    dependencies:
+      - target: YARC
+  YARC:
+    scheme:
+      testTargets:
+        - YARC_Test
+      config:
+        - Production
+    platform: iOS
+    type: application
+    sources:
+      - path: YARC
+    preBuildScripts:
+      - path: ../scripts/rswift.sh
+        name: R.swift
+        inputFiles:
+          - $TEMP_DIR/rswift-lastrun
+        outputFiles:
+          - $SRCROOT/YARC/R.generated.swift
+      - path: ../scripts/swiftFormat.sh
+        name: SwiftFormat
+    postCompileScripts:
+      - path: ../scripts/swiftLint.sh
+        name: SwiftLint
+    dependencies:
+        - package: YARC_SDK
+        - package: Rswift
+packages:
+  Rswift:
+    url: https://github.com/mac-cain13/R.swift.Library
+    from: "5.3.0"
+  YARC_SDK:
+    url: https://github.com/Tokko55v2/YARC_SDK
+    branch: "main"

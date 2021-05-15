@@ -1,7 +1,7 @@
 // ScanfileProtocol.swift
 // Copyright (c) 2021 FastlaneTools
 
-public protocol ScanfileProtocol: AnyObject {
+public protocol ScanfileProtocol: class {
     /// Path to the workspace file
     var workspace: String? { get }
 
@@ -19,6 +19,9 @@ public protocol ScanfileProtocol: AnyObject {
 
     /// Should skip auto detecting of devices if none were specified
     var skipDetectDevices: Bool { get }
+
+    /// Should fail if devices not found
+    var ensureDevicesFound: Bool { get }
 
     /// Enabling this option will automatically killall Simulator processes before the run
     var forceQuitSimulator: Bool { get }
@@ -109,6 +112,9 @@ public protocol ScanfileProtocol: AnyObject {
 
     /// Should zip the derived data build products and place in output path?
     var shouldZipBuildProducts: Bool { get }
+
+    /// Should provide additional copy of .xctestrun file (settings.xctestrun) and place in output path?
+    var outputXctestrun: Bool { get }
 
     /// Should an Xcode result bundle be generated in the output directory
     var resultBundle: Bool { get }
@@ -203,81 +209,87 @@ public protocol ScanfileProtocol: AnyObject {
     /// Lets xcodebuild use system's scm configuration
     var useSystemScm: Bool { get }
 
+    /// The number of times a test can fail before scan should stop retrying
+    var numberOfRetries: Int { get }
+
     /// Should this step stop the build if the tests fail? Set this to false if you're using trainer
     var failBuild: Bool { get }
 }
 
-extension ScanfileProtocol {
-    public var workspace: String? { nil }
-    public var project: String? { nil }
-    public var scheme: String? { nil }
-    public var device: String? { nil }
-    public var devices: [String]? { nil }
-    public var skipDetectDevices: Bool { false }
-    public var forceQuitSimulator: Bool { false }
-    public var resetSimulator: Bool { false }
-    public var disableSlideToType: Bool { true }
-    public var prelaunchSimulator: Bool? { nil }
-    public var reinstallApp: Bool { false }
-    public var appIdentifier: String? { nil }
-    public var onlyTesting: String? { nil }
-    public var skipTesting: String? { nil }
-    public var testplan: String? { nil }
-    public var onlyTestConfigurations: String? { nil }
-    public var skipTestConfigurations: String? { nil }
-    public var xctestrun: String? { nil }
-    public var toolchain: String? { nil }
-    public var clean: Bool { false }
-    public var codeCoverage: Bool? { nil }
-    public var addressSanitizer: Bool? { nil }
-    public var threadSanitizer: Bool? { nil }
-    public var openReport: Bool { false }
-    public var disableXcpretty: Bool? { nil }
-    public var outputDirectory: String { "./test_output" }
-    public var outputStyle: String? { nil }
-    public var outputTypes: String { "html,junit" }
-    public var outputFiles: String? { nil }
-    public var buildlogPath: String { "~/Library/Logs/scan" }
-    public var includeSimulatorLogs: Bool { false }
-    public var suppressXcodeOutput: Bool? { nil }
-    public var formatter: String? { nil }
-    public var xcprettyArgs: String? { nil }
-    public var derivedDataPath: String? { nil }
-    public var shouldZipBuildProducts: Bool { false }
-    public var resultBundle: Bool { false }
-    public var useClangReportName: Bool { false }
-    public var concurrentWorkers: Int? { nil }
-    public var maxConcurrentSimulators: Int? { nil }
-    public var disableConcurrentTesting: Bool { false }
-    public var skipBuild: Bool { false }
-    public var testWithoutBuilding: Bool? { nil }
-    public var buildForTesting: Bool? { nil }
-    public var sdk: String? { nil }
-    public var configuration: String? { nil }
-    public var xcargs: String? { nil }
-    public var xcconfig: String? { nil }
-    public var appName: String? { nil }
-    public var deploymentTargetVersion: String? { nil }
-    public var slackUrl: String? { nil }
-    public var slackChannel: String? { nil }
-    public var slackMessage: String? { nil }
-    public var slackUseWebhookConfiguredUsernameAndIcon: Bool { false }
-    public var slackUsername: String { "fastlane" }
-    public var slackIconUrl: String { "https://fastlane.tools/assets/img/fastlane_icon.png" }
-    public var skipSlack: Bool { false }
-    public var slackOnlyOnFailure: Bool { false }
-    public var slackDefaultPayloads: [String]? { nil }
-    public var destination: String? { nil }
-    public var catalystPlatform: String? { nil }
-    public var customReportFileName: String? { nil }
-    public var xcodebuildCommand: String { "env NSUnbufferedIO=YES xcodebuild" }
-    public var clonedSourcePackagesPath: String? { nil }
-    public var skipPackageDependenciesResolution: Bool { false }
-    public var disablePackageAutomaticUpdates: Bool { false }
-    public var useSystemScm: Bool { false }
-    public var failBuild: Bool { true }
+public extension ScanfileProtocol {
+    var workspace: String? { return nil }
+    var project: String? { return nil }
+    var scheme: String? { return nil }
+    var device: String? { return nil }
+    var devices: [String]? { return nil }
+    var skipDetectDevices: Bool { return false }
+    var ensureDevicesFound: Bool { return false }
+    var forceQuitSimulator: Bool { return false }
+    var resetSimulator: Bool { return false }
+    var disableSlideToType: Bool { return true }
+    var prelaunchSimulator: Bool? { return nil }
+    var reinstallApp: Bool { return false }
+    var appIdentifier: String? { return nil }
+    var onlyTesting: String? { return nil }
+    var skipTesting: String? { return nil }
+    var testplan: String? { return nil }
+    var onlyTestConfigurations: String? { return nil }
+    var skipTestConfigurations: String? { return nil }
+    var xctestrun: String? { return nil }
+    var toolchain: String? { return nil }
+    var clean: Bool { return false }
+    var codeCoverage: Bool? { return nil }
+    var addressSanitizer: Bool? { return nil }
+    var threadSanitizer: Bool? { return nil }
+    var openReport: Bool { return false }
+    var disableXcpretty: Bool? { return nil }
+    var outputDirectory: String { return "./test_output" }
+    var outputStyle: String? { return nil }
+    var outputTypes: String { return "html,junit" }
+    var outputFiles: String? { return nil }
+    var buildlogPath: String { return "~/Library/Logs/scan" }
+    var includeSimulatorLogs: Bool { return false }
+    var suppressXcodeOutput: Bool? { return nil }
+    var formatter: String? { return nil }
+    var xcprettyArgs: String? { return nil }
+    var derivedDataPath: String? { return nil }
+    var shouldZipBuildProducts: Bool { return false }
+    var outputXctestrun: Bool { return false }
+    var resultBundle: Bool { return false }
+    var useClangReportName: Bool { return false }
+    var concurrentWorkers: Int? { return nil }
+    var maxConcurrentSimulators: Int? { return nil }
+    var disableConcurrentTesting: Bool { return false }
+    var skipBuild: Bool { return false }
+    var testWithoutBuilding: Bool? { return nil }
+    var buildForTesting: Bool? { return nil }
+    var sdk: String? { return nil }
+    var configuration: String? { return nil }
+    var xcargs: String? { return nil }
+    var xcconfig: String? { return nil }
+    var appName: String? { return nil }
+    var deploymentTargetVersion: String? { return nil }
+    var slackUrl: String? { return nil }
+    var slackChannel: String? { return nil }
+    var slackMessage: String? { return nil }
+    var slackUseWebhookConfiguredUsernameAndIcon: Bool { return false }
+    var slackUsername: String { return "fastlane" }
+    var slackIconUrl: String { return "https://fastlane.tools/assets/img/fastlane_icon.png" }
+    var skipSlack: Bool { return false }
+    var slackOnlyOnFailure: Bool { return false }
+    var slackDefaultPayloads: [String]? { return nil }
+    var destination: String? { return nil }
+    var catalystPlatform: String? { return nil }
+    var customReportFileName: String? { return nil }
+    var xcodebuildCommand: String { return "env NSUnbufferedIO=YES xcodebuild" }
+    var clonedSourcePackagesPath: String? { return nil }
+    var skipPackageDependenciesResolution: Bool { return false }
+    var disablePackageAutomaticUpdates: Bool { return false }
+    var useSystemScm: Bool { return false }
+    var numberOfRetries: Int { return 0 }
+    var failBuild: Bool { return true }
 }
 
 // Please don't remove the lines below
 // They are used to detect outdated files
-// FastlaneRunnerAPIVersion [0.9.63]
+// FastlaneRunnerAPIVersion [0.9.75]

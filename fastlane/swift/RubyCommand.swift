@@ -1,5 +1,5 @@
 // RubyCommand.swift
-// Copyright (c) 2020 FastlaneTools
+// Copyright (c) 2021 FastlaneTools
 
 //
 //  ** NOTE **
@@ -11,7 +11,7 @@
 import Foundation
 
 struct RubyCommand: RubyCommandable {
-    var type: CommandType { .action }
+    var type: CommandType { return .action }
 
     struct Argument {
         enum ArgType {
@@ -36,7 +36,7 @@ struct RubyCommand: RubyCommandable {
         }
 
         var hasValue: Bool {
-            value != nil
+            return value != nil
         }
 
         var json: String {
@@ -51,14 +51,16 @@ struct RubyCommand: RubyCommandable {
                 if type == .stringClosure {
                     return "{\"name\" : \"\(name)\", \"value\" : \"ignored_for_closure\"\(typeJson)}"
                 } else if let array = someValue as? [String] {
-                    return "{\"name\" : \"\(name)\", \"value\" : \"\(array.joined(separator: ","))\"\(typeJson)}"
+                    return "{\"name\" : \"\(name)\", \"value\" : \(array)\(typeJson)}"
                 } else if let hash = someValue as? [String: Any] {
                     let jsonData = try! JSONSerialization.data(withJSONObject: hash, options: [])
                     let jsonString = String(data: jsonData, encoding: .utf8)!
                     return "{\"name\" : \"\(name)\", \"value\" : \(jsonString)\(typeJson)}"
                 } else {
-                    let dictionary = ["name": name,
-                                      "value": someValue]
+                    let dictionary = [
+                        "name": name,
+                        "value": someValue,
+                    ]
                     let jsonData = try! JSONSerialization.data(withJSONObject: dictionary, options: [])
                     let jsonString = String(data: jsonData, encoding: .utf8)!
                     return jsonString

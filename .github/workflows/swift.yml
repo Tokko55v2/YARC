@@ -5,19 +5,16 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  RunLinter:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-
+      
       - name: Install dependencies
         run: bundle install
 
       - name: Run linter
         run: bundle exec fastlane swiftLintLane
-
-      - name: Build
-        run: bundle exec fastlane buildLane
         
   update-readme:
     name: Update Readme with Metrics
