@@ -25,6 +25,7 @@ analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
 disabled_rules: # rule identifiers to exclude from running
   - multiple_closures_with_trailing_closure
 
+allow_zero_lintable_files: true
 # configurable rules can be customized from this configuration file
 # binary rules can set their severity level
 force_cast: warning # implicitly
