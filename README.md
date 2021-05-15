@@ -1,6 +1,6 @@
-<p float="left">
-  <img src="Assets/screen1.png" width="350" />
-  <img src="Assets/screen2.png" width="350" />
+<p float="center">
+  <img src="Assets/screen1.png" width="250" />
+  <img src="Assets/screen2.png" width="250" />
 </p>
 
 <p align="center">
