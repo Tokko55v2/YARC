@@ -6,7 +6,6 @@
   text-align:center;
 }
 </style>
-
 <p align="center">
 <a href="https://github.com/Tokko55v2/YARC">
 <img src="Assets/screen1.png" style="width: 30%; heigth: 30%;" alt="YARC1" />
