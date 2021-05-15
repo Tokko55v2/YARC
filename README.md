@@ -1,4 +1,7 @@
-![YARC1](https://github.com/Tokko55v2/YARC/blob/main/Assets/screen1.png) ![YARC2](https://github.com/Tokko55v2/YARC/blob/main/Assets/screen2.png)
+<p float="left">
+  <img src="Assets/screen1.png" width="350" />
+  <img src="Assets/screen2.png" width="350" />
+</p>
 
 <p align="center">
   <a href="https://github.com/Tokko55v2/YARC/blob/main/LICENSE">
