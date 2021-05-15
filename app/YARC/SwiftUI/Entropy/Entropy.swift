@@ -60,8 +60,8 @@ private struct BackgroundColor: View {
     }
 }
 
-// struct LoginView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Entropy()
-//    }
-// }
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        Entropy()
+    }
+}

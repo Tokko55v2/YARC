@@ -24,22 +24,6 @@ struct MainView: View {
                     Text(R.string.localizable.posts_page_title())
                 }
                 .tag(0)
-
-            Text("WIP: Profil")
-                .tabItem {
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.system(size: 16, weight: .regular))
-                    Text(R.string.localizable.profile_page_title())
-                }
-                .tag(1)
-
-            Text("WIP: Settings")
-                .tabItem {
-                    Image(systemName: "gear")
-                        .font(.system(size: 16, weight: .regular))
-                    Text(R.string.localizable.settings_page_title())
-                }
-                .tag(2)
         }
         .accentColor(Color(R.color.backgroundColorTwo()!))
     }
