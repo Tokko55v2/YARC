@@ -57,17 +57,6 @@ struct SubRedditView: View {
     }
 }
 
-private struct PostsView: View {
-    @ObservedObject var viewModel: SubRedditViewModel
-    var yarcProfil: YarcProfile
-
-    var body: some View {
-        if viewModel.posts != nil {
-            Text("NICE")
-        }
-    }
-}
-
 private struct ImageView: View {
     @State var callSafari: Bool = false
     var imageURL: String
