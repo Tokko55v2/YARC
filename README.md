@@ -1,20 +1,5 @@
-<style>
-.row img {
-   display:inline-block;
-}
-.row{
-  text-align:center;
-}
-</style>
+![YARC1](https://github.com/Tokko55v2/YARC/blob/main/Assets/screen1.png) ![YARC2](https://github.com/Tokko55v2/YARC/blob/main/Assets/screen2.png)
 
-<p align="center">
-<a href="https://github.com/Tokko55v2/YARC">
-<img src="Assets/screen1.png" style="width: 30%; heigth: 30%;" alt="YARC1" />
-</a>
-<a href="https://github.com/Tokko55v2/YARC">
-<img src="Assets/screen2.png" style="width: 30%; heigth: 30%;" alt="YARC2" />
-</a>
-</p>
 <p align="center">
   <a href="https://github.com/Tokko55v2/YARC/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/Tokko55v2/YARC"/>
