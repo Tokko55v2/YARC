@@ -44,6 +44,4 @@ class RedditsViewModel: ObservableObject {
     func insertSelectedItem(_ item: SubReddit) {
         selectedItem.insert(item)
     }
-
-    func saveItems(moc: NSManagedObjectContext) {}
 }

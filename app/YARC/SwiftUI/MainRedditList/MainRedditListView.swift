@@ -14,7 +14,7 @@ struct MainRedditListView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            VStack {
                 Text(R.string.localizable.no_subReddits_chosen())
                     .foregroundColor(Color(R.color.textColor()!))
                     .font(.headline)
@@ -26,41 +26,25 @@ struct MainRedditListView: View {
                     viewModel.showIntroView.toggle()
                 }, label: {
                     Text(R.string.localizable.add_subReddits())
-                }).buttonStyle(CustomButton())
+                }).buttonStyle(PrimaryButton())
 
                 Spacer()
 
                 LogoView()
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar(content: {
-            ToolbarItem(placement: .principal, content: {
-                Text(R.string.localizable.mainReddit_list_title())
-            })
-            ToolbarItem(placement: .navigationBarTrailing, content: {
-                Button(action: {
-                    viewModel.showIntroView.toggle()
-                }, label: {
-                    Image(systemName: "plus.circle.fill")
-                })
-            })
-        })
-        .sheet(isPresented: $viewModel.showIntroView, content: {
-            RedditsView(viewModel: RedditsViewModel())
-        })
     }
 }
 
 struct ListView: View {
     @ObservedObject var viewModel: MainRedditListViewModel
-    @State var isPresented: Bool = false
-
     var body: some View {
         HStack(spacing: 0) {
             VStack {
                 AsyncImageView(url: "",
-                               placeholder: { Text(R.string.localizable.isLoading_phrase()) })
+                               placeholder: {
+                                   Text(R.string.localizable.isLoading_phrase())
+                               })
                     .aspectRatio(contentMode: .fit)
             }
             .padding(.leading, 5)
@@ -72,9 +56,19 @@ struct ListView: View {
                     .foregroundColor(Color(R.color.textColor()!))
             }
             .padding(.horizontal, 5)
+
+            Spacer()
+
+            VStack(alignment: .trailing) {
+                Button(action: {}, label: {
+                    Image(systemName: "trash")
+                        .font(.system(size: 18, weight: .regular))
+                        .foregroundColor(Color(.black))
+                })
+            }
+            .padding(.trailing, 16)
         }
         .frame(maxWidth: .infinity, minHeight: 55)
-        .background(Color(R.color.backgroundColorTwo()!))
         .edgesIgnoringSafeArea(.all)
     }
 }

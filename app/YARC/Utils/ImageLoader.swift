@@ -56,7 +56,7 @@ class ImageLoader: ObservableObject {
     }
 }
 
-struct ImageCache {
+private struct ImageCache {
     var cache = NSCache<NSString, NSData>()
 
     func get(forKey: String) -> Data? {

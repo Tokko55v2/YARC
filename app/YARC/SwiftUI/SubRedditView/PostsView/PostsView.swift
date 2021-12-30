@@ -11,8 +11,6 @@ struct PostsView: View {
     @ObservedObject var viewModel: SubRedditViewModel
 
     var body: some View {
-        if viewModel.posts != nil {
-            Text("TBD")
-        }
+        Text("TBD")
     }
 }

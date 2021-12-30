@@ -15,7 +15,9 @@ struct SubRedditView: View {
             VStack {
                 HStack {
                     AsyncImageView(url: "",
-                                   placeholder: { Text(R.string.localizable.isLoading_phrase()) })
+                                   placeholder: {
+                                       Text(R.string.localizable.isLoading_phrase())
+                                   })
                         .aspectRatio(contentMode: .fit)
                     Spacer()
                 }
@@ -67,8 +69,10 @@ private struct ImageView: View {
             callSafari.toggle()
         }, label: {
             AsyncImageView(url: imageURL,
-                           placeholder: { Text(R.string.localizable.isLoading_phrase()) })
-                .aspectRatio(contentMode: .fit)
+                           placeholder: {
+                               Text(R.string.localizable.isLoading_phrase())
+                           }).aspectRatio(contentMode: .fit)
+
         }).sheet(isPresented: $callSafari) {
             SafariView(url: URL(string: url)!)
         }
