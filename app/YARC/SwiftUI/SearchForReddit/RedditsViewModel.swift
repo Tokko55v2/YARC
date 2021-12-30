@@ -12,7 +12,6 @@ import YARC_SDK
 
 class RedditsViewModel: ObservableObject {
     let repository = Repository()
-    let coreDataService = CoreDataService()
     var store = Set<AnyCancellable>()
 
     @Published var selectedItem = Set<SubReddit>()
@@ -24,6 +23,7 @@ class RedditsViewModel: ObservableObject {
 
     func initialReddits() {
         repository.getMostPopularReddits()
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case let .failure(error):
@@ -45,11 +45,5 @@ class RedditsViewModel: ObservableObject {
         selectedItem.insert(item)
     }
 
-    func saveItems(moc: NSManagedObjectContext) {
-        DispatchQueue.main.async {
-            self.selectedItem.forEach { item in
-                self.coreDataService.addSubRedditsToProfile(item, context: moc)
-            }
-        }
-    }
+    func saveItems(moc: NSManagedObjectContext) {}
 }

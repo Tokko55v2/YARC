@@ -11,12 +11,7 @@ import SwiftUI
 
 class MainRedditListViewModel: ObservableObject {
     let repository = Repository()
-    let coreDataService = CoreDataService()
     var store = Set<AnyCancellable>()
 
     @Published var showIntroView: Bool = false
-
-    func delete(item: YarcProfile, moc: NSManagedObjectContext) {
-        coreDataService.deleteSubReddit(item, context: moc)
-    }
 }
