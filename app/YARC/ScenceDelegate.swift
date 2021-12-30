@@ -10,9 +10,6 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    lazy var coreDataStack = CoreDataStack()
-    var hasEntropy = EntropyStatus()
-
     var viewController: UIViewController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -23,17 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // initialize SDK
         YARCSDK.initShared()
 
-        if hasEntropy.getEntropyState() {
-            viewController = UIHostingController(rootView: MainView()
-                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext))
-        } else {
-            viewController = UIHostingController(rootView: Entropy()
-                .onAppear {
-                    self.hasEntropy.setEntropyState()
-                }
-                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext))
-        }
-
+        viewController = UIHostingController(rootView: MainView())
         // Create the SwiftUI view that provides the window contents.
 
         // Use a UIHostingController as window root view controller.
@@ -71,11 +58,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-
-        do {
-            try coreDataStack.persistentContainer.viewContext.save()
-        } catch {
-            print("Error saving managed object context: \(error)")
-        }
     }
 }

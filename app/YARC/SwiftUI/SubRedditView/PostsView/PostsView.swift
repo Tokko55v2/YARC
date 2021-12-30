@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PostsView: View {
     @ObservedObject var viewModel: SubRedditViewModel
-    var yarcProfil: YarcProfile
 
     var body: some View {
         if viewModel.posts != nil {

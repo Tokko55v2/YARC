@@ -6,7 +6,7 @@ options:
   usesTabs: false
   indentWidth: 4
   deploymentTarget:
-    iOS: "14.3"
+    iOS: "15.0"
 
 settings:
   base:

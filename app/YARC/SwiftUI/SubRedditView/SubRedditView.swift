@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SubRedditView: View {
     @ObservedObject var viewModel: SubRedditViewModel
-    var yarcProfil: YarcProfile
 
     var body: some View {
         ScrollView {
             VStack {
                 HStack {
-                    AsyncImageView(url: yarcProfil.iconImg ?? "", placeholder: { Text(R.string.localizable.isLoading_phrase()) })
+                    AsyncImageView(url: "",
+                                   placeholder: { Text(R.string.localizable.isLoading_phrase()) })
                         .aspectRatio(contentMode: .fit)
                     Spacer()
                 }
@@ -24,19 +24,19 @@ struct SubRedditView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
 
             VStack(alignment: .leading) {
-                Text(self.yarcProfil.displayNamePrefixed ?? "")
+                Text("displayNamePrefixed")
                     .font(.title3)
                     .padding(.bottom, 5)
                     .padding(.leading, 5)
                     .foregroundColor(Color.white)
 
-                Text("\(self.yarcProfil.subscribers)")
+                Text("subscribers")
                     .font(.body)
                     .padding(.bottom, 5)
                     .padding(.leading, 5)
                     .foregroundColor(Color.gray)
 
-                Text(self.yarcProfil.publicDescription ?? "")
+                Text("publicDescription")
                     .font(.footnote)
                     .padding(.leading, 5)
                     .foregroundColor(Color.white)
@@ -48,7 +48,7 @@ struct SubRedditView: View {
 
             Spacer()
 
-            PostsView(viewModel: viewModel, yarcProfil: yarcProfil)
+            PostsView(viewModel: viewModel)
         }
         .onAppear {
             viewModel.getPosts()
