@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-struct CustomButton: ButtonStyle {
+
+struct PrimaryButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration
             .label

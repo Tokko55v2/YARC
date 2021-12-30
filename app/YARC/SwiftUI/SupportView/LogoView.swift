@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct LogoView: View {
     var body: some View {
         guard let img = R.image.logo() else {

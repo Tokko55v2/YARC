@@ -9,8 +9,6 @@ import SwiftUI
 import YARC_SDK
 
 struct RedditsView: View {
-    @Environment(\.managedObjectContext) var managedObjectContext
-    @Environment(\.presentationMode) var mode
     @ObservedObject var viewModel: RedditsViewModel
 
     var body: some View {
@@ -21,15 +19,11 @@ struct RedditsView: View {
                         .frame(minHeight: 60)
                 }
                 .navigationBarTitle(R.string.localizable.popular_subReddits(), displayMode: .inline)
-                .navigationBarItems(trailing: Button(action: {
-                    self.viewModel.saveItems(moc: managedObjectContext)
-                    self.mode.wrappedValue.dismiss()
-                }, label: {
+                .navigationBarItems(trailing: Button(action: {}, label: {
                     Text(R.string.localizable.save_button())
                 }))
             }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
         .modifier(LoadingModifier(isShowing: .constant(viewModel.mostPoular == nil)))
     }
 }
