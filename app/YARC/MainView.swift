@@ -9,15 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     @State private var selection = 0
-    @State var showSubRedditView: Bool = false
 
     var body: some View {
         TabView(selection: $selection) {
-            MainRedditListView(viewModel: MainRedditListViewModel())
-                .sheet(isPresented: $showSubRedditView, content: {
-                    RedditsView(viewModel: RedditsViewModel())
-                })
-                .navigationBarHidden(true)
+            MainRedditListView()
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                         .font(.system(size: 16, weight: .regular))
@@ -25,12 +20,11 @@ struct MainView: View {
                 }
                 .tag(0)
         }
-        .accentColor(Color(R.color.backgroundColorTwo()!))
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(showSubRedditView: false)
+        MainView()
     }
 }

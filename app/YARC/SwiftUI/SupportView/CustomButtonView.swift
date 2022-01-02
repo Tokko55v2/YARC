@@ -12,9 +12,11 @@ struct PrimaryButton: ButtonStyle {
         configuration
             .label
             .frame(width: 250, height: 15, alignment: .center)
-            .foregroundColor(configuration.isPressed ? Color(R.color.backgroundColorOne()!) : .white)
+            .foregroundColor(.white)
             .padding()
-            .background(Color(R.color.buttonColor()!))
+            .background(configuration.isPressed ?
+                Color(R.color.secondButtonColor()!) :
+                Color(R.color.buttonColor()!))
             .cornerRadius(8)
     }
 }
